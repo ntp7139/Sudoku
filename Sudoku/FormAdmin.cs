@@ -14,8 +14,6 @@ namespace Sudoku
     public partial class FormAdmin : Form
     {
         Nguoichoi Admin;
-        string Hello;
-        string Test1;
         public FormAdmin(string Con,Nguoichoi player)
         {
             InitializeComponent();

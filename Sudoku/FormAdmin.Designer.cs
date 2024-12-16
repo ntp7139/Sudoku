@@ -32,6 +32,7 @@
             btn_Quantrimanchoi = new Button();
             btn_Thoat = new Button();
             btn_Choitrochoi = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btn_Quantringuoichoi
@@ -73,11 +74,21 @@
             btn_Choitrochoi.UseVisualStyleBackColor = true;
             btn_Choitrochoi.Click += btn_Choitrochoi_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(307, 14);
+            button1.Name = "button1";
+            button1.Size = new Size(182, 62);
+            button1.TabIndex = 4;
+            button1.Text = "Hello";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(btn_Choitrochoi);
             Controls.Add(btn_Thoat);
             Controls.Add(btn_Quantrimanchoi);
@@ -94,5 +105,6 @@
         private Button btn_Quantrimanchoi;
         private Button btn_Thoat;
         private Button btn_Choitrochoi;
+        private Button button1;
     }
 }
