@@ -115,12 +115,14 @@
             textBox1 = new TextBox();
             btn_ChoiLai = new Button();
             btn_QuayLai = new Button();
+            lb_Time = new Label();
             pn_TroChoi.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // pn_TroChoi
             // 
+            pn_TroChoi.Controls.Add(lb_Time);
             pn_TroChoi.Controls.Add(btn_TamDung);
             pn_TroChoi.Controls.Add(btn_Luu);
             pn_TroChoi.Controls.Add(tableLayoutPanel1);
@@ -848,6 +850,15 @@
             btn_QuayLai.UseVisualStyleBackColor = true;
             btn_QuayLai.Click += btn_QuayLai_Click;
             // 
+            // lb_Time
+            // 
+            lb_Time.AutoSize = true;
+            lb_Time.Location = new Point(171, 11);
+            lb_Time.Name = "lb_Time";
+            lb_Time.Size = new Size(50, 25);
+            lb_Time.TabIndex = 5;
+            lb_Time.Text = "Time";
+            // 
             // FormCheDoDe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -952,5 +963,6 @@
         private Button btn_QuayLai;
         private Button btn_TamDung;
         private Button btn_Luu;
+        private Label lb_Time;
     }
 }
