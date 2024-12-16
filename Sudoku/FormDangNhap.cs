@@ -8,6 +8,7 @@ namespace Sudoku
     {
         private Nguoichoi nguoichoi { get; set; }
         private LichSuDau lichsudau { get; set; }
+        private string strConnection;
         public void Test()
         {
 
