@@ -10,6 +10,7 @@ namespace Sudoku1
     {
         public string taikhoan;
         public string access;
+        public string score;
         
     }
     public class LichSuDau
@@ -20,4 +21,5 @@ namespace Sudoku1
        public int time;
        public string status;
     }
+
 }
