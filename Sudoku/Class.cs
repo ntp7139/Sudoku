@@ -19,7 +19,14 @@ namespace Sudoku1
         public int current_game_id;
         //Phương thức trả về thông tin người chơi khi nhập tài khoản ( tài khoản  = id )
         public Nguoichoi() { }
-
+        public void Score()
+        {
+            game_played = 0;
+        }
+        public void Taikhoan() 
+        {
+            game_won = 0;
+        }
     }
     public class LichSuDau
     {
