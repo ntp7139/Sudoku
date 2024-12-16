@@ -15,6 +15,7 @@ namespace Sudoku
     {
         Nguoichoi Admin;
         string Hello;
+        string Test1;
         public FormAdmin(string Con,Nguoichoi player)
         {
             InitializeComponent();
