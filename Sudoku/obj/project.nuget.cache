@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4SaInsaudvY=",
+  "dgSpecHash": "sWLrYvkDBKY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sudoku.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\Sudoku\\Sudoku\\Sudoku.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
@@ -35,12 +35,5 @@
     "C:\\Users\\Admin\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  "logs": []
 }
