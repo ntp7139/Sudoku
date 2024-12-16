@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="BatDaulai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChoiLaiVancu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCheDoDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCheDoKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormCheDoTrungBinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDoimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormGiaoDienTroChoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormQuanTriNguoiChoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormQuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormXepHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LuuTrangthai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TaiLaiTrangthai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TamDunghoacTieptuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
