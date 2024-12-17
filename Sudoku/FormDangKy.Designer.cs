@@ -61,35 +61,37 @@
             pn_DangKy.Controls.Add(lb_TieuDeDangKy);
             pn_DangKy.Controls.Add(pictureBox1);
             pn_DangKy.Location = new Point(1, 5);
-            pn_DangKy.Margin = new Padding(2, 2, 2, 2);
+            pn_DangKy.Margin = new Padding(2);
             pn_DangKy.Name = "pn_DangKy";
             pn_DangKy.Size = new Size(793, 472);
             pn_DangKy.TabIndex = 12;
             // 
             // tb_NhapLaiMatKhau
             // 
-            tb_NhapLaiMatKhau.Location = new Point(308, 249);
-            tb_NhapLaiMatKhau.Margin = new Padding(2, 2, 2, 2);
+            tb_NhapLaiMatKhau.Location = new Point(252, 261);
+            tb_NhapLaiMatKhau.Margin = new Padding(2);
+            tb_NhapLaiMatKhau.Multiline = true;
             tb_NhapLaiMatKhau.Name = "tb_NhapLaiMatKhau";
             tb_NhapLaiMatKhau.PasswordChar = '*';
-            tb_NhapLaiMatKhau.Size = new Size(417, 27);
+            tb_NhapLaiMatKhau.Size = new Size(417, 33);
             tb_NhapLaiMatKhau.TabIndex = 17;
             // 
             // tb_MatKhau_DangKy
             // 
-            tb_MatKhau_DangKy.Location = new Point(308, 204);
-            tb_MatKhau_DangKy.Margin = new Padding(2, 2, 2, 2);
+            tb_MatKhau_DangKy.Location = new Point(252, 208);
+            tb_MatKhau_DangKy.Margin = new Padding(2);
+            tb_MatKhau_DangKy.Multiline = true;
             tb_MatKhau_DangKy.Name = "tb_MatKhau_DangKy";
             tb_MatKhau_DangKy.PasswordChar = '*';
-            tb_MatKhau_DangKy.Size = new Size(417, 27);
+            tb_MatKhau_DangKy.Size = new Size(417, 33);
             tb_MatKhau_DangKy.TabIndex = 16;
             // 
             // lb_NhapMatKhau
             // 
-            lb_NhapMatKhau.BackColor = Color.SkyBlue;
+            lb_NhapMatKhau.BackColor = Color.Moccasin;
             lb_NhapMatKhau.BorderStyle = BorderStyle.Fixed3D;
             lb_NhapMatKhau.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_NhapMatKhau.ForeColor = SystemColors.ControlLightLight;
+            lb_NhapMatKhau.ForeColor = Color.SaddleBrown;
             lb_NhapMatKhau.ImageAlign = ContentAlignment.TopLeft;
             lb_NhapMatKhau.Location = new Point(118, 256);
             lb_NhapMatKhau.Margin = new Padding(2, 0, 2, 0);
@@ -101,10 +103,10 @@
             // 
             // lb_MatKhau_DangKy
             // 
-            lb_MatKhau_DangKy.BackColor = Color.SkyBlue;
+            lb_MatKhau_DangKy.BackColor = Color.Moccasin;
             lb_MatKhau_DangKy.BorderStyle = BorderStyle.Fixed3D;
             lb_MatKhau_DangKy.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_MatKhau_DangKy.ForeColor = SystemColors.ButtonHighlight;
+            lb_MatKhau_DangKy.ForeColor = Color.SaddleBrown;
             lb_MatKhau_DangKy.Location = new Point(118, 208);
             lb_MatKhau_DangKy.Margin = new Padding(2, 0, 2, 0);
             lb_MatKhau_DangKy.Name = "lb_MatKhau_DangKy";
@@ -116,7 +118,7 @@
             // btn_QuayLai_DangKy
             // 
             btn_QuayLai_DangKy.Location = new Point(444, 353);
-            btn_QuayLai_DangKy.Margin = new Padding(2, 2, 2, 2);
+            btn_QuayLai_DangKy.Margin = new Padding(2);
             btn_QuayLai_DangKy.Name = "btn_QuayLai_DangKy";
             btn_QuayLai_DangKy.Size = new Size(128, 49);
             btn_QuayLai_DangKy.TabIndex = 13;
@@ -127,7 +129,7 @@
             // btn_DangKy
             // 
             btn_DangKy.Location = new Point(192, 353);
-            btn_DangKy.Margin = new Padding(2, 2, 2, 2);
+            btn_DangKy.Margin = new Padding(2);
             btn_DangKy.Name = "btn_DangKy";
             btn_DangKy.Size = new Size(128, 49);
             btn_DangKy.TabIndex = 12;
@@ -137,27 +139,29 @@
             // 
             // tb_Email_DangKy
             // 
-            tb_Email_DangKy.Location = new Point(308, 160);
-            tb_Email_DangKy.Margin = new Padding(2, 2, 2, 2);
+            tb_Email_DangKy.Location = new Point(252, 163);
+            tb_Email_DangKy.Margin = new Padding(2);
+            tb_Email_DangKy.Multiline = true;
             tb_Email_DangKy.Name = "tb_Email_DangKy";
-            tb_Email_DangKy.Size = new Size(417, 27);
+            tb_Email_DangKy.Size = new Size(417, 34);
             tb_Email_DangKy.TabIndex = 11;
             // 
             // tb_TaiKhoan_DangKy
             // 
             tb_TaiKhoan_DangKy.BackColor = SystemColors.Menu;
-            tb_TaiKhoan_DangKy.Location = new Point(308, 117);
-            tb_TaiKhoan_DangKy.Margin = new Padding(2, 2, 2, 2);
+            tb_TaiKhoan_DangKy.Location = new Point(252, 117);
+            tb_TaiKhoan_DangKy.Margin = new Padding(2);
+            tb_TaiKhoan_DangKy.Multiline = true;
             tb_TaiKhoan_DangKy.Name = "tb_TaiKhoan_DangKy";
-            tb_TaiKhoan_DangKy.Size = new Size(417, 27);
+            tb_TaiKhoan_DangKy.Size = new Size(417, 35);
             tb_TaiKhoan_DangKy.TabIndex = 10;
             // 
             // lb_Email_DangKy
             // 
-            lb_Email_DangKy.BackColor = Color.SkyBlue;
+            lb_Email_DangKy.BackColor = Color.Moccasin;
             lb_Email_DangKy.BorderStyle = BorderStyle.Fixed3D;
             lb_Email_DangKy.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_Email_DangKy.ForeColor = SystemColors.ButtonHighlight;
+            lb_Email_DangKy.ForeColor = Color.SaddleBrown;
             lb_Email_DangKy.Location = new Point(118, 163);
             lb_Email_DangKy.Margin = new Padding(2, 0, 2, 0);
             lb_Email_DangKy.Name = "lb_Email_DangKy";
@@ -168,10 +172,10 @@
             // 
             // lb_TaiKhoan_Dki
             // 
-            lb_TaiKhoan_Dki.BackColor = Color.SkyBlue;
+            lb_TaiKhoan_Dki.BackColor = Color.Moccasin;
             lb_TaiKhoan_Dki.BorderStyle = BorderStyle.Fixed3D;
             lb_TaiKhoan_Dki.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_TaiKhoan_Dki.ForeColor = SystemColors.ButtonHighlight;
+            lb_TaiKhoan_Dki.ForeColor = Color.SaddleBrown;
             lb_TaiKhoan_Dki.Location = new Point(118, 117);
             lb_TaiKhoan_Dki.Margin = new Padding(2, 0, 2, 0);
             lb_TaiKhoan_Dki.Name = "lb_TaiKhoan_Dki";
@@ -211,7 +215,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(794, 475);
             Controls.Add(pn_DangKy);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormDangKy";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Ký";
