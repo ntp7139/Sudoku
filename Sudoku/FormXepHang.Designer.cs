@@ -102,7 +102,7 @@ namespace Sudoku
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.Screenshot_2024_12_10_140725;
+            pictureBox4.Image = Properties.Resources.Screenshot_2024_12_10_1407251;
             pictureBox4.Location = new Point(648, 124);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(41, 38);
@@ -123,7 +123,7 @@ namespace Sudoku
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.xanh_đạm;
+            BackgroundImage = Properties.Resources.xanh_đạm1;
             ClientSize = new Size(800, 530);
             Controls.Add(pictureBox2);
             Controls.Add(btnXepHang);

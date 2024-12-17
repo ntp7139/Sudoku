@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace Sudoku
 {
+
     public partial class FormThongKe : Form
     {
         string constr;
@@ -23,7 +24,7 @@ namespace Sudoku
             InitializeComponent();
             adt = new MySqlDataAdapter(); // Khởi tạo mặc định
             cmd = new MySqlCommand(); // Khởi tạo mặc định
-            constr = "server=127.0.0.1; Database = sudoku; Uid=root; Pwd=phatbaoan112;";
+            constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
             con = new MySqlConnection(constr);
         }
 
@@ -53,12 +54,24 @@ namespace Sudoku
             {
                 string name = txtTen.Text;
                 string id = txtID.Text;
-                
-                string query = $"SELECT * FROM nguoichoi WHERE taikhoan = '{name}'";
-                MySqlDataAdapter newadt = new MySqlDataAdapter(query, con);
-                DataTable dt = new DataTable();
-                newadt.Fill(dt);
-                dataGridView1.DataSource = dt;
+                constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
+                string query = $"SELECT * FROM book1 WHERE Name = '{name}'and ID ='{id}';";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(query, con);
+                MySqlDataReader read = command.ExecuteReader();
+                if (read.HasRows)
+                {
+                    read.Close();
+                    MySqlDataAdapter newadt = new MySqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    newadt.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
+                else
+                {
+                    MessageBox.Show("Không có thông tin người chơi !");
+                    read.Close();
+                }
                 con.Close();
             }
             catch (Exception ex)
@@ -69,7 +82,66 @@ namespace Sudoku
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void lbTen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string name = txtTen.Text;
+                string id = txtID.Text;
+                constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
+                string query = $"SELECT * FROM book1 WHERE Name = '{name}'and ID ='{id}';";
+                con.Open();
+                MySqlCommand command = new MySqlCommand(query, con);
+                MySqlDataReader read = command.ExecuteReader();
+                if (read.HasRows)
+                {
+                    read.Close();
+                    label2.Visible = false;
+                    pictureBox3.Visible = false;
+                    MySqlDataAdapter newadt = new MySqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    newadt.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
+                else
+                {
+                    MessageBox.Show("Không có thông tin người chơi !");
+                    read.Close();
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

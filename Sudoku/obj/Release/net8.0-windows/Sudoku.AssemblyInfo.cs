@@ -14,7 +14,19 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sudoku")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edb5f85709af82a2d3fbfb2843c13f6b41655e9e")]
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c37bfdd2f87784dcca03c6f5e6214085d76d5b0a")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80bff2c9566f702b5813b9c6868f3b36be08361a")]
+>>>>>>> 9d7d72cd4fff1fe2a5433354184591a971e87452
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80bff2c9566f702b5813b9c6868f3b36be08361a")]
+>>>>>>> 9d7d72cd4fff1fe2a5433354184591a971e87452
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80bff2c9566f702b5813b9c6868f3b36be08361a")]
+>>>>>>> 9d7d72cd4fff1fe2a5433354184591a971e87452
 [assembly: System.Reflection.AssemblyProductAttribute("Sudoku")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sudoku")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
