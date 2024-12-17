@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8Sqqfz7bXD0=",
+  "dgSpecHash": "4SaInsaudvY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sudoku.csproj",
   "expectedPackageFiles": [
@@ -35,12 +35,5 @@
     "C:\\Users\\Admin\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
