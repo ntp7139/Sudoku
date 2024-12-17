@@ -18,11 +18,8 @@ namespace Sudoku1
         public int time_played;
         public int current_game_id;
         //Phương thức trả về thông tin người chơi khi nhập tài khoản ( tài khoản  = id )
+        public int current_score;
         public Nguoichoi() { }
-        public void testc() { }
-        public void Hello(string s) { }
-        public void Hello() { }
-
     }
     public class LichSuDau
     {
