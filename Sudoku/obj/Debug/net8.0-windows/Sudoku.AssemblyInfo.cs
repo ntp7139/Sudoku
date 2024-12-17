@@ -14,15 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sudoku")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff30172cdd9cd983826708133f9642504a6ebb70")]
-=======
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d41544300d8010870d1db2f863110ab385d0da37")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80302b16c707f0920f64f5371132e463c8098358")]
->>>>>>> ff30172cdd9cd983826708133f9642504a6ebb70
->>>>>>> 26ad74c523424611772f92a49e7e7839d019598e
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a166e67c748a8809b560bdebe35eb4784a509732")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sudoku")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sudoku")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

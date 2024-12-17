@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Tls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace Sudoku1
         //Phương thức trả về thông tin người chơi khi nhập tài khoản ( tài khoản  = id )
         public int current_score;
         public Nguoichoi() { }
+        public void Hello() { }
     }
     public class LichSuDau
     {
