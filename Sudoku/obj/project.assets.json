@@ -1688,11 +1688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\Sudoku\\Sudoku\\Sudoku.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sudoku.csproj",
       "projectName": "Sudoku",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\Sudoku\\Sudoku\\Sudoku.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sudoku.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\Sudoku\\Sudoku\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1762,5 +1762,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
