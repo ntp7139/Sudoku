@@ -3,12 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Sudoku\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\FormDangNhap.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\FormDangNhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formthongke.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 7815af440f3099b93629a35d9be4d8a9e0f2979a
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +27,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 8,
+=======
+          "SelectedChildIndex": 12,
+>>>>>>> 7815af440f3099b93629a35d9be4d8a9e0f2979a
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
+=======
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+>>>>>>> 7815af440f3099b93629a35d9be4d8a9e0f2979a
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
@@ -42,6 +74,7 @@
             },
             {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
@@ -51,10 +84,22 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+=======
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+>>>>>>> 7815af440f3099b93629a35d9be4d8a9e0f2979a
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "FormDangNhap.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.Designer.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.Designer.cs",
@@ -81,6 +126,29 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T05:30:34.257Z",
               "EditorCaption": ""
+=======
+              "Title": "FormThongKe.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormThongKe.Designer.cs",
+              "RelativeDocumentMoniker": "Sudoku\\FormThongKe.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormThongKe.Designer.cs",
+              "RelativeToolTip": "Sudoku\\FormThongKe.Designer.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwGQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:00:06.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormThongKe.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormThongKe.cs",
+              "RelativeDocumentMoniker": "Sudoku\\FormThongKe.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormThongKe.cs [Design]",
+              "RelativeToolTip": "Sudoku\\FormThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T05:59:55.633Z",
+              "EditorCaption": " [Design]"
+>>>>>>> 7815af440f3099b93629a35d9be4d8a9e0f2979a
             }
           ]
         }
