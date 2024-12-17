@@ -95,7 +95,7 @@
             pn_DangNhap.Controls.Add(tB_TaiKhoan);
             pn_DangNhap.Dock = DockStyle.Fill;
             pn_DangNhap.Location = new Point(0, 0);
-            pn_DangNhap.Margin = new Padding(2, 2, 2, 2);
+            pn_DangNhap.Margin = new Padding(2);
             pn_DangNhap.Name = "pn_DangNhap";
             pn_DangNhap.Size = new Size(640, 360);
             pn_DangNhap.TabIndex = 9;
@@ -140,7 +140,7 @@
             // btn_Thoat
             // 
             btn_Thoat.Location = new Point(366, 256);
-            btn_Thoat.Margin = new Padding(2, 2, 2, 2);
+            btn_Thoat.Margin = new Padding(2);
             btn_Thoat.Name = "btn_Thoat";
             btn_Thoat.RightToLeft = RightToLeft.No;
             btn_Thoat.Size = new Size(96, 46);
@@ -152,7 +152,7 @@
             // btn_DongY
             // 
             btn_DongY.Location = new Point(94, 256);
-            btn_DongY.Margin = new Padding(2, 2, 2, 2);
+            btn_DongY.Margin = new Padding(2);
             btn_DongY.Name = "btn_DongY";
             btn_DongY.Size = new Size(96, 46);
             btn_DongY.TabIndex = 5;
@@ -170,11 +170,12 @@
             lb_TieuDe.Size = new Size(160, 40);
             lb_TieuDe.TabIndex = 4;
             lb_TieuDe.Text = "Đăng Nhập";
+            lb_TieuDe.Click += lb_TieuDe_Click;
             // 
             // tB_MatKhau
             // 
             tB_MatKhau.Location = new Point(291, 138);
-            tB_MatKhau.Margin = new Padding(2, 2, 2, 2);
+            tB_MatKhau.Margin = new Padding(2);
             tB_MatKhau.Name = "tB_MatKhau";
             tB_MatKhau.PasswordChar = '*';
             tB_MatKhau.Size = new Size(169, 27);
@@ -205,7 +206,7 @@
             // tB_TaiKhoan
             // 
             tB_TaiKhoan.Location = new Point(291, 79);
-            tB_TaiKhoan.Margin = new Padding(2, 2, 2, 2);
+            tB_TaiKhoan.Margin = new Padding(2);
             tB_TaiKhoan.Name = "tB_TaiKhoan";
             tB_TaiKhoan.Size = new Size(169, 27);
             tB_TaiKhoan.TabIndex = 0;
@@ -225,7 +226,7 @@
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(640, 360);
             Controls.Add(pn_DangNhap);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormDangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Nhập";
