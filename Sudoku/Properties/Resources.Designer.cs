@@ -383,9 +383,49 @@ namespace Sudoku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nen {
+            get {
+                object obj = ResourceManager.GetObject("nen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nền {
             get {
                 object obj = ResourceManager.GetObject("nền", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nen1 {
+            get {
+                object obj = ResourceManager.GetObject("nen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nen2 {
+            get {
+                object obj = ResourceManager.GetObject("nen2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nen3 {
+            get {
+                object obj = ResourceManager.GetObject("nen3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +466,16 @@ namespace Sudoku.Properties {
         internal static System.Drawing.Bitmap plug_loads {
             get {
                 object obj = ResourceManager.GetObject("plug loads", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sách_vở {
+            get {
+                object obj = ResourceManager.GetObject("sách vở", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1046,6 +1096,26 @@ namespace Sudoku.Properties {
         internal static System.Drawing.Bitmap TEN_BẢNG {
             get {
                 object obj = ResourceManager.GetObject("TEN BẢNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tuvi {
+            get {
+                object obj = ResourceManager.GetObject("tuvi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tuvi1 {
+            get {
+                object obj = ResourceManager.GetObject("tuvi1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

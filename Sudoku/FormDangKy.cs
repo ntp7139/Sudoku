@@ -94,5 +94,10 @@ namespace Sudoku
         {
 
         }
+
+        private void tb_Email_DangKy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
