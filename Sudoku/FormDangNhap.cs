@@ -9,8 +9,10 @@ namespace Sudoku
         private Nguoichoi nguoichoi { get; set; }
         private LichSuDau lichsudau { get; set; }
         private string strConnection;
-        private string strError;
-        private string strWarning;
+        public void Test()
+        {
+
+        }
         public FormDangNhap(string Con)
         {
             InitializeComponent();
