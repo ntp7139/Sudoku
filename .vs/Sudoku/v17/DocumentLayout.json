@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,6 +82,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Class.cs",
+              "RelativeDocumentMoniker": "Sudoku\\Class.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Class.cs",
+              "RelativeToolTip": "Sudoku\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:28:52.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "FormDangKy.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangKy.cs",
@@ -91,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormGiaoDienTroChoi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormGiaoDienTroChoi.cs",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormDoimatkhau.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDoimatkhau.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormDoimatkhau.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FormAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormAdmin.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormAdmin.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormDangNhap.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FormDangNhap.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.Designer.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.Designer.cs",
@@ -164,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FormDangNhap.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.cs",

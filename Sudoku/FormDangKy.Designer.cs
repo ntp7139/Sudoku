@@ -68,23 +68,25 @@
             // 
             // tb_NhapLaiMatKhau
             // 
+            tb_NhapLaiMatKhau.BackColor = Color.FloralWhite;
             tb_NhapLaiMatKhau.Location = new Point(252, 261);
             tb_NhapLaiMatKhau.Margin = new Padding(2);
             tb_NhapLaiMatKhau.Multiline = true;
             tb_NhapLaiMatKhau.Name = "tb_NhapLaiMatKhau";
             tb_NhapLaiMatKhau.PasswordChar = '*';
             tb_NhapLaiMatKhau.Size = new Size(417, 33);
-            tb_NhapLaiMatKhau.TabIndex = 17;
+            tb_NhapLaiMatKhau.TabIndex = 3;
             // 
             // tb_MatKhau_DangKy
             // 
+            tb_MatKhau_DangKy.BackColor = Color.FloralWhite;
             tb_MatKhau_DangKy.Location = new Point(252, 208);
             tb_MatKhau_DangKy.Margin = new Padding(2);
             tb_MatKhau_DangKy.Multiline = true;
             tb_MatKhau_DangKy.Name = "tb_MatKhau_DangKy";
             tb_MatKhau_DangKy.PasswordChar = '*';
             tb_MatKhau_DangKy.Size = new Size(417, 33);
-            tb_MatKhau_DangKy.TabIndex = 16;
+            tb_MatKhau_DangKy.TabIndex = 2;
             // 
             // lb_NhapMatKhau
             // 
@@ -139,22 +141,23 @@
             // 
             // tb_Email_DangKy
             // 
+            tb_Email_DangKy.BackColor = Color.FloralWhite;
             tb_Email_DangKy.Location = new Point(252, 163);
             tb_Email_DangKy.Margin = new Padding(2);
             tb_Email_DangKy.Multiline = true;
             tb_Email_DangKy.Name = "tb_Email_DangKy";
             tb_Email_DangKy.Size = new Size(417, 34);
-            tb_Email_DangKy.TabIndex = 11;
+            tb_Email_DangKy.TabIndex = 1;
             // 
             // tb_TaiKhoan_DangKy
             // 
-            tb_TaiKhoan_DangKy.BackColor = SystemColors.Menu;
+            tb_TaiKhoan_DangKy.BackColor = Color.FloralWhite;
             tb_TaiKhoan_DangKy.Location = new Point(252, 117);
             tb_TaiKhoan_DangKy.Margin = new Padding(2);
             tb_TaiKhoan_DangKy.Multiline = true;
             tb_TaiKhoan_DangKy.Name = "tb_TaiKhoan_DangKy";
             tb_TaiKhoan_DangKy.Size = new Size(417, 35);
-            tb_TaiKhoan_DangKy.TabIndex = 10;
+            tb_TaiKhoan_DangKy.TabIndex = 0;
             // 
             // lb_Email_DangKy
             // 
@@ -218,7 +221,7 @@
             Margin = new Padding(2);
             Name = "FormDangKy";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Đăng Ký";
+            Load += FormDangKy_Load;
             pn_DangKy.ResumeLayout(false);
             pn_DangKy.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
