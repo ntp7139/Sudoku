@@ -10,7 +10,7 @@ namespace Sudoku1
     {
         public string taikhoan;
         public string access;
-        
+        public string Hello;
     }
     public class LichSuDau
     {
