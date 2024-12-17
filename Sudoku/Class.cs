@@ -21,6 +21,7 @@ namespace Sudoku1
         public Nguoichoi() { }
         public void testc() { }
         public void Hello(string s) { }
+        public void Hello() { }
 
     }
     public class LichSuDau
