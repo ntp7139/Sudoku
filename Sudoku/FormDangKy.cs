@@ -26,7 +26,7 @@ namespace Sudoku
 
         private void btn_DangKy_Click(object sender, EventArgs e)
         {
-            
+
             string strConnection = "server=127.0.0.1;uid=root;pwd=phatbaoan112;database=sudoku";
             using (MySql.Data.MySqlClient.MySqlConnection connection = new MySql.Data.MySqlClient.MySqlConnection(strConnection))
             {
@@ -40,13 +40,15 @@ namespace Sudoku
                     string Check_taikhoan = $"Select * from nguoichoi where taikhoan ='{taikhoan}'";
                     MySqlCommand kiemtra = new MySqlCommand(Check_taikhoan, connection);
                     MySqlDataReader kiemtra_taikhoan = kiemtra.ExecuteReader();
-                   
+
                     if (kiemtra_taikhoan.HasRows)
                     {
                         MessageBox.Show("Tai khoan da ton tai!");
                         kiemtra_taikhoan.Close();
 
-                    } else {
+                    }
+                    else
+                    {
                         kiemtra_taikhoan.Close();
                         string Check_email = $"Select * from nguoichoi where email ='{email}'";
                         MySqlCommand kiemtra1 = new MySqlCommand(Check_email, connection);
@@ -55,29 +57,30 @@ namespace Sudoku
                         {
                             MessageBox.Show("Email da ton tai");
                             kiemtra_email.Close();
-                        } else if (matkhau != nhaplaimatkhau)
-                            {
-                                MessageBox.Show("Mat khau không trùng hợp!");
-                            }
+                        }
+                        else if (matkhau != nhaplaimatkhau)
+                        {
+                            MessageBox.Show("Mat khau không trùng hợp!");
+                        }
                         else
+                        {
+                            kiemtra_email.Close();
+
+                            string insert = $"insert into nguoichoi values('{taikhoan}','{matkhau}','{email}')";
+                            MySqlCommand mySqlCommand = new MySqlCommand(insert, connection);
+                            try
                             {
-                                kiemtra_email.Close();
-                            
-                                string insert = $"insert into nguoichoi values('{taikhoan}','{matkhau}','{email}')";
-                                MySqlCommand mySqlCommand = new MySqlCommand(insert, connection);
-                                try
-                                {
-                                    int row = mySqlCommand.ExecuteNonQuery();
-                                    MessageBox.Show("Dang ky thanh cong!");
-                                    this.Close();
-                                }
-                                catch (Exception ex)
-                                {
-                                    MessageBox.Show(ex.Message);
-                                }
+                                int row = mySqlCommand.ExecuteNonQuery();
+                                MessageBox.Show("Dang ky thanh cong!");
+                                this.Close();
                             }
-            
-         
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+                        }
+
+
                     }
                 }
                 catch (Exception ex)
@@ -85,6 +88,11 @@ namespace Sudoku
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void FormDangKy_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
