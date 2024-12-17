@@ -1,4 +1,4 @@
-﻿using QUANLYTRANGTHAIGAME;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,15 +12,15 @@ using System.Windows.Forms;
 
 namespace Sudoku
 {
-    public partial class sodukuwinform : Form
+    public partial class Sodukuwinform 
     {
         private int[,] banChoi = new int[9, 9]; // Dữ liệu bảng Sudoku
 
-        public sodukuwinform()
+        public Sodukuwinform()
         {
-            InitializeComponent();
-            KhoiTaoBangSudoku();
-            TaoNutNhapSo();
+               InitializeComponent();
+                KhoiTaoBangSudoku();
+                TaoNutNhapSo();
         }
         private void sodukuwinform_Load(object sender, EventArgs e)
         {

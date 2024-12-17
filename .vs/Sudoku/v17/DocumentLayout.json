@@ -3,70 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Sudoku\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\Sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\Sodukuwinform.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\TaiLaiTrangthai.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\TamDunghoacTieptuc.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\Sodukuwinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\sodukuwinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\sodukuwinform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\sudoku\\tamdunghoactieptuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sudoku\\tamdunghoactieptuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> bdbcfb68a7ddce5933caa3ddc26fec210bad3885
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\TamDunghoacTieptuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\TaiLaiTrangthai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\sudoku\\tailaitrangthai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sudoku\\tailaitrangthai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdoimatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Properties\\Resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\Properties\\Resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sudoku\\formgiaodientrochoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\FormGiaoDienTroChoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\formdangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\formdangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|c:\\users\\admin\\source\\repos\\sudoku\\sudoku\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A29375-9D51-45C5-BADC-5E5A44B07F96}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 5b917ee87e5b7326af517111423c8c208e1ddd36
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sudoku\\Class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -76,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -124,115 +114,153 @@
             },
             {
               "$type": "Bookmark",
-<<<<<<< HEAD
-              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Class.cs",
-              "RelativeDocumentMoniker": "Sudoku\\Class.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Class.cs",
-              "RelativeToolTip": "Sudoku\\Class.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:28:52.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormDangKy.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangKy.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormDangKy.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangKy.cs*",
-              "RelativeToolTip": "Sudoku\\FormDangKy.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAIAwwBwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:07:32.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormGiaoDienTroChoi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormGiaoDienTroChoi.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs [Design]",
-              "RelativeToolTip": "Sudoku\\FormGiaoDienTroChoi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T05:46:32.42Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormDoimatkhau.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDoimatkhau.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormDoimatkhau.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDoimatkhau.cs [Design]",
-              "RelativeToolTip": "Sudoku\\FormDoimatkhau.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T05:46:31.689Z",
-              "EditorCaption": " [Design]"
-=======
               "Name": "ST:134:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
->>>>>>> 5b917ee87e5b7326af517111423c8c208e1ddd36
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Program.cs",
-              "RelativeDocumentMoniker": "Sudoku\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Program.cs",
-              "RelativeToolTip": "Sudoku\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAxAAAA",
+              "Title": "Sodukuwinform.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.Designer.cs",
+              "RelativeDocumentMoniker": "Sudoku\\Sodukuwinform.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.Designer.cs",
+              "RelativeToolTip": "Sudoku\\Sodukuwinform.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:43:16.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "sodukuwinform.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\sodukuwinform.cs",
-              "RelativeDocumentMoniker": "Sudoku\\sodukuwinform.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\sodukuwinform.cs*",
-              "RelativeToolTip": "Sudoku\\sodukuwinform.cs*",
-              "ViewState": "AQIAADMAAAAAAAAAAAAgwE4AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:41:06.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T06:39:52.671Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "sodukuwinform.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\sodukuwinform.cs",
-              "RelativeDocumentMoniker": "Sudoku\\sodukuwinform.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\sodukuwinform.cs [Design]*",
-              "RelativeToolTip": "Sudoku\\sodukuwinform.cs [Design]*",
+              "Title": "Sodukuwinform.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.cs",
+              "RelativeDocumentMoniker": "Sudoku\\Sodukuwinform.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.cs [Design]",
+              "RelativeToolTip": "Sudoku\\Sodukuwinform.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T06:39:49.301Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaiLaiTrangthai.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.Designer.cs",
+              "RelativeDocumentMoniker": "Sudoku\\TaiLaiTrangthai.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.Designer.cs",
+              "RelativeToolTip": "Sudoku\\TaiLaiTrangthai.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:50:38.892Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "TamDunghoacTieptuc.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.Designer.cs",
+              "RelativeDocumentMoniker": "Sudoku\\TamDunghoacTieptuc.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.Designer.cs",
+              "RelativeToolTip": "Sudoku\\TamDunghoacTieptuc.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:52:22.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sodukuwinform.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.cs",
+              "RelativeDocumentMoniker": "Sudoku\\Sodukuwinform.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Sodukuwinform.cs",
+              "RelativeToolTip": "Sudoku\\Sodukuwinform.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:41:06.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TamDunghoacTieptuc.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.cs",
+              "RelativeDocumentMoniker": "Sudoku\\TamDunghoacTieptuc.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.cs [Design]",
+              "RelativeToolTip": "Sudoku\\TamDunghoacTieptuc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:51:30.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TamDunghoacTieptuc.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.cs",
+              "RelativeDocumentMoniker": "Sudoku\\TamDunghoacTieptuc.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TamDunghoacTieptuc.cs",
+              "RelativeToolTip": "Sudoku\\TamDunghoacTieptuc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:51:35.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaiLaiTrangthai.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.cs",
+              "RelativeDocumentMoniker": "Sudoku\\TaiLaiTrangthai.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.cs",
+              "RelativeToolTip": "Sudoku\\TaiLaiTrangthai.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:50:20.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaiLaiTrangthai.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.cs",
+              "RelativeDocumentMoniker": "Sudoku\\TaiLaiTrangthai.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\TaiLaiTrangthai.cs [Design]",
+              "RelativeToolTip": "Sudoku\\TaiLaiTrangthai.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:50:15.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Sudoku\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Properties\\Resources.resx",
+              "RelativeToolTip": "Sudoku\\Properties\\Resources.resx",
+              "ViewState": "AQIAAJ8BAAAAAAAAAAAUwLYBAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-12-17T06:49:03.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Program.cs",
+              "RelativeDocumentMoniker": "Sudoku\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Program.cs",
+              "RelativeToolTip": "Sudoku\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:43:16.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "FormGiaoDienTroChoi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormGiaoDienTroChoi.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs [Design]",
               "RelativeToolTip": "Sudoku\\FormGiaoDienTroChoi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:42:06.418Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-17T06:42:06.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "FormGiaoDienTroChoi.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormGiaoDienTroChoi.cs",
               "RelativeDocumentMoniker": "Sudoku\\FormGiaoDienTroChoi.cs",
@@ -240,25 +268,11 @@
               "RelativeToolTip": "Sudoku\\FormGiaoDienTroChoi.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAqwDwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:42:09.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T06:42:09.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "sodukuwinform.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\sodukuwinform.Designer.cs",
-              "RelativeDocumentMoniker": "Sudoku\\sodukuwinform.Designer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\sodukuwinform.Designer.cs*",
-              "RelativeToolTip": "Sudoku\\sodukuwinform.Designer.cs*",
-              "ViewState": "AQIAADYAAAAAAAAAAAAYwBEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:39:52.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Class.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\Class.cs",
               "RelativeDocumentMoniker": "Sudoku\\Class.cs",
@@ -266,62 +280,7 @@
               "RelativeToolTip": "Sudoku\\Class.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-12-17T05:32:08.264Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormAdmin.cs [Design]",
-              "RelativeToolTip": "Sudoku\\FormAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T05:31:55.22Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormDangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs [Design]",
-              "RelativeToolTip": "Sudoku\\FormDangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T05:31:18.625Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormDangNhap.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.Designer.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.Designer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.Designer.cs",
-              "RelativeToolTip": "Sudoku\\FormDangNhap.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T05:30:38.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormDangNhap.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs",
-              "RelativeDocumentMoniker": "Sudoku\\FormDangNhap.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Sudoku\\Sudoku\\FormDangNhap.cs",
-              "RelativeToolTip": "Sudoku\\FormDangNhap.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAIAwwH8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T05:30:34.257Z",
-=======
-              "WhenOpened": "2024-12-17T06:04:14.601Z",
->>>>>>> 5b917ee87e5b7326af517111423c8c208e1ddd36
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T06:04:14.601Z"
             }
           ]
         }
