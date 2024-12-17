@@ -50,16 +50,17 @@ namespace Sudoku
 
 
         private void btn_DongY_Click(object sender, EventArgs e)
-        {   if (tB_TaiKhoan.Text == "admin" && tB_MatKhau.Text == "admin")
+        {
+            if (tB_TaiKhoan.Text == "admin" && tB_MatKhau.Text == "admin")
             {
                 this.Hide();
-                FormAdmin newform = new FormAdmin(strConnection,nguoichoi);
+                FormAdmin newform = new FormAdmin(strConnection, nguoichoi);
                 newform.ShowDialog();
                 this.Show();
             }
             else
             {
-                
+
                 using (MySql.Data.MySqlClient.MySqlConnection connection = new MySql.Data.MySqlClient.MySqlConnection(strConnection))
                 {
                     try
@@ -75,11 +76,11 @@ namespace Sudoku
                             {
                                 read.Read();
                                 string useraccess = read["access"]?.ToString();
-                                if(useraccess ==  "admin")
+                                if (useraccess == "admin")
                                 {
                                     this.Hide();
                                     FormQuanTriNguoiChoi newform = new FormQuanTriNguoiChoi();
-                                    
+
                                     newform.ShowDialog();
                                     this.Show();
                                 }
@@ -101,8 +102,8 @@ namespace Sudoku
                     }
                 }
             }
-            
-            
+
+
         }
 
         private void pn_DangNhap_Paint(object sender, PaintEventArgs e)
@@ -120,6 +121,11 @@ namespace Sudoku
             FormDoimatkhau newform = new FormDoimatkhau();
             newform.ShowDialog();
             this.Show();
+        }
+
+        private void lb_TieuDe_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
