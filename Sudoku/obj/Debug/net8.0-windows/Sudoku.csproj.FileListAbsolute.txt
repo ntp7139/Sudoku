@@ -52,3 +52,6 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormCh
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormCheDoDe.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormCheDoKho.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.sourcelink.json
+C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.sodukuwinform.resources
+C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.TaiLaiTrangthai.resources
+C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.TamDunghoacTieptuc.resources

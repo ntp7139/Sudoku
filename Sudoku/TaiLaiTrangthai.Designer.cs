@@ -1,6 +1,6 @@
-﻿namespace QUANLYTRANGTHAIGAME
+﻿namespace Sudoku
 {
-    partial class TaiLaiTrangthai
+    partial class TaiLaiTrangthai :Form
     {
         /// <summary>
         /// Required designer variable.
