@@ -128,10 +128,10 @@
             // 
             // btn_DangKy
             // 
-            btn_DangKy.Location = new Point(192, 304);
+            btn_DangKy.Location = new Point(192, 353);
             btn_DangKy.Margin = new Padding(2);
             btn_DangKy.Name = "btn_DangKy";
-            btn_DangKy.Size = new Size(248, 98);
+            btn_DangKy.Size = new Size(128, 49);
             btn_DangKy.TabIndex = 12;
             btn_DangKy.Text = "Đăng Ký";
             btn_DangKy.UseVisualStyleBackColor = true;
