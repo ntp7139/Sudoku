@@ -47,7 +47,7 @@
             // 
             // pn_DangKy
             // 
-            pn_DangKy.BackgroundImage = Properties.Resources.tuvi1;
+       //     pn_DangKy.BackgroundImage = Properties.Resources.tuvi1;
             pn_DangKy.Controls.Add(tb_NhapLaiMatKhau);
             pn_DangKy.Controls.Add(tb_MatKhau_DangKy);
             pn_DangKy.Controls.Add(lb_NhapMatKhau);
@@ -87,7 +87,7 @@
             tb_MatKhau_DangKy.PasswordChar = '*';
             tb_MatKhau_DangKy.Size = new Size(465, 33);
             tb_MatKhau_DangKy.TabIndex = 2;
-            tb_MatKhau_DangKy.TextChanged += this.tb_MatKhau_DangKy_TextChanged;
+          //  tb_MatKhau_DangKy.TextChanged += this.tb_MatKhau_DangKy_TextChanged;
             // 
             // lb_NhapMatKhau
             // 
@@ -117,7 +117,7 @@
             lb_MatKhau_DangKy.TabIndex = 14;
             lb_MatKhau_DangKy.Text = "MẬT KHẨU";
             lb_MatKhau_DangKy.TextAlign = ContentAlignment.MiddleCenter;
-            lb_MatKhau_DangKy.Click += this.lb_MatKhau_DangKy_Click;
+          //  lb_MatKhau_DangKy.Click += this.lb_MatKhau_DangKy_Click;
             // 
             // btn_QuayLai_DangKy
             // 
@@ -184,7 +184,7 @@
             lb_Email_DangKy.TabIndex = 9;
             lb_Email_DangKy.Text = "EMAIL";
             lb_Email_DangKy.TextAlign = ContentAlignment.MiddleCenter;
-            lb_Email_DangKy.Click += this.lb_Email_DangKy_Click;
+        //    lb_Email_DangKy.Click += this.lb_Email_DangKy_Click;
             // 
             // lb_TaiKhoan_Dki
             // 

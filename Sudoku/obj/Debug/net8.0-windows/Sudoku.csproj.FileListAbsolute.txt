@@ -37,8 +37,6 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.csproj
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.BatDaulai.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.ChoiLaiVancu.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.LuuTrangthai.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.TaiLaiTrangthai.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.TamDunghoacTieptuc.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\Unity.Abstractions.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\Unity.Container.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormQuanTriNguoiChoi.resources
