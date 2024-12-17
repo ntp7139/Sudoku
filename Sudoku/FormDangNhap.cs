@@ -9,12 +9,10 @@ namespace Sudoku
         private Nguoichoi nguoichoi { get; set; }
         private LichSuDau lichsudau { get; set; }
         private string strConnection;
-        private string strError;
-        private string strWarning;
         public FormDangNhap(string Con)
         {
             InitializeComponent();
-            string strConnection = Con;
+            strConnection = Con;
         }
 
         private void lb_QuenMatKhau_Click(object sender, EventArgs e)
