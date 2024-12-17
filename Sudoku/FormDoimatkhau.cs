@@ -21,5 +21,15 @@ namespace Sudoku
         {
             this.Close();
         }
+
+        private void pn_DangKy_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox_QuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

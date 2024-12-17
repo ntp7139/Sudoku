@@ -99,5 +99,15 @@ namespace Sudoku
         {
 
         }
+
+        private void tb_MatKhau_DangKy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_DangKy_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

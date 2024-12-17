@@ -33,18 +33,21 @@
             tabPage2 = new TabPage();
             tabPage1 = new TabPage();
             pn_DangNhap = new Panel();
+            lbThoat = new Label();
+            button3 = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             lbDoimatkhau = new Label();
-            lb_DangKy = new Label();
-            lb_QuenMatKhau = new Label();
-            btn_Thoat = new Button();
             btn_DongY = new Button();
-            lb_TieuDe = new Label();
             tB_MatKhau = new TextBox();
             lb_MatKhau = new Label();
             lb_TaiKhoan = new Label();
             tB_TaiKhoan = new TextBox();
+            pictureBox1 = new PictureBox();
             tCt_FormDangNhap = new TabControl();
             pn_DangNhap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -83,16 +86,19 @@
             // 
             // pn_DangNhap
             // 
+            pn_DangNhap.BackColor = SystemColors.ButtonHighlight;
+            pn_DangNhap.Controls.Add(lbThoat);
+            pn_DangNhap.Controls.Add(button3);
+            pn_DangNhap.Controls.Add(label3);
+            pn_DangNhap.Controls.Add(label2);
+            pn_DangNhap.Controls.Add(label1);
             pn_DangNhap.Controls.Add(lbDoimatkhau);
-            pn_DangNhap.Controls.Add(lb_DangKy);
-            pn_DangNhap.Controls.Add(lb_QuenMatKhau);
-            pn_DangNhap.Controls.Add(btn_Thoat);
             pn_DangNhap.Controls.Add(btn_DongY);
-            pn_DangNhap.Controls.Add(lb_TieuDe);
             pn_DangNhap.Controls.Add(tB_MatKhau);
             pn_DangNhap.Controls.Add(lb_MatKhau);
             pn_DangNhap.Controls.Add(lb_TaiKhoan);
             pn_DangNhap.Controls.Add(tB_TaiKhoan);
+            pn_DangNhap.Controls.Add(pictureBox1);
             pn_DangNhap.Dock = DockStyle.Fill;
             pn_DangNhap.Location = new Point(0, 0);
             pn_DangNhap.Margin = new Padding(2);
@@ -101,11 +107,67 @@
             pn_DangNhap.TabIndex = 9;
             pn_DangNhap.Paint += pn_DangNhap_Paint;
             // 
+            // lbThoat
+            // 
+            lbThoat.AutoSize = true;
+            lbThoat.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 163);
+            lbThoat.Location = new Point(671, 456);
+            lbThoat.Margin = new Padding(2, 0, 2, 0);
+            lbThoat.Name = "lbThoat";
+            lbThoat.Size = new Size(46, 20);
+            lbThoat.TabIndex = 15;
+            lbThoat.Text = "Thoát";
+            lbThoat.Click += label4_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.SteelBlue;
+            button3.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(478, 395);
+            button3.Name = "button3";
+            button3.Size = new Size(269, 35);
+            button3.TabIndex = 14;
+            button3.Text = "Đăng Ký";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ActiveBorder;
+            label3.Location = new Point(597, 370);
+            label3.Name = "label3";
+            label3.Size = new Size(23, 20);
+            label3.TabIndex = 13;
+            label3.Text = "or";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(462, 95);
+            label2.Name = "label2";
+            label2.Size = new Size(210, 20);
+            label2.TabIndex = 11;
+            label2.Text = "Please log in to your account";
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Gill Sans Ultra Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.SteelBlue;
+            label1.Location = new Point(458, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(240, 86);
+            label1.TabIndex = 10;
+            label1.Text = "Welcome Back!";
+            // 
             // lbDoimatkhau
             // 
             lbDoimatkhau.AutoSize = true;
             lbDoimatkhau.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 163);
-            lbDoimatkhau.Location = new Point(300, 308);
+            lbDoimatkhau.Location = new Point(499, 457);
             lbDoimatkhau.Margin = new Padding(2, 0, 2, 0);
             lbDoimatkhau.Name = "lbDoimatkhau";
             lbDoimatkhau.Size = new Size(97, 20);
@@ -113,83 +175,34 @@
             lbDoimatkhau.Text = "Đổi mật khẩu";
             lbDoimatkhau.Click += lbDoimatkhau_Click;
             // 
-            // lb_DangKy
-            // 
-            lb_DangKy.AutoSize = true;
-            lb_DangKy.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 163);
-            lb_DangKy.Location = new Point(558, 333);
-            lb_DangKy.Margin = new Padding(2, 0, 2, 0);
-            lb_DangKy.Name = "lb_DangKy";
-            lb_DangKy.Size = new Size(62, 20);
-            lb_DangKy.TabIndex = 8;
-            lb_DangKy.Text = "Đăng ký";
-            lb_DangKy.Click += lb_DangKy_Click;
-            // 
-            // lb_QuenMatKhau
-            // 
-            lb_QuenMatKhau.AutoSize = true;
-            lb_QuenMatKhau.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 163);
-            lb_QuenMatKhau.Location = new Point(101, 308);
-            lb_QuenMatKhau.Margin = new Padding(2, 0, 2, 0);
-            lb_QuenMatKhau.Name = "lb_QuenMatKhau";
-            lb_QuenMatKhau.Size = new Size(118, 20);
-            lb_QuenMatKhau.TabIndex = 7;
-            lb_QuenMatKhau.Text = "Quên mật khẩu ?";
-            lb_QuenMatKhau.Click += lb_QuenMatKhau_Click;
-            // 
-            // btn_Thoat
-            // 
-            btn_Thoat.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Thoat.Location = new Point(466, 392);
-            btn_Thoat.Margin = new Padding(2);
-            btn_Thoat.Name = "btn_Thoat";
-            btn_Thoat.RightToLeft = RightToLeft.No;
-            btn_Thoat.Size = new Size(96, 46);
-            btn_Thoat.TabIndex = 6;
-            btn_Thoat.Text = "Thoát";
-            btn_Thoat.UseVisualStyleBackColor = true;
-            btn_Thoat.Click += btn_Thoat_Click;
-            // 
             // btn_DongY
             // 
+            btn_DongY.BackColor = Color.SteelBlue;
             btn_DongY.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_DongY.Location = new Point(174, 392);
+            btn_DongY.ForeColor = SystemColors.ButtonHighlight;
+            btn_DongY.Location = new Point(478, 335);
             btn_DongY.Margin = new Padding(2);
             btn_DongY.Name = "btn_DongY";
-            btn_DongY.Size = new Size(117, 46);
+            btn_DongY.Size = new Size(269, 35);
             btn_DongY.TabIndex = 5;
             btn_DongY.Text = "Đăng Nhập";
-            btn_DongY.UseVisualStyleBackColor = true;
+            btn_DongY.UseVisualStyleBackColor = false;
             btn_DongY.Click += btn_DongY_Click;
-            // 
-            // lb_TieuDe
-            // 
-            lb_TieuDe.BackColor = Color.NavajoWhite;
-            lb_TieuDe.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_TieuDe.ForeColor = Color.SaddleBrown;
-            lb_TieuDe.Location = new Point(248, 37);
-            lb_TieuDe.Margin = new Padding(2, 0, 2, 0);
-            lb_TieuDe.Name = "lb_TieuDe";
-            lb_TieuDe.Size = new Size(212, 40);
-            lb_TieuDe.TabIndex = 4;
-            lb_TieuDe.Text = "ĐĂNG NHẬP";
-            lb_TieuDe.TextAlign = ContentAlignment.MiddleCenter;
-            lb_TieuDe.Click += lb_TieuDe_Click;
             // 
             // tB_MatKhau
             // 
-            tB_MatKhau.Location = new Point(134, 233);
+            tB_MatKhau.Location = new Point(464, 262);
             tB_MatKhau.Margin = new Padding(2);
             tB_MatKhau.Name = "tB_MatKhau";
             tB_MatKhau.PasswordChar = '*';
-            tB_MatKhau.Size = new Size(169, 27);
+            tB_MatKhau.Size = new Size(294, 27);
             tB_MatKhau.TabIndex = 3;
             // 
             // lb_MatKhau
             // 
             lb_MatKhau.AutoSize = true;
             lb_MatKhau.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_MatKhau.Location = new Point(132, 194);
+            lb_MatKhau.Location = new Point(464, 238);
             lb_MatKhau.Margin = new Padding(2, 0, 2, 0);
             lb_MatKhau.Name = "lb_MatKhau";
             lb_MatKhau.Size = new Size(80, 21);
@@ -200,7 +213,7 @@
             // 
             lb_TaiKhoan.AutoSize = true;
             lb_TaiKhoan.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_TaiKhoan.Location = new Point(132, 106);
+            lb_TaiKhoan.Location = new Point(460, 150);
             lb_TaiKhoan.Margin = new Padding(2, 0, 2, 0);
             lb_TaiKhoan.Name = "lb_TaiKhoan";
             lb_TaiKhoan.Size = new Size(82, 21);
@@ -209,18 +222,28 @@
             // 
             // tB_TaiKhoan
             // 
-            tB_TaiKhoan.Location = new Point(134, 138);
+            tB_TaiKhoan.Location = new Point(461, 173);
             tB_TaiKhoan.Margin = new Padding(2);
             tB_TaiKhoan.Name = "tB_TaiKhoan";
-            tB_TaiKhoan.Size = new Size(169, 27);
+            tB_TaiKhoan.Size = new Size(297, 27);
             tB_TaiKhoan.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.anhbia1;
+            pictureBox1.Location = new Point(1, -1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(444, 500);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
             // tCt_FormDangNhap
             // 
             tCt_FormDangNhap.Location = new Point(0, 0);
             tCt_FormDangNhap.Name = "tCt_FormDangNhap";
             tCt_FormDangNhap.SelectedIndex = 0;
-            tCt_FormDangNhap.Size = new Size(200, 100);
+            tCt_FormDangNhap.Size = new Size(800, 500);
             tCt_FormDangNhap.TabIndex = 0;
             // 
             // FormDangNhap
@@ -236,6 +259,7 @@
             Text = "Đăng Nhập";
             pn_DangNhap.ResumeLayout(false);
             pn_DangNhap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -245,16 +269,18 @@
         private TabPage tabPage2;
         private TabPage tabPage1;
         private Panel pn_DangNhap;
-        private Label lb_DangKy;
-        private Label lb_QuenMatKhau;
-        private Button btn_Thoat;
         private Button btn_DongY;
-        public Label lb_TieuDe;
         private TextBox tB_MatKhau;
         private Label lb_MatKhau;
         private Label lb_TaiKhoan;
         private TextBox tB_TaiKhoan;
         private TabControl tCt_FormDangNhap;
         private Label lbDoimatkhau;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private Label label2;
+        private Label label3;
+        private Button button3;
+        private Label lbThoat;
     }
 }

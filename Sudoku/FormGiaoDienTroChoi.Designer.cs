@@ -189,7 +189,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(830, 513);
+            ClientSize = new Size(800, 500);
             Controls.Add(pn_GiaoDien);
             Name = "FormGiaoDienTroChoi";
             Text = "FormGiaoDienTroChoi";

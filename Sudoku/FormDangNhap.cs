@@ -127,6 +127,19 @@ namespace Sudoku
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangKy newform = new FormDangKy();
+            newform.ShowDialog();
+            this.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
