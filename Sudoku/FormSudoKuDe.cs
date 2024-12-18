@@ -12,15 +12,16 @@ using System.Windows.Forms;
 
 namespace Sudoku
 {
-    public partial class Sodukuwinform 
+    
+    public partial class FormSudoKuDe 
     {
         private int[,] banChoi = new int[9, 9]; // Dữ liệu bảng Sudoku
 
-        public Sodukuwinform()
+        public FormSudoKuDe()
         {
                InitializeComponent();
                 KhoiTaoBangSudoku();
-                TaoNutNhapSo();
+           
         }
         private void sodukuwinform_Load(object sender, EventArgs e)
         {
@@ -30,49 +31,38 @@ namespace Sudoku
 
         private void KhoiTaoBangSudoku()
         {
-            // Thiết lập DataGridView
-            dvgBangTroChoi.RowCount = 9;
-            dvgBangTroChoi.ColumnCount = 9;
-            dvgBangTroChoi.RowHeadersVisible = false;
-            dvgBangTroChoi.ColumnHeadersVisible = false;
-            dvgBangTroChoi.DefaultCellStyle.Font = new Font("Arial", 18);
-            dvgBangTroChoi.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dvgBangTroChoi.AllowUserToResizeRows = false;
-            dvgBangTroChoi.AllowUserToResizeColumns = false;
-            dvgBangTroChoi.AllowUserToAddRows = false;
+            
+                // Thiết lập DataGridView
+                dvgBangTroChoi.RowCount = 9;
+                dvgBangTroChoi.ColumnCount = 9;
+                dvgBangTroChoi.RowHeadersVisible = false;
+                dvgBangTroChoi.ColumnHeadersVisible = false;
+                dvgBangTroChoi.DefaultCellStyle.Font = new Font("Arial", 18);
+                dvgBangTroChoi.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dvgBangTroChoi.AllowUserToResizeRows = false;
+                dvgBangTroChoi.AllowUserToResizeColumns = false;
+                dvgBangTroChoi.AllowUserToAddRows = false;
 
-            foreach (DataGridViewColumn cot in dvgBangTroChoi.Columns)
-            {
-                cot.Width = dvgBangTroChoi.Width / 9 - 1;
-            }
-            foreach (DataGridViewRow dong in dvgBangTroChoi.Rows)
-            {
-                dong.Height = dvgBangTroChoi.Height / 9 - 1;
-            }
+                foreach (DataGridViewColumn cot in dvgBangTroChoi.Columns)
+                {
+                    cot.Width = dvgBangTroChoi.Width / 9 - 1;
+                }
+                foreach (DataGridViewRow dong in dvgBangTroChoi.Rows)
+                {
+                    dong.Height = dvgBangTroChoi.Height / 9 - 1;
+                }
+            
         }
 
-        private void TaoNutNhapSo()
-        {
-            for (int i = 1; i <= 9; i++)
-            {
-                Button btn = new Button();
-                btn.Text = i.ToString();
-                btn.Width = 40;
-                btn.Height = 40;
-                btn.Tag = i;
-                btn.Click += NutNhapSo_Click;
-                //flowLayoutPanel1.Controls.Add(btn); // Đảm bảo bạn đã thêm flowLayoutPanel1 vào Form
-            }
-        }
 
-        private void NutNhapSo_Click(object sender, EventArgs e)
+     /*   private void NutNhapSo_Click(object sender, EventArgs e)
         {
             if (dvgBangTroChoi.CurrentCell != null && dvgBangTroChoi.CurrentCell.ReadOnly == false)
             {
                 Button btn = sender as Button;
-                dvgBangTroChoi.CurrentCell.Value = btn.Tag.ToString();
+                dvgBangTroChoi.CurrentCell.Value = btn.Text.ToString();
             }
-        }
+        }*/
 
         private void btnQuanLyTrangThai_Click(object sender, EventArgs e)
         {
@@ -168,16 +158,21 @@ namespace Sudoku
         private void ShuffleSudoku(int[,] grid)
         {
             Random rand = new Random();
+            try
+            {
+                // Shuffle các hàng trong từng nhóm 3 hàng
+                for (int i = 0; i < 9; i += 3)
+                    for (int j = 0; j < 3; j++)
+                        SwapRows(grid, i + j, i + rand.Next(0, 3));
 
-            // Shuffle các hàng trong từng nhóm 3 hàng
-            for (int i = 0; i < 9; i += 3)
-                for (int j = 0; j < 3; j++)
-                    SwapRows(grid, i + j, i + rand.Next(0, 3));
-
-            // Shuffle các cột trong từng nhóm 3 cột
-            for (int i = 0; i < 9; i += 3)
-                for (int j = 0; j < 3; j++)
-                    SwapColumns(grid, i + j, i + rand.Next(0, 3));
+                // Shuffle các cột trong từng nhóm 3 cột
+                for (int i = 0; i < 9; i += 3)
+                    for (int j = 0; j < 3; j++)
+                        SwapColumns(grid, i + j, i + rand.Next(0, 3));
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void SwapRows(int[,] grid, int row1, int row2)
@@ -233,7 +228,7 @@ namespace Sudoku
 
             ShuffleSudoku(sudokuBase);
             TaoOTrong(sudokuBase);
-
+           
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9; j++)

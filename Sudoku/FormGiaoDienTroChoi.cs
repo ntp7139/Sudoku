@@ -82,7 +82,7 @@ namespace Sudoku
         private void btn_De_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormCheDoDe newform = new FormCheDoDe();
+            FormSudoKuDe newform = new FormSudoKuDe();
             newform.ShowDialog();
             this.Show();
         }
