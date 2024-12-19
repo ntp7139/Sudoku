@@ -16,7 +16,7 @@ namespace Sudoku
         public FormDangNhap(string Con)
         {
             InitializeComponent();
-            string strConnection = Con;
+            strConnection = Con;
         }
 
         private void lb_QuenMatKhau_Click(object sender, EventArgs e)

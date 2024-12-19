@@ -46,10 +46,9 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\runtimes\brow
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormGiaoDienTroChoi.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormThongKe.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormXepHang.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormCheDoTrungBinh.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormCheDoDe.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormCheDoKho.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.sourcelink.json
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.TaiLaiTrangthai.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.TamDunghoacTieptuc.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuDe.resources
+C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuKho.resources
+C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuTrungBinh.resources

@@ -482,8 +482,7 @@
 
         #endregion
 
-        private TabPage tabPage2;
-        private TabPage tabPage1;
+       
         private Button btn_Tailai;
         private Button btn_Xoataikhoan;
         private Button btn_Suuataikhoan;

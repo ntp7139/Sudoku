@@ -37,21 +37,22 @@
             // 
             lbTroChoiDaDuocTamDung.BackColor = Color.Transparent;
             lbTroChoiDaDuocTamDung.Font = new Font("Microsoft Sans Serif", 19.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTroChoiDaDuocTamDung.Location = new Point(238, 92);
+            lbTroChoiDaDuocTamDung.Location = new Point(73, 41);
             lbTroChoiDaDuocTamDung.Margin = new Padding(6, 0, 6, 0);
             lbTroChoiDaDuocTamDung.Name = "lbTroChoiDaDuocTamDung";
-            lbTroChoiDaDuocTamDung.Size = new Size(684, 78);
+            lbTroChoiDaDuocTamDung.Size = new Size(538, 78);
             lbTroChoiDaDuocTamDung.TabIndex = 3;
             lbTroChoiDaDuocTamDung.Text = "Trò chơi đã được tạm dừng";
+            lbTroChoiDaDuocTamDung.Click += lbTroChoiDaDuocTamDung_Click;
             // 
             // button1
             // 
             button1.BackColor = Color.Chartreuse;
             button1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(622, 459);
+            button1.Location = new Point(364, 152);
             button1.Margin = new Padding(6, 8, 6, 8);
             button1.Name = "button1";
-            button1.Size = new Size(278, 70);
+            button1.Size = new Size(247, 49);
             button1.TabIndex = 8;
             button1.Text = "Thoát Game";
             button1.UseVisualStyleBackColor = false;
@@ -61,10 +62,10 @@
             // 
             btnChoiTiep.BackColor = Color.Chartreuse;
             btnChoiTiep.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnChoiTiep.Location = new Point(75, 459);
+            btnChoiTiep.Location = new Point(73, 150);
             btnChoiTiep.Margin = new Padding(6, 8, 6, 8);
             btnChoiTiep.Name = "btnChoiTiep";
-            btnChoiTiep.Size = new Size(270, 70);
+            btnChoiTiep.Size = new Size(226, 51);
             btnChoiTiep.TabIndex = 9;
             btnChoiTiep.Text = "Chơi tiếp";
             btnChoiTiep.UseVisualStyleBackColor = false;
@@ -75,12 +76,13 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
-            ClientSize = new Size(1000, 703);
+            ClientSize = new Size(657, 242);
             Controls.Add(btnChoiTiep);
             Controls.Add(button1);
             Controls.Add(lbTroChoiDaDuocTamDung);
             Margin = new Padding(4, 5, 4, 5);
             Name = "TamDunghoacTieptuc";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "TamDunghoacTieptuc";
             ResumeLayout(false);
         }

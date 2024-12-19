@@ -10,15 +10,6 @@
     <Compile Update="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormCheDoDe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormCheDoKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormCheDoTrungBinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FormDangKy.cs">
       <SubType>Form</SubType>
     </Compile>

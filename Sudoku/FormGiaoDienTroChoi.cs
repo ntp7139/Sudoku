@@ -24,6 +24,7 @@ namespace Sudoku
         private void btn_Choi_Click(object sender, EventArgs e)
         {
             btn_Choi.Visible = false;
+            btn_Choitiep.Visible = false;
             btn_Bangxephang.Visible = false;
             btn_Choilaivancu.Visible = false;
             btn_Thongke.Visible = false;
@@ -67,6 +68,7 @@ namespace Sudoku
         private void btn_Quaylai_Click(object sender, EventArgs e)
         {
             btn_Choi.Visible = true;
+            btn_Choitiep.Visible = true;
             btn_Bangxephang.Visible = true;
             btn_Choilaivancu.Visible = true;
             btn_Thongke.Visible = true;
@@ -90,7 +92,7 @@ namespace Sudoku
         private void btn_TrungBinh_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormCheDoTrungBinh newform = new FormCheDoTrungBinh();
+            FormSudoKuTrungBinh newform = new FormSudoKuTrungBinh();
             newform.ShowDialog();
             this.Show();
         }
@@ -98,7 +100,7 @@ namespace Sudoku
         private void btn_Kho_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormCheDoKho newform = new FormCheDoKho();
+            FormSudoKuKho newform = new FormSudoKuKho();
             newform.ShowDialog();
             this.Show();
         }

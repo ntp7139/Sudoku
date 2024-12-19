@@ -73,6 +73,7 @@
             btn_Choitiep.Text = "Chơi tiếp";
             btn_Choitiep.UseVisualStyleBackColor = true;
             btn_Choitiep.Click += btn_Choitiep_Click;
+            
             // 
             // btn_Quaylai
             // 
@@ -187,6 +188,7 @@
             // 
             // FormGiaoDienTroChoi
             // 
+            StartPosition = FormStartPosition.CenterScreen;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);

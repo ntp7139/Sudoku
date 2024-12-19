@@ -28,16 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnQuanLyTrangThai = new Button();
-       /*     btnNhap1 = new Button();
-            btnNhap2 = new Button();
-            bntNhap3 = new Button();
-            bntNhap4 = new Button();
-            bntNhap5 = new Button();
-            bntNhap6 = new Button();
-            btnNhap7 = new Button();
-            bntNhap8 = new Button();
-            bntNhap9 = new Button();*/
+            btnGoiY = new Button();
             btnXoa = new Button();
             btnKiemTraDungSai = new Button();
             dvgBangTroChoi = new DataGridView();
@@ -56,112 +47,22 @@
             btn_Luu = new Button();
             btn_ChoiLai = new Button();
             btn_QuayLai = new Button();
+            lb_Score = new Label();
             ((System.ComponentModel.ISupportInitialize)dvgBangTroChoi).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
-            // btnQuanLyTrangThai
+            // btnGoiY
             // 
-            btnQuanLyTrangThai.BackColor = Color.Chartreuse;
-            btnQuanLyTrangThai.Location = new Point(540, 315);
-            btnQuanLyTrangThai.Margin = new Padding(4, 5, 4, 5);
-            btnQuanLyTrangThai.Name = "btnQuanLyTrangThai";
-            btnQuanLyTrangThai.Size = new Size(138, 47);
-            btnQuanLyTrangThai.TabIndex = 1;
-            btnQuanLyTrangThai.Text = "Quản lý trạng thái";
-            btnQuanLyTrangThai.UseVisualStyleBackColor = false;
-            btnQuanLyTrangThai.Click += btnQuanLyTrangThai_Click;
+            btnGoiY.BackColor = Color.Chartreuse;
+            btnGoiY.Location = new Point(540, 315);
+            btnGoiY.Margin = new Padding(4, 5, 4, 5);
+            btnGoiY.Name = "btnGoiY";
+            btnGoiY.Size = new Size(138, 47);
+            btnGoiY.TabIndex = 1;
+            btnGoiY.Text = "Gợi ý";
+            btnGoiY.UseVisualStyleBackColor = false;
             // 
-            // btnNhap1
-            /*
-            btnNhap1.BackColor = Color.Cyan;
-            btnNhap1.Location = new Point(3, 3);
-            btnNhap1.Name = "btnNhap1";
-            btnNhap1.Size = new Size(75, 23);
-            btnNhap1.TabIndex = 4;
-            btnNhap1.Text = "1";
-            btnNhap1.UseVisualStyleBackColor = false;
-            // 
-            // btnNhap2
-            // 
-            btnNhap2.BackColor = Color.Cyan;
-            btnNhap2.Location = new Point(84, 3);
-            btnNhap2.Name = "btnNhap2";
-            btnNhap2.Size = new Size(75, 23);
-            btnNhap2.TabIndex = 5;
-            btnNhap2.Text = "2";
-            btnNhap2.UseVisualStyleBackColor = false;
-            // 
-            // bntNhap3
-            // 
-            bntNhap3.BackColor = Color.Aqua;
-            bntNhap3.Location = new Point(165, 3);
-            bntNhap3.Name = "bntNhap3";
-            bntNhap3.Size = new Size(75, 23);
-            bntNhap3.TabIndex = 6;
-            bntNhap3.Text = "3";
-            bntNhap3.UseVisualStyleBackColor = false;
-            // 
-            // bntNhap4
-            // 
-            bntNhap4.BackColor = Color.Cyan;
-            bntNhap4.Location = new Point(3, 61);
-            bntNhap4.Name = "bntNhap4";
-            bntNhap4.Size = new Size(75, 23);
-            bntNhap4.TabIndex = 7;
-            bntNhap4.Text = "4";
-            bntNhap4.UseVisualStyleBackColor = false;
-            // 
-            // bntNhap5
-            // 
-            bntNhap5.BackColor = Color.Cyan;
-            bntNhap5.Location = new Point(3, 32);
-            bntNhap5.Name = "bntNhap5";
-            bntNhap5.Size = new Size(75, 23);
-            bntNhap5.TabIndex = 8;
-            bntNhap5.Text = "5";
-            bntNhap5.UseVisualStyleBackColor = false;
-            // 
-            // bntNhap6
-            // 
-            bntNhap6.BackColor = Color.Cyan;
-            bntNhap6.Location = new Point(84, 32);
-            bntNhap6.Name = "bntNhap6";
-            bntNhap6.Size = new Size(75, 23);
-            bntNhap6.TabIndex = 9;
-            bntNhap6.Text = "6";
-            bntNhap6.UseVisualStyleBackColor = false;
-            // 
-            // btnNhap7
-            // 
-            btnNhap7.BackColor = Color.Cyan;
-            btnNhap7.Location = new Point(165, 32);
-            btnNhap7.Name = "btnNhap7";
-            btnNhap7.Size = new Size(75, 23);
-            btnNhap7.TabIndex = 10;
-            btnNhap7.Text = "7";
-            btnNhap7.UseVisualStyleBackColor = false;
-            // 
-            // bntNhap8
-            // 
-            bntNhap8.BackColor = Color.Cyan;
-            bntNhap8.Location = new Point(165, 61);
-            bntNhap8.Name = "bntNhap8";
-            bntNhap8.Size = new Size(75, 23);
-            bntNhap8.TabIndex = 11;
-            bntNhap8.Text = "8";
-            bntNhap8.UseVisualStyleBackColor = false;
-            // 
-            // bntNhap9
-            // 
-            bntNhap9.BackColor = Color.Cyan;
-            bntNhap9.Location = new Point(84, 61);
-            bntNhap9.Name = "bntNhap9";
-            bntNhap9.Size = new Size(75, 23);
-            bntNhap9.TabIndex = 12;
-            bntNhap9.Text = "9";
-            bntNhap9.UseVisualStyleBackColor = false;
-            */ 
             // btnXoa
             // 
             btnXoa.BackColor = Color.Chartreuse;
@@ -172,6 +73,7 @@
             btnXoa.TabIndex = 14;
             btnXoa.Text = " Xóa";
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += bntXoa_Click;
             // 
             // btnKiemTraDungSai
             // 
@@ -183,6 +85,7 @@
             btnKiemTraDungSai.TabIndex = 15;
             btnKiemTraDungSai.Text = "Kiểm tra";
             btnKiemTraDungSai.UseVisualStyleBackColor = false;
+            btnKiemTraDungSai.Click += btnKiemTraDungSai_Click_1;
             // 
             // dvgBangTroChoi
             // 
@@ -190,13 +93,13 @@
             dvgBangTroChoi.BackgroundColor = SystemColors.ButtonHighlight;
             dvgBangTroChoi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvgBangTroChoi.ColumnHeadersVisible = false;
-            dvgBangTroChoi.Location = new Point(25, 74);
+            dvgBangTroChoi.Location = new Point(13, 60);
             dvgBangTroChoi.Margin = new Padding(4, 5, 4, 5);
             dvgBangTroChoi.Name = "dvgBangTroChoi";
             dvgBangTroChoi.RowHeadersVisible = false;
             dvgBangTroChoi.RowHeadersWidth = 51;
             dvgBangTroChoi.RowTemplate.Height = 24;
-            dvgBangTroChoi.Size = new Size(454, 351);
+            dvgBangTroChoi.Size = new Size(426, 426);
             dvgBangTroChoi.TabIndex = 16;
             // 
             // flowLayoutPanel1
@@ -227,6 +130,7 @@
             button1.TabIndex = 0;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += NutNhapSo_Click;
             // 
             // button2
             // 
@@ -238,6 +142,7 @@
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += NutNhapSo_Click;
             // 
             // button3
             // 
@@ -249,6 +154,7 @@
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += NutNhapSo_Click;
             // 
             // button4
             // 
@@ -260,6 +166,7 @@
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += NutNhapSo_Click;
             // 
             // button5
             // 
@@ -271,6 +178,7 @@
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += NutNhapSo_Click;
             // 
             // button6
             // 
@@ -282,6 +190,7 @@
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += NutNhapSo_Click;
             // 
             // button7
             // 
@@ -293,6 +202,7 @@
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += NutNhapSo_Click;
             // 
             // button8
             // 
@@ -304,6 +214,7 @@
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += NutNhapSo_Click;
             // 
             // button9
             // 
@@ -315,6 +226,7 @@
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += NutNhapSo_Click;
             // 
             // lb_Time
             // 
@@ -334,6 +246,7 @@
             btn_TamDung.TabIndex = 21;
             btn_TamDung.Text = "Tạm dừng";
             btn_TamDung.UseVisualStyleBackColor = true;
+            btn_TamDung.Click += btn_TamDung_Click;
             // 
             // btn_Luu
             // 
@@ -343,6 +256,7 @@
             btn_Luu.TabIndex = 20;
             btn_Luu.Text = "Lưu";
             btn_Luu.UseVisualStyleBackColor = true;
+            btn_Luu.Click += btn_Luu_Click;
             // 
             // btn_ChoiLai
             // 
@@ -352,6 +266,7 @@
             btn_ChoiLai.TabIndex = 19;
             btn_ChoiLai.Text = "Chơi lại";
             btn_ChoiLai.UseVisualStyleBackColor = true;
+            btn_ChoiLai.Click += btn_ChoiLai_Click;
             // 
             // btn_QuayLai
             // 
@@ -361,6 +276,16 @@
             btn_QuayLai.TabIndex = 18;
             btn_QuayLai.Text = "Quay Lại";
             btn_QuayLai.UseVisualStyleBackColor = true;
+            btn_QuayLai.Click += btn_QuayLai_Click;
+            // 
+            // lb_Score
+            // 
+            lb_Score.AutoSize = true;
+            lb_Score.Location = new Point(15, 10);
+            lb_Score.Name = "lb_Score";
+            lb_Score.Size = new Size(56, 25);
+            lb_Score.TabIndex = 23;
+            lb_Score.Text = "Score";
             // 
             // FormSudoKuDe
             // 
@@ -368,6 +293,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
             ClientSize = new Size(800, 500);
+            Controls.Add(lb_Score);
             Controls.Add(dvgBangTroChoi);
             Controls.Add(lb_Time);
             Controls.Add(btn_TamDung);
@@ -377,11 +303,11 @@
             Controls.Add(flowLayoutPanel1);
             Controls.Add(btnKiemTraDungSai);
             Controls.Add(btnXoa);
-            Controls.Add(btnQuanLyTrangThai);
+            Controls.Add(btnGoiY);
             Margin = new Padding(4, 5, 4, 5);
             Name = "FormSudoKuDe";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "sodukuwinform";
+            Text = "Chế Độ Dễ";
             Load += sodukuwinform_Load;
             ((System.ComponentModel.ISupportInitialize)dvgBangTroChoi).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
@@ -389,8 +315,13 @@
             PerformLayout();
         }
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
-        private System.Windows.Forms.Button btnQuanLyTrangThai;
+        private System.Windows.Forms.Button btnGoiY;
       /*  private System.Windows.Forms.Button btnNhap1;
         private System.Windows.Forms.Button btnNhap2;
         private System.Windows.Forms.Button bntNhap3;
@@ -418,5 +349,6 @@
         private Button btn_Luu;
         private Button btn_ChoiLai;
         private Button btn_QuayLai;
+        private Label lb_Score;
     }
 }
