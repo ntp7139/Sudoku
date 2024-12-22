@@ -117,7 +117,6 @@
             pn_GiaoDien.Controls.Add(pictureBox1);
             pn_GiaoDien.Controls.Add(btn_ThongTinNguoiCHoi);
             pn_GiaoDien.Controls.Add(btn_Choitiep);
-            pn_GiaoDien.Controls.Add(btn_Quaylai);
             pn_GiaoDien.Controls.Add(lb_Chedochoi);
             pn_GiaoDien.Controls.Add(btn_Kho);
             pn_GiaoDien.Controls.Add(btn_TrungBinh);
@@ -128,6 +127,7 @@
             pn_GiaoDien.Controls.Add(btn_Thoat);
             pn_GiaoDien.Controls.Add(btn_Choi);
             pn_GiaoDien.Controls.Add(button1);
+            pn_GiaoDien.Controls.Add(btn_Quaylai);
             pn_GiaoDien.Dock = DockStyle.Fill;
             pn_GiaoDien.Location = new Point(0, 0);
             pn_GiaoDien.Margin = new Padding(2);
@@ -409,13 +409,14 @@
             // btn_Quaylai
             // 
             btn_Quaylai.AutoSize = true;
-            btn_Quaylai.BackColor = Color.SteelBlue;
+            btn_Quaylai.BackColor = SystemColors.ButtonFace;
+            btn_Quaylai.BackgroundImageLayout = ImageLayout.None;
             btn_Quaylai.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Quaylai.ForeColor = SystemColors.ButtonHighlight;
-            btn_Quaylai.Location = new Point(-72, 620);
+            btn_Quaylai.ForeColor = SystemColors.ButtonFace;
+            btn_Quaylai.Location = new Point(27, 661);
             btn_Quaylai.Margin = new Padding(2);
             btn_Quaylai.Name = "btn_Quaylai";
-            btn_Quaylai.Size = new Size(126, 34);
+            btn_Quaylai.Size = new Size(75, 30);
             btn_Quaylai.TabIndex = 9;
             btn_Quaylai.Text = "Quay lại";
             btn_Quaylai.UseVisualStyleBackColor = false;
