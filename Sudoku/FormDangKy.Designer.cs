@@ -95,7 +95,7 @@
             // 
             // tb_NhapLaiMatKhau
             // 
-            tb_NhapLaiMatKhau.BackColor = Color.FloralWhite;
+            tb_NhapLaiMatKhau.BackColor = SystemColors.ButtonHighlight;
             tb_NhapLaiMatKhau.BorderStyle = BorderStyle.FixedSingle;
             tb_NhapLaiMatKhau.Location = new Point(192, 370);
             tb_NhapLaiMatKhau.Margin = new Padding(2);
@@ -107,7 +107,7 @@
             // 
             // tb_MatKhau_DangKy
             // 
-            tb_MatKhau_DangKy.BackColor = Color.FloralWhite;
+            tb_MatKhau_DangKy.BackColor = SystemColors.ButtonHighlight;
             tb_MatKhau_DangKy.BorderStyle = BorderStyle.FixedSingle;
             tb_MatKhau_DangKy.Location = new Point(192, 292);
             tb_MatKhau_DangKy.Margin = new Padding(2);
@@ -122,7 +122,7 @@
             // 
             lb_NhapMatKhau.BackColor = SystemColors.ButtonHighlight;
             lb_NhapMatKhau.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_NhapMatKhau.ForeColor = Color.SaddleBrown;
+            lb_NhapMatKhau.ForeColor = SystemColors.ActiveCaptionText;
             lb_NhapMatKhau.ImageAlign = ContentAlignment.TopLeft;
             lb_NhapMatKhau.Location = new Point(85, 344);
             lb_NhapMatKhau.Margin = new Padding(2, 0, 2, 0);
@@ -136,7 +136,7 @@
             // 
             lb_MatKhau_DangKy.BackColor = SystemColors.ButtonHighlight;
             lb_MatKhau_DangKy.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_MatKhau_DangKy.ForeColor = Color.SaddleBrown;
+            lb_MatKhau_DangKy.ForeColor = SystemColors.ActiveCaptionText;
             lb_MatKhau_DangKy.Location = new Point(108, 263);
             lb_MatKhau_DangKy.Margin = new Padding(2, 0, 2, 0);
             lb_MatKhau_DangKy.Name = "lb_MatKhau_DangKy";
@@ -147,38 +147,37 @@
             // 
             // btn_QuayLai_DangKy
             // 
+            btn_QuayLai_DangKy.BackColor = Color.SteelBlue;
             btn_QuayLai_DangKy.Font = new Font("Comic Sans MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_QuayLai_DangKy.ForeColor = Color.Brown;
-            btn_QuayLai_DangKy.Image = Properties.Resources.hinh_nen_iPad_cute;
+            btn_QuayLai_DangKy.ForeColor = SystemColors.ButtonHighlight;
             btn_QuayLai_DangKy.ImageAlign = ContentAlignment.TopLeft;
-            btn_QuayLai_DangKy.Location = new Point(470, 436);
+            btn_QuayLai_DangKy.Location = new Point(470, 450);
             btn_QuayLai_DangKy.Margin = new Padding(2);
             btn_QuayLai_DangKy.Name = "btn_QuayLai_DangKy";
-            btn_QuayLai_DangKy.Size = new Size(128, 49);
+            btn_QuayLai_DangKy.Size = new Size(128, 35);
             btn_QuayLai_DangKy.TabIndex = 13;
-            btn_QuayLai_DangKy.Text = "QUAY LẠI";
-            btn_QuayLai_DangKy.UseVisualStyleBackColor = true;
+            btn_QuayLai_DangKy.Text = "Quay Lại";
+            btn_QuayLai_DangKy.UseVisualStyleBackColor = false;
             btn_QuayLai_DangKy.Click += btn_QuayLai_DangKy_Click;
             // 
             // btn_DangKy
             // 
-            btn_DangKy.BackColor = Color.LightGreen;
+            btn_DangKy.BackColor = Color.SteelBlue;
             btn_DangKy.Font = new Font("Comic Sans MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_DangKy.ForeColor = Color.Brown;
-            btn_DangKy.Image = Properties.Resources.hinh_nen_iPad_cute;
+            btn_DangKy.ForeColor = SystemColors.ButtonHighlight;
             btn_DangKy.ImageAlign = ContentAlignment.TopRight;
-            btn_DangKy.Location = new Point(229, 436);
+            btn_DangKy.Location = new Point(229, 450);
             btn_DangKy.Margin = new Padding(2);
             btn_DangKy.Name = "btn_DangKy";
-            btn_DangKy.Size = new Size(128, 49);
+            btn_DangKy.Size = new Size(128, 35);
             btn_DangKy.TabIndex = 12;
-            btn_DangKy.Text = "ĐĂNG KÝ";
+            btn_DangKy.Text = "Đăng Ký";
             btn_DangKy.UseVisualStyleBackColor = false;
             btn_DangKy.Click += btn_DangKy_Click;
             // 
             // tb_Email_DangKy
             // 
-            tb_Email_DangKy.BackColor = Color.FloralWhite;
+            tb_Email_DangKy.BackColor = SystemColors.ButtonHighlight;
             tb_Email_DangKy.BorderStyle = BorderStyle.FixedSingle;
             tb_Email_DangKy.Location = new Point(192, 211);
             tb_Email_DangKy.Margin = new Padding(2);
@@ -190,7 +189,7 @@
             // 
             // tb_TaiKhoan_DangKy
             // 
-            tb_TaiKhoan_DangKy.BackColor = Color.FloralWhite;
+            tb_TaiKhoan_DangKy.BackColor = SystemColors.ButtonHighlight;
             tb_TaiKhoan_DangKy.BorderStyle = BorderStyle.FixedSingle;
             tb_TaiKhoan_DangKy.Location = new Point(192, 137);
             tb_TaiKhoan_DangKy.Margin = new Padding(2);
@@ -203,7 +202,7 @@
             // 
             lb_Email_DangKy.BackColor = SystemColors.ButtonHighlight;
             lb_Email_DangKy.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_Email_DangKy.ForeColor = Color.SaddleBrown;
+            lb_Email_DangKy.ForeColor = SystemColors.ActiveCaptionText;
             lb_Email_DangKy.Location = new Point(91, 182);
             lb_Email_DangKy.Margin = new Padding(2, 0, 2, 0);
             lb_Email_DangKy.Name = "lb_Email_DangKy";
@@ -216,7 +215,7 @@
             // 
             lb_TaiKhoan_Dki.BackColor = SystemColors.ButtonHighlight;
             lb_TaiKhoan_Dki.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_TaiKhoan_Dki.ForeColor = Color.SaddleBrown;
+            lb_TaiKhoan_Dki.ForeColor = SystemColors.ActiveCaptionText;
             lb_TaiKhoan_Dki.Location = new Point(107, 106);
             lb_TaiKhoan_Dki.Margin = new Padding(2, 0, 2, 0);
             lb_TaiKhoan_Dki.Name = "lb_TaiKhoan_Dki";
@@ -230,7 +229,7 @@
             lb_TieuDeDangKy.BackColor = SystemColors.ButtonHighlight;
             lb_TieuDeDangKy.FlatStyle = FlatStyle.Popup;
             lb_TieuDeDangKy.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_TieuDeDangKy.ForeColor = Color.Black;
+            lb_TieuDeDangKy.ForeColor = Color.SteelBlue;
             lb_TieuDeDangKy.Location = new Point(269, 10);
             lb_TieuDeDangKy.Margin = new Padding(2, 0, 2, 0);
             lb_TieuDeDangKy.Name = "lb_TieuDeDangKy";
@@ -242,9 +241,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(135, 137);
+            pictureBox1.Location = new Point(133, 137);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(36, 35);
+            pictureBox1.Size = new Size(43, 35);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
@@ -252,7 +251,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(129, 210);
+            pictureBox3.Location = new Point(131, 210);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(52, 35);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -262,9 +261,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(135, 290);
+            pictureBox4.Location = new Point(131, 290);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(46, 35);
+            pictureBox4.Size = new Size(52, 35);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 23;
             pictureBox4.TabStop = false;
@@ -272,9 +271,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(135, 368);
+            pictureBox5.Location = new Point(136, 368);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(36, 35);
+            pictureBox5.Size = new Size(44, 35);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 24;
             pictureBox5.TabStop = false;
