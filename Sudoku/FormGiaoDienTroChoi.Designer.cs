@@ -412,13 +412,14 @@
             btn_Quaylai.BackColor = Color.SteelBlue;
             btn_Quaylai.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Quaylai.ForeColor = SystemColors.ButtonHighlight;
-            btn_Quaylai.Location = new Point(83, 620);
+            btn_Quaylai.Location = new Point(-72, 620);
             btn_Quaylai.Margin = new Padding(2);
             btn_Quaylai.Name = "btn_Quaylai";
             btn_Quaylai.Size = new Size(126, 34);
             btn_Quaylai.TabIndex = 9;
             btn_Quaylai.Text = "Quay lại";
             btn_Quaylai.UseVisualStyleBackColor = false;
+            btn_Quaylai.Visible = false;
             btn_Quaylai.Click += btn_Quaylai_Click;
             // 
             // lb_Chedochoi
@@ -526,7 +527,7 @@
             btn_Thoat.BackColor = Color.SteelBlue;
             btn_Thoat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Thoat.ForeColor = SystemColors.ButtonHighlight;
-            btn_Thoat.Location = new Point(286, 620);
+            btn_Thoat.Location = new Point(172, 620);
             btn_Thoat.Margin = new Padding(2);
             btn_Thoat.Name = "btn_Thoat";
             btn_Thoat.Size = new Size(126, 34);
@@ -610,7 +611,6 @@
         private Button btn_Kho;
         private Button btn_TrungBinh;
         private Button btn_De;
-        private Button btn_Quaylai;
         private Button btn_Choitiep;
         private Button btn_ThongTinNguoiCHoi;
         private PictureBox pictureBox1;
@@ -637,5 +637,6 @@
         private PictureBox pictureBox21;
         private Button button1;
         private Label label3;
+        private Button btn_Quaylai;
     }
 }
