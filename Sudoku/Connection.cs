@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Math.Field;
 
 namespace Sudoku
 {
@@ -59,7 +60,7 @@ namespace Sudoku
             }
         }
         // Thực hiện truy vấn xem có cột hay không
-        public bool Check(string query) 
+        public bool Check_Query(string query) 
         {
             bool check =false;
             MySqlConnection Connect = MySqlConnection(connection);
@@ -82,16 +83,20 @@ namespace Sudoku
             }
             return check;
         }
-        // Thực hiện trả về duy nhất 1 giá trị
-        public object ExcuteScalar(string query)
+        // Thực hiện trả về duy nhất 1 giá trị ( Count, Max)
+        public int ExcuteScalar(string query)
         {
-            object result = null;
+            int result = 0;
             MySqlConnection Connect = MySqlConnection(connection);
             try
             {
                 Connect.Open();
                 MySqlCommand cmd = new MySqlCommand(query, Connect);
-                result = cmd.ExecuteScalar();
+                if (!(cmd.ExecuteScalar() == null))
+                {
+                    object count_row = cmd.ExecuteScalar();
+                    result = Convert.ToInt32(count_row);
+                }
                 Connect.Close();
             }
             catch (Exception ex)
@@ -100,5 +105,22 @@ namespace Sudoku
             }
             return result;
         }
+        public bool Check_ID_Player(string ID_Player)
+        {
+            
+            string query  = $"Select * from nguoichoi where taikhoan ='{ID_Player}'";
+            bool Check = Check_Query(query);
+            return Check;
+
+        }
+        public bool Check_ID_Sudoku(string ID_Sudoku)
+        {
+           
+            string query = $"Select * from lichsudau where game_id ='{ID_Sudoku}'";
+            bool Check = Check_Query(query);
+            return Check;
+
+        }
+
     }
 }

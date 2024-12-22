@@ -1,22 +1,21 @@
 using System.Data;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-using Sudoku1;
 namespace Sudoku
 {
     public partial class FormDangNhap : Form
     {
-        private Nguoichoi nguoichoi { get; set; }
-        private LichSuDau lichsudau { get; set; }
-        private string strConnection;
+        public Nguoichoi nguoichoi = new Nguoichoi();
+        public LichSuDau lichsudau = new LichSuDau();
+        private string strConnection = "server=127.0.0.1;uid=root;pwd=phatbaoan112;database=sudoku";
         public void Test()
         {
 
         }
-        public FormDangNhap(string Con)
+        public FormDangNhap()
         {
             InitializeComponent();
-            strConnection = Con;
+            
         }
 
         private void lb_QuenMatKhau_Click(object sender, EventArgs e)
@@ -54,7 +53,7 @@ namespace Sudoku
             if (tB_TaiKhoan.Text == "admin" && tB_MatKhau.Text == "admin")
             {
                 this.Hide();
-                FormAdmin newform = new FormAdmin(strConnection, nguoichoi);
+                FormAdmin newform = new FormAdmin("admin");
                 newform.ShowDialog();
                 this.Show();
             }
@@ -85,7 +84,7 @@ namespace Sudoku
                                     this.Show();
                                 }
                                 this.Hide();
-                                FormGiaoDienTroChoi form1 = new FormGiaoDienTroChoi(nguoichoi);
+                                FormGiaoDienTroChoi form1 = new FormGiaoDienTroChoi(taikhoan);
                                 form1.ShowDialog();
                                 this.Close();
                             }
@@ -140,6 +139,8 @@ namespace Sudoku
         {
             this.Close();
         }
+
+        
     }
 
 }
