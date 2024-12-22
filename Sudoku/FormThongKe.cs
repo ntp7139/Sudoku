@@ -99,6 +99,7 @@ namespace Sudoku
         {
             try
             {
+                pb.Visible = false;
                 string name = txtTen.Text;
                 string id = txtID.Text;
                 constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
@@ -109,8 +110,6 @@ namespace Sudoku
                 if (read.HasRows)
                 {
                     read.Close();
-                    label2.Visible = false;
-                    pictureBox3.Visible = false;
                     MySqlDataAdapter newadt = new MySqlDataAdapter(query, con);
                     DataTable dt = new DataTable();
                     newadt.Fill(dt);
@@ -140,6 +139,11 @@ namespace Sudoku
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_Click(object sender, EventArgs e)
         {
 
         }
