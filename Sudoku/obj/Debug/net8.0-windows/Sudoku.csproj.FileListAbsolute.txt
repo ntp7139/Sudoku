@@ -34,9 +34,6 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\runtimes\win-
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.csproj.Up2Date
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.BatDaulai.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.ChoiLaiVancu.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\QUANLYTRANGTHAIGAME.LuuTrangthai.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\Unity.Abstractions.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\Unity.Container.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormQuanTriNguoiChoi.resources
@@ -53,4 +50,3 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSu
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuKho.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuTrungBinh.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormThongTinNguoiChoi.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.Form1.resources

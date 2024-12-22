@@ -61,7 +61,8 @@ namespace Sudoku
             KhoiTaoBangSudoku();
             DienDuLieuBang();
             KhoitaoBoDemThoiGian();
-            lb_game_id.Text += Bang_Dau.game_id;
+            lb_Sudoku_title.Text += "_ID: " + Bang_Dau.game_id;
+            //lb_game_id.Text += Bang_Dau.game_id;
         }
         //Khởi chạy chơi màn đang chơi
         public FormSudoKuDe(string player_ID, string current_game_id)
@@ -75,8 +76,10 @@ namespace Sudoku
 
             Load_Game_Cu();
             KhoitaoBoDemThoiGian();
-            lb_game_id.Text += Bang_Dau.game_id;
+            lb_Sudoku_title.Text +="_ID:" + Bang_Dau.game_id;
+            // lb_game_id.Text += Bang_Dau.game_id;
         }
+        
         //Khởi tạo sự kiện chạy 
         private void time_Tick(object sender, EventArgs e)
         {
@@ -241,6 +244,7 @@ namespace Sudoku
                 else return false;
             }
             status = true;
+            
             return true;
         }
 
@@ -939,7 +943,7 @@ namespace Sudoku
                     if (dvgBangTroChoi.Rows[i].Cells[j].ReadOnly == true)
                         if (!(dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor == Color.Red))
                         {
-                            dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.LightYellow;
+                            dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.LightBlue;
                         }
 
         }
@@ -967,7 +971,7 @@ namespace Sudoku
                         {
                             if (dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor != Color.Red)
                             {
-                                dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.LightYellow;
+                                dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.LightBlue;
                             }
                         }
                     }
@@ -1001,8 +1005,12 @@ namespace Sudoku
 
         private void btnGoiY_Click(object sender, EventArgs e)
         {
-            for(int i= 0; i < 9; i++)
-                for(int j = 0; i < 9; j++)
+            if (Help == 0)
+            {
+                MessageBox.Show("Bạn đã hết lượt gợi ý", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Stop);
+            } else 
+               for(int i= 0; i < 9; i++)
+                for(int j = 0; j < 9; j++)
                 {
                     if (dvgBangTroChoi.Rows[i].Cells[j].ReadOnly == false)
                     {

@@ -66,7 +66,7 @@ namespace Sudoku
                         {
                             kiemtra_email.Close();
 
-                            string insert = $"insert into nguoichoi values('{taikhoan}','{matkhau}','{email}')";
+                            string insert = $"insert into nguoichoi(taikhoan,email,matkhau) values('{taikhoan}','{email}','{matkhau}')";
                             MySqlCommand mySqlCommand = new MySqlCommand(insert, connection);
                             try
                             {

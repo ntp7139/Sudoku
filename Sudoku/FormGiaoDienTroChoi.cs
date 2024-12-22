@@ -1,4 +1,4 @@
-﻿using QUANLYTRANGTHAIGAME;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,7 +63,7 @@ namespace Sudoku
         private void btn_Choilaivancu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TaiLaiTrangthai newform = new TaiLaiTrangthai();
+            TaiLaiTrangthai newform = new TaiLaiTrangthai(nguoichoi.taikhoan);
             newform.ShowDialog();
             this.Show();
         }

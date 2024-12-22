@@ -24,8 +24,9 @@ namespace Sudoku
             InitializeComponent();
             adt = new MySqlDataAdapter(); // Khởi tạo mặc định
             cmd = new MySqlCommand(); // Khởi tạo mặc định
-            constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
+            constr = "server=127.0.0.1; Database = sudoku; Uid=root; Pwd=phatbaoan112;";
             con = new MySqlConnection(constr);
+            dataGridView1.RowPostPaint += dataGridView1_RowPostPaint;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -54,8 +55,8 @@ namespace Sudoku
             {
                 string name = txtTen.Text;
                 string id = txtID.Text;
-                constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
-                string query = $"SELECT * FROM book1 WHERE Name = '{name}'and ID ='{id}';";
+
+                string query = $"SELECT taikhoan,game_id,score,time FROM lichsudau WHERE taikhoan = '{name}';";
                 con.Open();
                 MySqlCommand command = new MySqlCommand(query, con);
                 MySqlDataReader read = command.ExecuteReader();
@@ -102,8 +103,8 @@ namespace Sudoku
                 pb.Visible = false;
                 string name = txtTen.Text;
                 string id = txtID.Text;
-                constr = "server=127.0.0.1; Database = newschema; Uid=root; Pwd=;";
-                string query = $"SELECT * FROM book1 WHERE Name = '{name}'and ID ='{id}';";
+                
+                string query = $"SELECT taikhoan,game_id,score,time FROM lichsudau WHERE taikhoan = '{name}';";
                 con.Open();
                 MySqlCommand command = new MySqlCommand(query, con);
                 MySqlDataReader read = command.ExecuteReader();
@@ -146,6 +147,18 @@ namespace Sudoku
         private void pb_Click(object sender, EventArgs e)
         {
 
+        }
+        private void dataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            using (SolidBrush b = new SolidBrush(dataGridView1.RowHeadersDefaultCellStyle.ForeColor))
+            {
+                string rowNumber = (e.RowIndex + 1).ToString(); // Số thứ tự
+                e.Graphics.DrawString(rowNumber,
+                    dataGridView1.DefaultCellStyle.Font,
+                    b,
+                    e.RowBounds.Location.X + 15, // Vị trí X
+                    e.RowBounds.Location.Y + 4); // Vị trí Y
+            }
         }
     }
 }

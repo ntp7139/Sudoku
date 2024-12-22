@@ -1,4 +1,6 @@
-﻿using Org.BouncyCastle.Tls;
+﻿using Mysqlx.Resultset;
+using MySqlX.XDevAPI.Relational;
+using Org.BouncyCastle.Tls;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -35,6 +37,7 @@ namespace Sudoku
         public void Save()
         {
             Save_ID();
+            
             Connection Check = new Connection();
             if (!Check.Check_ID_Player(taikhoan))
             {
@@ -76,6 +79,51 @@ namespace Sudoku
             }
             return true;
         }
+        public void Update_Player()
+        {
+
+            DataTable Table = new DataTable();
+            Connection Check = new Connection();
+            string query = $"Select taikhoan,Count(game_status) as soluong from lichsudau \r\nwhere taikhoan = '{taikhoan}' and game_status = 'Done' group by taikhoan";
+            Table = Check.ExcuteQuery(query);
+            if (Table.Rows.Count != 0)
+            {
+                if (Table.Rows[0] != null)
+                {
+                    DataRow rows = Table.Rows[0];
+                
+                    game_won = Convert.ToString(rows["soluong"]);
+                }
+                else game_won = "0";
+            }
+            else game_won = "0";
+
+            string query_1 = $"Select taikhoan,Count(game_status) as soluong from lichsudau \r\nwhere taikhoan = '{taikhoan}' group by taikhoan";
+            Table = Check.ExcuteQuery(query_1);
+            if (Table != null)
+            {
+                if (Table.Rows[0] != null)
+                {
+                    DataRow rows = Table.Rows[0];
+                
+                    game_played = Convert.ToString(rows["soluong"]);
+                } else game_played = "0";
+            }
+            else game_played = "0";
+            string query_2 = $"Select taikhoan,Sum(time) as tong from lichsudau \r\nwhere taikhoan = '{taikhoan}' group by taikhoan";
+            Table = Check.ExcuteQuery(query_2);
+            if (Table != null)
+            {
+                if (Table.Rows[0] != null)
+                {
+                    DataRow rows = Table.Rows[0];
+                
+                    time_played = Convert.ToString(rows["tong"]);
+                }else time_played = "0";
+            }
+            else time_played = "0";
+        }
+            
         public override string ToString()
         {
             string s = "";
@@ -110,7 +158,7 @@ namespace Sudoku
             } else
             {
                 string query_1 = "update lichsudau " +
-                    $"set Current_Sudoku = '{Current_Sudoku}', Default_Sudoku = '{Default_Sudoku}',Key_Sudoku = '{Key_Sudoku}',time = '{time}',score='{score}',game_status='{game_status}'" +
+                    $"set taikhoan = '{taikhoan}', Current_Sudoku = '{Current_Sudoku}', Default_Sudoku = '{Default_Sudoku}',Key_Sudoku = '{Key_Sudoku}',time = '{time}',score='{score}',game_status='{game_status}'" +
                     $"where game_id = '{game_id}'";
                 Check.ExcuteNonQuery(query_1);
             }

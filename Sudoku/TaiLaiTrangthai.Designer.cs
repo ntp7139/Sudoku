@@ -41,7 +41,6 @@
             dtgLuuTrangThaiVanCu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgLuuTrangThaiVanCu.BackgroundColor = SystemColors.Control;
             dtgLuuTrangThaiVanCu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgLuuTrangThaiVanCu.Columns.AddRange(new DataGridViewColumn[] { Tenman, Thoigianlluu });
             dtgLuuTrangThaiVanCu.Location = new Point(176, 78);
             dtgLuuTrangThaiVanCu.Margin = new Padding(4, 5, 4, 5);
             dtgLuuTrangThaiVanCu.Name = "dtgLuuTrangThaiVanCu";
@@ -51,20 +50,20 @@
             dtgLuuTrangThaiVanCu.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtgLuuTrangThaiVanCu.Size = new Size(649, 317);
             dtgLuuTrangThaiVanCu.TabIndex = 1;
+            dtgLuuTrangThaiVanCu.CellContentClick += dtgLuuTrangThaiVanCu_CellContentClick;
+            dtgLuuTrangThaiVanCu.MouseClick += dtgLuuTrangThaiVanCu_MouseClick;
             // 
             // Tenman
             // 
-            Tenman.HeaderText = "Tenman";
-            Tenman.MinimumWidth = 6;
+            Tenman.MinimumWidth = 8;
             Tenman.Name = "Tenman";
-            Tenman.ReadOnly = true;
+            Tenman.Width = 150;
             // 
             // Thoigianlluu
             // 
-            Thoigianlluu.HeaderText = "Thoigianluu";
-            Thoigianlluu.MinimumWidth = 6;
+            Thoigianlluu.MinimumWidth = 8;
             Thoigianlluu.Name = "Thoigianlluu";
-            Thoigianlluu.ReadOnly = true;
+            Thoigianlluu.Width = 150;
             // 
             // btnTaiLai
             // 
@@ -76,6 +75,7 @@
             btnTaiLai.TabIndex = 2;
             btnTaiLai.Text = "Tải lại";
             btnTaiLai.UseVisualStyleBackColor = false;
+            btnTaiLai.Click += btnTaiLai_Click;
             // 
             // btnHuy
             // 
@@ -100,6 +100,7 @@
             Controls.Add(dtgLuuTrangThaiVanCu);
             Margin = new Padding(4, 5, 4, 5);
             Name = "TaiLaiTrangthai";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TaiLaiTrangthai";
             ((System.ComponentModel.ISupportInitialize)dtgLuuTrangThaiVanCu).EndInit();
             ResumeLayout(false);

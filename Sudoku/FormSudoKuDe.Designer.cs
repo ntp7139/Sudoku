@@ -51,13 +51,14 @@
             label1 = new Label();
             label2 = new Label();
             pbQuayLai = new PictureBox();
-            label3 = new Label();
+            lb_Sudoku_title = new Label();
             pbTamDung = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             pbChoiLai = new PictureBox();
+            btn_Hiendapan = new Button();
             ((System.ComponentModel.ISupportInitialize)dvgBangTroChoi).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbQuayLai).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbTamDung).BeginInit();
@@ -71,10 +72,10 @@
             // btnGoiY
             // 
             btnGoiY.BackColor = SystemColors.ButtonHighlight;
-            btnGoiY.Location = new Point(286, 588);
-            btnGoiY.Margin = new Padding(3, 4, 3, 4);
+            btnGoiY.Location = new Point(291, 734);
+            btnGoiY.Margin = new Padding(4, 5, 4, 5);
             btnGoiY.Name = "btnGoiY";
-            btnGoiY.Size = new Size(75, 38);
+            btnGoiY.Size = new Size(94, 48);
             btnGoiY.TabIndex = 1;
             btnGoiY.Text = "Gợi ý";
             btnGoiY.UseVisualStyleBackColor = false;
@@ -83,10 +84,10 @@
             // btnXoa
             // 
             btnXoa.BackColor = SystemColors.ButtonHighlight;
-            btnXoa.Location = new Point(150, 588);
-            btnXoa.Margin = new Padding(3, 4, 3, 4);
+            btnXoa.Location = new Point(156, 734);
+            btnXoa.Margin = new Padding(4, 5, 4, 5);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(75, 38);
+            btnXoa.Size = new Size(94, 48);
             btnXoa.TabIndex = 14;
             btnXoa.Text = " Xóa";
             btnXoa.UseVisualStyleBackColor = false;
@@ -95,10 +96,10 @@
             // btnKiemTraDungSai
             // 
             btnKiemTraDungSai.BackColor = SystemColors.ButtonHighlight;
-            btnKiemTraDungSai.Location = new Point(26, 587);
-            btnKiemTraDungSai.Margin = new Padding(3, 4, 3, 4);
+            btnKiemTraDungSai.Location = new Point(32, 734);
+            btnKiemTraDungSai.Margin = new Padding(4, 5, 4, 5);
             btnKiemTraDungSai.Name = "btnKiemTraDungSai";
-            btnKiemTraDungSai.Size = new Size(75, 40);
+            btnKiemTraDungSai.Size = new Size(94, 50);
             btnKiemTraDungSai.TabIndex = 15;
             btnKiemTraDungSai.Text = "Kiểm tra";
             btnKiemTraDungSai.UseVisualStyleBackColor = false;
@@ -110,13 +111,13 @@
             dvgBangTroChoi.BackgroundColor = SystemColors.ButtonHighlight;
             dvgBangTroChoi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvgBangTroChoi.ColumnHeadersVisible = false;
-            dvgBangTroChoi.Location = new Point(5, 107);
-            dvgBangTroChoi.Margin = new Padding(3, 4, 3, 4);
+            dvgBangTroChoi.Location = new Point(6, 134);
+            dvgBangTroChoi.Margin = new Padding(4, 5, 4, 5);
             dvgBangTroChoi.Name = "dvgBangTroChoi";
             dvgBangTroChoi.RowHeadersVisible = false;
             dvgBangTroChoi.RowHeadersWidth = 51;
             dvgBangTroChoi.RowTemplate.Height = 24;
-            dvgBangTroChoi.Size = new Size(509, 428);
+            dvgBangTroChoi.Size = new Size(636, 535);
             dvgBangTroChoi.TabIndex = 16;
             // 
             // button1
@@ -124,10 +125,10 @@
             button1.BackColor = SystemColors.ButtonHighlight;
             button1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.SteelBlue;
-            button1.Location = new Point(17, 645);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(21, 806);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(40, 45);
+            button1.Size = new Size(50, 56);
             button1.TabIndex = 0;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = false;
@@ -138,10 +139,10 @@
             button2.BackColor = SystemColors.ButtonHighlight;
             button2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.SteelBlue;
-            button2.Location = new Point(72, 645);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(90, 806);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(40, 45);
+            button2.Size = new Size(50, 56);
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = false;
@@ -152,10 +153,10 @@
             button3.BackColor = SystemColors.ButtonHighlight;
             button3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.SteelBlue;
-            button3.Location = new Point(125, 645);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(156, 806);
+            button3.Margin = new Padding(4, 5, 4, 5);
             button3.Name = "button3";
-            button3.Size = new Size(40, 45);
+            button3.Size = new Size(50, 56);
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = false;
@@ -166,10 +167,10 @@
             button4.BackColor = SystemColors.ButtonHighlight;
             button4.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.SteelBlue;
-            button4.Location = new Point(179, 645);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(224, 806);
+            button4.Margin = new Padding(4, 5, 4, 5);
             button4.Name = "button4";
-            button4.Size = new Size(40, 45);
+            button4.Size = new Size(50, 56);
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = false;
@@ -180,10 +181,10 @@
             button5.BackColor = SystemColors.ButtonHighlight;
             button5.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.SteelBlue;
-            button5.Location = new Point(233, 645);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(291, 806);
+            button5.Margin = new Padding(4, 5, 4, 5);
             button5.Name = "button5";
-            button5.Size = new Size(40, 45);
+            button5.Size = new Size(50, 56);
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = false;
@@ -194,10 +195,10 @@
             button6.BackColor = SystemColors.ButtonHighlight;
             button6.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.SteelBlue;
-            button6.Location = new Point(287, 645);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Location = new Point(359, 806);
+            button6.Margin = new Padding(4, 5, 4, 5);
             button6.Name = "button6";
-            button6.Size = new Size(40, 45);
+            button6.Size = new Size(50, 56);
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = false;
@@ -208,10 +209,10 @@
             button7.BackColor = SystemColors.ButtonHighlight;
             button7.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.SteelBlue;
-            button7.Location = new Point(340, 645);
-            button7.Margin = new Padding(3, 4, 3, 4);
+            button7.Location = new Point(425, 806);
+            button7.Margin = new Padding(4, 5, 4, 5);
             button7.Name = "button7";
-            button7.Size = new Size(40, 45);
+            button7.Size = new Size(50, 56);
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = false;
@@ -222,10 +223,10 @@
             button8.BackColor = SystemColors.ButtonHighlight;
             button8.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = Color.SteelBlue;
-            button8.Location = new Point(397, 644);
-            button8.Margin = new Padding(3, 4, 3, 4);
+            button8.Location = new Point(496, 805);
+            button8.Margin = new Padding(4, 5, 4, 5);
             button8.Name = "button8";
-            button8.Size = new Size(40, 45);
+            button8.Size = new Size(50, 56);
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = false;
@@ -236,10 +237,10 @@
             button9.BackColor = SystemColors.ButtonHighlight;
             button9.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button9.ForeColor = Color.SteelBlue;
-            button9.Location = new Point(451, 644);
-            button9.Margin = new Padding(3, 4, 3, 4);
+            button9.Location = new Point(564, 805);
+            button9.Margin = new Padding(4, 5, 4, 5);
             button9.Name = "button9";
-            button9.Size = new Size(40, 45);
+            button9.Size = new Size(50, 56);
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = false;
@@ -249,20 +250,20 @@
             // 
             lb_Time.AutoSize = true;
             lb_Time.ForeColor = SystemColors.ControlDarkDark;
-            lb_Time.Location = new Point(302, 60);
+            lb_Time.Location = new Point(378, 75);
             lb_Time.Margin = new Padding(2, 0, 2, 0);
             lb_Time.Name = "lb_Time";
-            lb_Time.Size = new Size(42, 20);
+            lb_Time.Size = new Size(50, 25);
             lb_Time.TabIndex = 22;
             lb_Time.Text = "Time";
             // 
             // btn_TamDung
             // 
             btn_TamDung.AutoSize = true;
-            btn_TamDung.Location = new Point(335, 119);
+            btn_TamDung.Location = new Point(419, 149);
             btn_TamDung.Margin = new Padding(2);
             btn_TamDung.Name = "btn_TamDung";
-            btn_TamDung.Size = new Size(87, 33);
+            btn_TamDung.Size = new Size(109, 41);
             btn_TamDung.TabIndex = 21;
             btn_TamDung.Text = "Tạm dừng";
             btn_TamDung.UseVisualStyleBackColor = true;
@@ -270,10 +271,10 @@
             // 
             // btn_Luu
             // 
-            btn_Luu.Location = new Point(418, 588);
+            btn_Luu.Location = new Point(419, 734);
             btn_Luu.Margin = new Padding(2);
             btn_Luu.Name = "btn_Luu";
-            btn_Luu.Size = new Size(75, 38);
+            btn_Luu.Size = new Size(94, 48);
             btn_Luu.TabIndex = 20;
             btn_Luu.Text = "Lưu";
             btn_Luu.UseVisualStyleBackColor = true;
@@ -281,10 +282,10 @@
             // 
             // btn_ChoiLai
             // 
-            btn_ChoiLai.Location = new Point(372, 156);
+            btn_ChoiLai.Location = new Point(465, 195);
             btn_ChoiLai.Margin = new Padding(2);
             btn_ChoiLai.Name = "btn_ChoiLai";
-            btn_ChoiLai.Size = new Size(70, 33);
+            btn_ChoiLai.Size = new Size(88, 41);
             btn_ChoiLai.TabIndex = 19;
             btn_ChoiLai.Text = "Chơi lại";
             btn_ChoiLai.UseVisualStyleBackColor = true;
@@ -292,10 +293,10 @@
             // 
             // btn_QuayLai
             // 
-            btn_QuayLai.Location = new Point(198, 119);
+            btn_QuayLai.Location = new Point(248, 149);
             btn_QuayLai.Margin = new Padding(2);
             btn_QuayLai.Name = "btn_QuayLai";
-            btn_QuayLai.Size = new Size(70, 33);
+            btn_QuayLai.Size = new Size(88, 41);
             btn_QuayLai.TabIndex = 18;
             btn_QuayLai.Text = "Quay Lại";
             btn_QuayLai.UseVisualStyleBackColor = true;
@@ -305,22 +306,22 @@
             // 
             lb_Score.AutoSize = true;
             lb_Score.ForeColor = SystemColors.ControlDarkDark;
-            lb_Score.Location = new Point(144, 60);
+            lb_Score.Location = new Point(180, 75);
             lb_Score.Margin = new Padding(2, 0, 2, 0);
             lb_Score.Name = "lb_Score";
-            lb_Score.Size = new Size(46, 20);
+            lb_Score.Size = new Size(56, 25);
             lb_Score.TabIndex = 23;
             lb_Score.Text = "Score";
-            lb_Score.Click += lb_Score_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlDarkDark;
-            label1.Location = new Point(5, 60);
+            label1.Location = new Point(6, 75);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(57, 20);
+            label1.Size = new Size(71, 25);
             label1.TabIndex = 24;
             label1.Text = "Độ khó";
             // 
@@ -329,9 +330,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ControlDarkDark;
-            label2.Location = new Point(5, 83);
+            label2.Location = new Point(6, 104);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(28, 20);
+            label2.Size = new Size(35, 25);
             label2.TabIndex = 25;
             label2.Text = "Dễ";
             // 
@@ -339,41 +341,45 @@
             // 
             pbQuayLai.Image = (Image)resources.GetObject("pbQuayLai.Image");
             pbQuayLai.Location = new Point(0, 0);
+            pbQuayLai.Margin = new Padding(4);
             pbQuayLai.Name = "pbQuayLai";
-            pbQuayLai.Size = new Size(33, 37);
+            pbQuayLai.Size = new Size(41, 46);
             pbQuayLai.SizeMode = PictureBoxSizeMode.StretchImage;
             pbQuayLai.TabIndex = 26;
             pbQuayLai.TabStop = false;
-            pbQuayLai.Click += pbQuayLai_Click;
+            pbQuayLai.Click += btn_QuayLai_Click;
             // 
-            // label3
+            // lb_Sudoku_title
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.SteelBlue;
-            label3.Location = new Point(184, 6);
-            label3.Name = "label3";
-            label3.Size = new Size(96, 31);
-            label3.TabIndex = 27;
-            label3.Text = "Sudoku";
+            lb_Sudoku_title.AutoSize = true;
+            lb_Sudoku_title.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb_Sudoku_title.ForeColor = Color.SteelBlue;
+            lb_Sudoku_title.Location = new Point(230, 8);
+            lb_Sudoku_title.Margin = new Padding(4, 0, 4, 0);
+            lb_Sudoku_title.Name = "lb_Sudoku_title";
+            lb_Sudoku_title.Size = new Size(117, 38);
+            lb_Sudoku_title.TabIndex = 27;
+            lb_Sudoku_title.Text = "Sudoku";
             // 
             // pbTamDung
             // 
             pbTamDung.Image = (Image)resources.GetObject("pbTamDung.Image");
-            pbTamDung.Location = new Point(438, 53);
+            pbTamDung.Location = new Point(548, 66);
+            pbTamDung.Margin = new Padding(4);
             pbTamDung.Name = "pbTamDung";
-            pbTamDung.Size = new Size(35, 33);
+            pbTamDung.Size = new Size(44, 41);
             pbTamDung.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTamDung.TabIndex = 28;
             pbTamDung.TabStop = false;
-            pbTamDung.Click += pbTamDung_Click;
+            pbTamDung.Click += btn_TamDung_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(438, 549);
+            pictureBox4.Location = new Point(445, 685);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(35, 40);
+            pictureBox4.Size = new Size(44, 50);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 30;
             pictureBox4.TabStop = false;
@@ -381,9 +387,10 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(302, 549);
+            pictureBox5.Location = new Point(311, 685);
+            pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(42, 40);
+            pictureBox5.Size = new Size(52, 50);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 31;
             pictureBox5.TabStop = false;
@@ -391,9 +398,10 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(163, 548);
+            pictureBox6.Location = new Point(172, 684);
+            pictureBox6.Margin = new Padding(4);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(50, 40);
+            pictureBox6.Size = new Size(62, 50);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 32;
             pictureBox6.TabStop = false;
@@ -401,9 +409,10 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(38, 549);
+            pictureBox7.Location = new Point(48, 686);
+            pictureBox7.Margin = new Padding(4);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(48, 38);
+            pictureBox7.Size = new Size(60, 48);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 33;
             pictureBox7.TabStop = false;
@@ -411,39 +420,32 @@
             // pbChoiLai
             // 
             pbChoiLai.Image = (Image)resources.GetObject("pbChoiLai.Image");
-            pbChoiLai.Location = new Point(474, 1);
+            pbChoiLai.Location = new Point(592, 1);
+            pbChoiLai.Margin = new Padding(4);
             pbChoiLai.Name = "pbChoiLai";
-            pbChoiLai.Size = new Size(40, 37);
+            pbChoiLai.Size = new Size(50, 46);
             pbChoiLai.SizeMode = PictureBoxSizeMode.StretchImage;
             pbChoiLai.TabIndex = 34;
             pbChoiLai.TabStop = false;
-            pbChoiLai.Click += pbChoiLai_Click;
+            pbChoiLai.Click += btn_ChoiLai_Click;
             // 
-            // lb_game_id
+            // btn_Hiendapan
             // 
-            lb_game_id.AutoSize = true;
-            lb_game_id.Location = new Point(518, 435);
-            lb_game_id.Name = "lb_game_id";
-            lb_game_id.Size = new Size(95, 25);
-            lb_game_id.TabIndex = 24;
-            lb_game_id.Text = "GAME_ID: ";
-            // 
-            // btn_hiendapan
-            // 
-            btn_hiendapan.Location = new Point(568, 310);
-            btn_hiendapan.Name = "btn_hiendapan";
-            btn_hiendapan.Size = new Size(116, 46);
-            btn_hiendapan.TabIndex = 25;
-            btn_hiendapan.Text = "Hiện đáp án";
-            btn_hiendapan.UseVisualStyleBackColor = true;
-            btn_hiendapan.Click += btn_hiendapan_Click;
+            btn_Hiendapan.Location = new Point(539, 734);
+            btn_Hiendapan.Name = "btn_Hiendapan";
+            btn_Hiendapan.Size = new Size(85, 48);
+            btn_Hiendapan.TabIndex = 35;
+            btn_Hiendapan.Text = "Đáp án";
+            btn_Hiendapan.UseVisualStyleBackColor = true;
+            btn_Hiendapan.Click += btn_hiendapan_Click;
             // 
             // FormSudoKuDe
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(521, 698);
+            ClientSize = new Size(651, 872);
+            Controls.Add(btn_Hiendapan);
             Controls.Add(pbChoiLai);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
@@ -459,7 +461,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pbTamDung);
-            Controls.Add(label3);
+            Controls.Add(lb_Sudoku_title);
             Controls.Add(pbQuayLai);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -473,7 +475,7 @@
             Controls.Add(btnKiemTraDungSai);
             Controls.Add(btnXoa);
             Controls.Add(btnGoiY);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FormSudoKuDe";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Chế Độ Dễ";
@@ -526,12 +528,13 @@
         private Label label1;
         private Label label2;
         private PictureBox pbQuayLai;
-        private Label label3;
+        private Label lb_Sudoku_title;
         private PictureBox pbTamDung;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pbChoiLai;
+        private Button btn_Hiendapan;
     }
 }

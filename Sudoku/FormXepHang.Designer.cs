@@ -64,6 +64,7 @@ namespace Sudoku
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(553, 352);
             dataGridView1.TabIndex = 0;
+            dataGridView1.AutoGenerateColumns = true;
             // 
             // btnXepHang
             // 
