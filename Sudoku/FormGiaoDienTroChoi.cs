@@ -19,11 +19,12 @@ namespace Sudoku
             nguoichoi.taikhoan = player_ID;
             nguoichoi.Load_Player(player_ID);
             InitializeComponent();
-            
+
         }
 
         private void btn_Choi_Click(object sender, EventArgs e)
         {
+            button1.Visible = false;
             btn_ThongTinNguoiCHoi.Visible = false;
             btn_Choi.Visible = false;
             btn_Choitiep.Visible = false;
@@ -81,12 +82,14 @@ namespace Sudoku
             btn_Kho.Visible = false;
             btn_TrungBinh.Visible = false;
             btn_Quaylai.Visible = false;
+            button1.Visible = true;
 
         }
 
         private void btn_De_Click(object sender, EventArgs e)
         {
             this.Hide();
+            nguoichoi.Load_Player(nguoichoi.taikhoan);
             FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan);
             newform.ShowDialog();
             this.Show();
@@ -95,6 +98,7 @@ namespace Sudoku
         private void btn_TrungBinh_Click(object sender, EventArgs e)
         {
             this.Hide();
+            nguoichoi.Load_Player(nguoichoi.taikhoan);
             FormSudoKuTrungBinh newform = new FormSudoKuTrungBinh();
             newform.ShowDialog();
             this.Show();
@@ -103,6 +107,7 @@ namespace Sudoku
         private void btn_Kho_Click(object sender, EventArgs e)
         {
             this.Hide();
+            nguoichoi.Load_Player(nguoichoi.taikhoan);
             FormSudoKuKho newform = new FormSudoKuKho();
             newform.ShowDialog();
             this.Show();
@@ -111,7 +116,8 @@ namespace Sudoku
         private void btn_Choitiep_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan, nguoichoi.current_game_id); 
+            nguoichoi.Load_Player(nguoichoi.taikhoan);
+            FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan, nguoichoi.current_game_id);
             newform.ShowDialog();
             this.Show();
         }
@@ -119,9 +125,15 @@ namespace Sudoku
         private void btn_ThongTinNguoiCHoi_Click(object sender, EventArgs e)
         {
             this.Hide();
+            nguoichoi.Load_Player(nguoichoi.taikhoan);
             FormThongTinNguoiChoi Form_Player = new FormThongTinNguoiChoi(nguoichoi.taikhoan);
             Form_Player.ShowDialog();
             this.Show();
+        }
+
+        private void pn_GiaoDien_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -48,6 +48,8 @@
             btn_ChoiLai = new Button();
             btn_QuayLai = new Button();
             lb_Score = new Label();
+            lb_game_id = new Label();
+            btn_hiendapan = new Button();
             ((System.ComponentModel.ISupportInitialize)dvgBangTroChoi).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -55,21 +57,22 @@
             // btnGoiY
             // 
             btnGoiY.BackColor = Color.Chartreuse;
-            btnGoiY.Location = new Point(540, 315);
+            btnGoiY.Location = new Point(589, 246);
             btnGoiY.Margin = new Padding(4, 5, 4, 5);
             btnGoiY.Name = "btnGoiY";
-            btnGoiY.Size = new Size(138, 47);
+            btnGoiY.Size = new Size(73, 43);
             btnGoiY.TabIndex = 1;
             btnGoiY.Text = "Gợi ý";
             btnGoiY.UseVisualStyleBackColor = false;
+            btnGoiY.Click += btnGoiY_Click;
             // 
             // btnXoa
             // 
             btnXoa.BackColor = Color.Chartreuse;
-            btnXoa.Location = new Point(540, 246);
+            btnXoa.Location = new Point(508, 246);
             btnXoa.Margin = new Padding(4, 5, 4, 5);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(138, 48);
+            btnXoa.Size = new Size(73, 43);
             btnXoa.TabIndex = 14;
             btnXoa.Text = " Xóa";
             btnXoa.UseVisualStyleBackColor = false;
@@ -78,10 +81,10 @@
             // btnKiemTraDungSai
             // 
             btnKiemTraDungSai.BackColor = Color.Chartreuse;
-            btnKiemTraDungSai.Location = new Point(540, 375);
+            btnKiemTraDungSai.Location = new Point(675, 246);
             btnKiemTraDungSai.Margin = new Padding(4, 5, 4, 5);
             btnKiemTraDungSai.Name = "btnKiemTraDungSai";
-            btnKiemTraDungSai.Size = new Size(138, 50);
+            btnKiemTraDungSai.Size = new Size(88, 43);
             btnKiemTraDungSai.TabIndex = 15;
             btnKiemTraDungSai.Text = "Kiểm tra";
             btnKiemTraDungSai.UseVisualStyleBackColor = false;
@@ -114,7 +117,7 @@
             flowLayoutPanel1.Controls.Add(button7);
             flowLayoutPanel1.Controls.Add(button8);
             flowLayoutPanel1.Controls.Add(button9);
-            flowLayoutPanel1.Location = new Point(508, 91);
+            flowLayoutPanel1.Location = new Point(530, 91);
             flowLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(204, 145);
@@ -287,12 +290,33 @@
             lb_Score.TabIndex = 23;
             lb_Score.Text = "Score";
             // 
+            // lb_game_id
+            // 
+            lb_game_id.AutoSize = true;
+            lb_game_id.Location = new Point(518, 435);
+            lb_game_id.Name = "lb_game_id";
+            lb_game_id.Size = new Size(95, 25);
+            lb_game_id.TabIndex = 24;
+            lb_game_id.Text = "GAME_ID: ";
+            // 
+            // btn_hiendapan
+            // 
+            btn_hiendapan.Location = new Point(568, 310);
+            btn_hiendapan.Name = "btn_hiendapan";
+            btn_hiendapan.Size = new Size(116, 46);
+            btn_hiendapan.TabIndex = 25;
+            btn_hiendapan.Text = "Hiện đáp án";
+            btn_hiendapan.UseVisualStyleBackColor = true;
+            btn_hiendapan.Click += btn_hiendapan_Click;
+            // 
             // FormSudoKuDe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
             ClientSize = new Size(800, 500);
+            Controls.Add(btn_hiendapan);
+            Controls.Add(lb_game_id);
             Controls.Add(lb_Score);
             Controls.Add(dvgBangTroChoi);
             Controls.Add(lb_Time);
@@ -349,5 +373,7 @@
         private Button btn_ChoiLai;
         private Button btn_QuayLai;
         private Label lb_Score;
+        private Label lb_game_id;
+        private Button btn_hiendapan;
     }
 }

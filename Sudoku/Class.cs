@@ -34,6 +34,19 @@ namespace Sudoku
         }
         public void Save()
         {
+            Save_ID();
+            Connection Check = new Connection();
+            if (!Check.Check_ID_Player(taikhoan))
+            {
+                MessageBox.Show("Không tồn tại người chơi!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string query = $"Update nguoichoi " +
+                    $"set game_played = '{game_played}',game_won = '{game_won}',time_played='{time_played}'" +
+                    $" where taikhoan ='{taikhoan}'";
+                Check.ExcuteNonQuery(query);
+            }
 
         }
         public bool Load_Player(string ID_Player)
@@ -81,8 +94,8 @@ namespace Sudoku
            public string Current_Sudoku;
            public string Default_Sudoku;
            public string Key_Sudoku;
-        public string Check_Loi;
-        public string Check_Diem;
+       // public string Check_Loi;
+       // public string Check_Diem;
         public string Che_Do;
        //Lưu thông tin trận đấu về cơ sở dữ liệu.
         public void Save()
@@ -92,11 +105,14 @@ namespace Sudoku
             if (!Check.Check_ID_Sudoku(game_id))
             {
                 string query = $"Insert into lichsudau values('{taikhoan}','{game_id}','{game_status}','{time}'," +
-                    $"'{score}','{Current_Sudoku}','{Default_Sudoku}','{Key_Sudoku}','{Check_Loi}','{Check_Diem}','{Che_Do}')";
+                    $"'{score}','{Current_Sudoku}','{Default_Sudoku}','{Key_Sudoku}','{Che_Do}')";
                 Check.ExcuteNonQuery(query);
             } else
             {
-                string query_1 = "";
+                string query_1 = "update lichsudau " +
+                    $"set Current_Sudoku = '{Current_Sudoku}', Default_Sudoku = '{Default_Sudoku}',Key_Sudoku = '{Key_Sudoku}',time = '{time}',score='{score}',game_status='{game_status}'" +
+                    $"where game_id = '{game_id}'";
+                Check.ExcuteNonQuery(query_1);
             }
         }
         public bool Load_LSD()
@@ -123,8 +139,8 @@ namespace Sudoku
                     this.Current_Sudoku = (string)FirstColumn["Current_Sudoku"];
                     this.Default_Sudoku = (string)FirstColumn["Default_Sudoku"];
                     this.Key_Sudoku = (string)FirstColumn["Key_Sudoku"];
-                    this.Check_Diem = (string)FirstColumn["Check_Diem"];
-                    this.Check_Loi = (string)FirstColumn["Check_Loi"];
+                  //  this.Check_Diem = (string)FirstColumn["Check_Diem"];
+                   // this.Check_Loi = (string)FirstColumn["Check_Loi"];
 
                 }
             }
@@ -133,12 +149,15 @@ namespace Sudoku
         public string Set_up_ID_game() 
         {
             int id;
-           
+            
             string query = "Select COUNT(*) from lichsudau";
             Connection Count = new Connection();
-            id = Count.ExcuteScalar(query);
-            id++;
-            return id.ToString();
+            if (!Count.Check_ID_Sudoku(game_id))
+            {
+                id = Count.ExcuteScalar(query);
+                id++;
+                return id.ToString();
+            } return game_id;
          }
     }
     
