@@ -40,12 +40,14 @@
             btn_Choilaivancu = new Button();
             btn_Thoat = new Button();
             btn_Choi = new Button();
+            btn_ThongTinNguoiCHoi = new Button();
             pn_GiaoDien.SuspendLayout();
             SuspendLayout();
             // 
             // pn_GiaoDien
             // 
             pn_GiaoDien.BackgroundImage = Properties.Resources.Untitled;
+            pn_GiaoDien.Controls.Add(btn_ThongTinNguoiCHoi);
             pn_GiaoDien.Controls.Add(btn_Choitiep);
             pn_GiaoDien.Controls.Add(btn_Quaylai);
             pn_GiaoDien.Controls.Add(lb_Chedochoi);
@@ -60,7 +62,7 @@
             pn_GiaoDien.Dock = DockStyle.Fill;
             pn_GiaoDien.Location = new Point(0, 0);
             pn_GiaoDien.Name = "pn_GiaoDien";
-            pn_GiaoDien.Size = new Size(830, 513);
+            pn_GiaoDien.Size = new Size(800, 500);
             pn_GiaoDien.TabIndex = 3;
             // 
             // btn_Choitiep
@@ -73,7 +75,6 @@
             btn_Choitiep.Text = "Chơi tiếp";
             btn_Choitiep.UseVisualStyleBackColor = true;
             btn_Choitiep.Click += btn_Choitiep_Click;
-            
             // 
             // btn_Quaylai
             // 
@@ -186,14 +187,24 @@
             btn_Choi.UseVisualStyleBackColor = true;
             btn_Choi.Click += btn_Choi_Click;
             // 
+            // btn_ThongTinNguoiCHoi
+            // 
+            btn_ThongTinNguoiCHoi.Location = new Point(13, 89);
+            btn_ThongTinNguoiCHoi.Name = "btn_ThongTinNguoiCHoi";
+            btn_ThongTinNguoiCHoi.Size = new Size(127, 61);
+            btn_ThongTinNguoiCHoi.TabIndex = 11;
+            btn_ThongTinNguoiCHoi.Text = "Thông tin người chơi";
+            btn_ThongTinNguoiCHoi.UseVisualStyleBackColor = true;
+            btn_ThongTinNguoiCHoi.Click += btn_ThongTinNguoiCHoi_Click;
+            // 
             // FormGiaoDienTroChoi
             // 
-            StartPosition = FormStartPosition.CenterScreen;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
             Controls.Add(pn_GiaoDien);
             Name = "FormGiaoDienTroChoi";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormGiaoDienTroChoi";
             pn_GiaoDien.ResumeLayout(false);
             pn_GiaoDien.PerformLayout();
@@ -214,5 +225,6 @@
         private Button btn_De;
         private Button btn_Quaylai;
         private Button btn_Choitiep;
+        private Button btn_ThongTinNguoiCHoi;
     }
 }

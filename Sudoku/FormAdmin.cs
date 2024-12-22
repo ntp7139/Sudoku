@@ -1,4 +1,4 @@
-﻿using Sudoku1;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,12 +13,13 @@ namespace Sudoku
 {
     public partial class FormAdmin : Form
     {
-        Nguoichoi Admin;
-        public FormAdmin(string Con,Nguoichoi player)
+        Nguoichoi Admin = new Nguoichoi();
+        public FormAdmin(string  ID_player)
         {
+            Admin.taikhoan = ID_player;
             InitializeComponent();
-            string Connection = Con;
-            Admin = player;
+            
+           
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace Sudoku
         private void btn_Choitrochoi_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormGiaoDienTroChoi newform = new FormGiaoDienTroChoi(Admin );
+            FormGiaoDienTroChoi newform = new FormGiaoDienTroChoi(Admin.taikhoan );
             newform.ShowDialog();
             this.Show();
 

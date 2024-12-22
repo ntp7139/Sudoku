@@ -1,5 +1,4 @@
 ﻿using QUANLYTRANGTHAIGAME;
-using Sudoku1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +13,13 @@ namespace Sudoku
 {
     public partial class FormGiaoDienTroChoi : Form
     {
-        Nguoichoi nguoichoi;
-        public FormGiaoDienTroChoi(Nguoichoi player)
+        Nguoichoi nguoichoi = new Nguoichoi();
+        public FormGiaoDienTroChoi(string player_ID)
         {
+            nguoichoi.taikhoan = player_ID;
+            nguoichoi.Load_Player(player_ID);
             InitializeComponent();
-            nguoichoi = player;
+            
         }
 
         private void btn_Choi_Click(object sender, EventArgs e)
@@ -84,7 +85,7 @@ namespace Sudoku
         private void btn_De_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormSudoKuDe newform = new FormSudoKuDe();
+            FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan);
             newform.ShowDialog();
             this.Show();
         }
@@ -107,7 +108,15 @@ namespace Sudoku
 
         private void btn_Choitiep_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btn_ThongTinNguoiCHoi_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormThongTinNguoiChoi Form_Player = new FormThongTinNguoiChoi(nguoichoi.taikhoan);
+            Form_Player.ShowDialog();
+            this.Show();
         }
     }
 }
