@@ -20,6 +20,18 @@ namespace Sudoku
             public string time_played;
             public string current_game_id = "0";
         //Phương thức trả về thông tin người chơi khi nhập tài khoản ( tài khoản  = id )
+        public void Save_ID()
+        {
+            Connection Check = new Connection();
+            if (!Check.Check_ID_Player(taikhoan))
+            {
+                MessageBox.Show("Không tồn tại người chơi!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            } else
+            {
+                string query = $"Update nguoichoi set current_game_id = '{current_game_id}' where taikhoan ='{taikhoan}'";
+                Check.ExcuteNonQuery(query);
+            }
+        }
         public void Save()
         {
 
@@ -71,6 +83,7 @@ namespace Sudoku
            public string Key_Sudoku;
         public string Check_Loi;
         public string Check_Diem;
+        public string Che_Do;
        //Lưu thông tin trận đấu về cơ sở dữ liệu.
         public void Save()
         {
@@ -79,7 +92,7 @@ namespace Sudoku
             if (!Check.Check_ID_Sudoku(game_id))
             {
                 string query = $"Insert into lichsudau values('{taikhoan}','{game_id}','{game_status}','{time}'," +
-                    $"'{score}','{Current_Sudoku}','{Default_Sudoku}','{Key_Sudoku}','{Check_Loi}','{Check_Diem}')";
+                    $"'{score}','{Current_Sudoku}','{Default_Sudoku}','{Key_Sudoku}','{Check_Loi}','{Check_Diem}','{Che_Do}')";
                 Check.ExcuteNonQuery(query);
             } else
             {
@@ -108,7 +121,7 @@ namespace Sudoku
                     this.score = (string)FirstColumn["score"];
                     this.time = (string)FirstColumn["time"];
                     this.Current_Sudoku = (string)FirstColumn["Current_Sudoku"];
-                    this.Default_Sudoku = (string)FirstColumn["Current_Sudoku"];
+                    this.Default_Sudoku = (string)FirstColumn["Default_Sudoku"];
                     this.Key_Sudoku = (string)FirstColumn["Key_Sudoku"];
                     this.Check_Diem = (string)FirstColumn["Check_Diem"];
                     this.Check_Loi = (string)FirstColumn["Check_Loi"];
@@ -120,6 +133,7 @@ namespace Sudoku
         public string Set_up_ID_game() 
         {
             int id;
+           
             string query = "Select COUNT(*) from lichsudau";
             Connection Count = new Connection();
             id = Count.ExcuteScalar(query);

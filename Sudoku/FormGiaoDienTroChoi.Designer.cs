@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pn_GiaoDien = new Panel();
+            btn_ThongTinNguoiCHoi = new Button();
             btn_Choitiep = new Button();
             btn_Quaylai = new Button();
             lb_Chedochoi = new Label();
@@ -40,7 +41,6 @@
             btn_Choilaivancu = new Button();
             btn_Thoat = new Button();
             btn_Choi = new Button();
-            btn_ThongTinNguoiCHoi = new Button();
             pn_GiaoDien.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,6 +64,16 @@
             pn_GiaoDien.Name = "pn_GiaoDien";
             pn_GiaoDien.Size = new Size(800, 500);
             pn_GiaoDien.TabIndex = 3;
+            // 
+            // btn_ThongTinNguoiCHoi
+            // 
+            btn_ThongTinNguoiCHoi.Location = new Point(3, 346);
+            btn_ThongTinNguoiCHoi.Name = "btn_ThongTinNguoiCHoi";
+            btn_ThongTinNguoiCHoi.Size = new Size(127, 61);
+            btn_ThongTinNguoiCHoi.TabIndex = 11;
+            btn_ThongTinNguoiCHoi.Text = "Thông tin người chơi";
+            btn_ThongTinNguoiCHoi.UseVisualStyleBackColor = true;
+            btn_ThongTinNguoiCHoi.Click += btn_ThongTinNguoiCHoi_Click;
             // 
             // btn_Choitiep
             // 
@@ -186,16 +196,6 @@
             btn_Choi.Text = "Chơi ván mới";
             btn_Choi.UseVisualStyleBackColor = true;
             btn_Choi.Click += btn_Choi_Click;
-            // 
-            // btn_ThongTinNguoiCHoi
-            // 
-            btn_ThongTinNguoiCHoi.Location = new Point(13, 89);
-            btn_ThongTinNguoiCHoi.Name = "btn_ThongTinNguoiCHoi";
-            btn_ThongTinNguoiCHoi.Size = new Size(127, 61);
-            btn_ThongTinNguoiCHoi.TabIndex = 11;
-            btn_ThongTinNguoiCHoi.Text = "Thông tin người chơi";
-            btn_ThongTinNguoiCHoi.UseVisualStyleBackColor = true;
-            btn_ThongTinNguoiCHoi.Click += btn_ThongTinNguoiCHoi_Click;
             // 
             // FormGiaoDienTroChoi
             // 

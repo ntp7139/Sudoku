@@ -18,7 +18,7 @@ namespace Sudoku
     {
         private Nguoichoi nguoichoi = new Nguoichoi();
         private LichSuDau Bang_Dau = new LichSuDau();
-        private int[,] banChoi = new int[9, 9]; // Dữ liệu bảng Sudoku
+        private int[,] banChoi = new int[9, 9]; // Dữ liệu bảng Sudoku ban đầu
         private System.Windows.Forms.Timer time;
         private int Thoigian = 0; // Biến đếm thời gian
         private int[,] BangSudoku = new int[9, 9];
@@ -37,21 +37,40 @@ namespace Sudoku
                     Check_Diem[i, j] = 1;
                 }
         }
+
         public FormSudoKuDe()
         {
             this.MaximizeBox = false;
             InitializeComponent();
             KhoiTaoBangSudoku();
+            DienDuLieuBang();
             KhoitaoBoDemThoiGian();
 
 
         }
+        // Khởi chạy chơi màn mới
         public FormSudoKuDe(string player_ID)
         {
             nguoichoi.taikhoan = player_ID;
             nguoichoi.Load_Player(player_ID);
+            Bang_Dau.game_id = Bang_Dau.Set_up_ID_game();
             InitializeComponent();
+            
             KhoiTaoBangSudoku();
+            DienDuLieuBang();
+            KhoitaoBoDemThoiGian();
+        }
+        //Khởi chạy chơi màn đang chơi
+        public FormSudoKuDe(string player_ID,string current_game_id)
+        {
+            nguoichoi.taikhoan = player_ID;
+            nguoichoi.Load_Player(player_ID);
+            Bang_Dau.game_id = current_game_id;
+            Bang_Dau.Load_LSD();
+            InitializeComponent();         
+            KhoiTaoBangSudoku();
+            
+            Load_Game_Cu();
             KhoitaoBoDemThoiGian();
         }
         //Khởi tạo sự kiện chạy 
@@ -76,11 +95,7 @@ namespace Sudoku
             time.Start();
 
         }
-        private void sodukuwinform_Load(object sender, EventArgs e)
-        {
-
-            DienDuLieuBang();
-        }
+        
 
         //Khởi tạo bảng
         private void KhoiTaoBangSudoku()
@@ -94,6 +109,7 @@ namespace Sudoku
             dvgBangTroChoi.AllowUserToResizeRows = false;
             dvgBangTroChoi.AllowUserToResizeColumns = false;
             dvgBangTroChoi.AllowUserToAddRows = false;
+            dvgBangTroChoi.ReadOnly = false;
 
             // Tính toán kích thước hàng và cột
             int cellWidth = dvgBangTroChoi.ClientSize.Width / 9;  // Chiều rộng ô
@@ -107,7 +123,7 @@ namespace Sudoku
             for (int i = 0; i < dvgBangTroChoi.RowCount; i++)
             {
                 dvgBangTroChoi.Rows[i].Height = cellHeight;
-                dvgBangTroChoi.Rows[i].Cells[0].Value = i.ToString();
+                
             }
             dvgBangTroChoi.CellPainting += DvgBangTroChoi_CellPainting;
 
@@ -219,6 +235,7 @@ namespace Sudoku
                 }
                 else return false;
             }
+            status = true;
             return true;
         }
 
@@ -394,17 +411,20 @@ namespace Sudoku
         {
             try
             {
+                Bang_Dau.Che_Do = "Easy";
                 Bang_Dau.taikhoan = nguoichoi.taikhoan;
-                Bang_Dau.game_id = Bang_Dau.Set_up_ID_game();
+                Bang_Dau.game_id = Bang_Dau.game_id == "0"?Bang_Dau.Set_up_ID_game():Bang_Dau.game_id;
                 Bang_Dau.time = Thoigian.ToString();
                 Bang_Dau.score = lb_Score.Text == "Score" ? "0" : lb_Score.Text;
-                Bang_Dau.Check_Diem = Convert_Matrix_To_String(Check_Diem);
-                Bang_Dau.Check_Loi = Convert_Matrix_To_String(Check_Loi);
+               // Bang_Dau.Check_Diem = Convert_Matrix_To_String(Check_Diem);
+                //Bang_Dau.Check_Loi = Convert_Matrix_To_String(Check_Loi);
                 int[,] Table = new int[9, 9];
                 Table = Current_Table();
                 Bang_Dau.Current_Sudoku = Convert_Matrix_To_String(Table);
                 Bang_Dau.game_status = status ? "Done" : "Playing";
                 Bang_Dau.Save();
+                nguoichoi.current_game_id = Bang_Dau.game_id;
+                nguoichoi.Save_ID();
                 MessageBox.Show("Bạn đã lưu game thành công!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -415,7 +435,23 @@ namespace Sudoku
 
         private void btn_QuayLai_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Bang_Dau.Che_Do = "Easy";
+            Bang_Dau.taikhoan = nguoichoi.taikhoan;
+            Bang_Dau.game_id = Bang_Dau.Set_up_ID_game();
+            Bang_Dau.time = Thoigian.ToString();
+            Bang_Dau.score = lb_Score.Text == "Score" ? "0" : lb_Score.Text;
+            Bang_Dau.Check_Diem = Convert_Matrix_To_String(Check_Diem);
+            Bang_Dau.Check_Loi = Convert_Matrix_To_String(Check_Loi);
+            int[,] Table = new int[9, 9];
+            Table = Current_Table();
+            Bang_Dau.Current_Sudoku = Convert_Matrix_To_String(Table);
+            Bang_Dau.game_status = status ? "Done" : "Playing";
+            Bang_Dau.Save();
+            nguoichoi.current_game_id = Bang_Dau.game_id;
+            nguoichoi.Save_ID();
+            this.Close();
+            
+
         }
 
         private void btn_ChoiLai_Click(object sender, EventArgs e)
@@ -425,6 +461,8 @@ namespace Sudoku
             {
                 Reset_Bang();
                 Init_CheckLoi();
+                score = 0;
+                lb_Score.Text = score.ToString();
             }
         }
         private void Reset_Bang()
@@ -613,6 +651,177 @@ namespace Sudoku
                     if (Check_Loi[i, j] == 1)
                         dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.White;
         }
+        private void KiemTra_MoiLanNhap(int m,int n)
+        {
+
+
+            int Cot_RowCheck = -1;
+            int Hang_RowCheck = -1;
+            int Cot_ColCheck = -1;
+            int Hang_ColCheck = -1;
+            int Cot_3x3Check = -1;
+            int Hang_3x3Check = -1;
+            int CountFault = 0;
+            // Kiểm tra hàng ở Current cell
+
+            int Hang = m;
+            int Cot = n;
+            object GiaTri_Check = dvgBangTroChoi.Rows[Hang].Cells[Cot].Value;
+            int GiaTri = Convert.ToInt32(GiaTri_Check);
+            int startRow = (Hang / 3) * 3;
+            int startCol = (Cot / 3) * 3;
+            HashSet<int> set_Hang = new HashSet<int>();
+            for (int i = 0; i < 9; i++)
+            {
+                int value;
+                object value1 = dvgBangTroChoi.Rows[Hang].Cells[i].Value;
+                if (value1 == null)
+                {
+                    value = 0;
+                }
+                else value = Convert.ToInt32(value1);
+
+
+                if (value != 0 && !set_Hang.Add(value))
+                {
+                    Hang_RowCheck = Hang;
+                    Cot_RowCheck = i;
+                    CountFault++;
+
+
+                }
+                else Check_Loi[Hang, i] = 1;
+            }
+            HashSet<int> set_Cot = new HashSet<int>();
+            for (int i = 0; i < 9; i++)
+            {
+                int value;
+                object value1 = dvgBangTroChoi.Rows[i].Cells[Cot].Value;
+                if (value1 == null)
+                {
+                    value = 0;
+                }
+                else value = Convert.ToInt32(value1);
+
+                if (value != 0 && !set_Cot.Add(value))
+                {
+                    Hang_ColCheck = i;
+                    Cot_ColCheck = Cot;
+                    CountFault++;
+
+                }
+                else Check_Loi[i, Cot] = 1;
+            }
+            HashSet<int> set_3x3 = new HashSet<int>();
+
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    int value;
+                    object value1 = dvgBangTroChoi.Rows[startRow + i].Cells[startCol + j].Value;
+                    if (value1 == null)
+                    {
+                        value = 0;
+                    }
+                    else value = Convert.ToInt32(value1);
+                    if (value != 0 && !set_3x3.Add(value))
+                    {
+                        Hang_3x3Check = startRow + i;
+                        Cot_3x3Check = startCol + j;
+                        CountFault++;
+
+                    }
+                    else Check_Loi[startRow + i, startCol + j] = 1;
+                }
+            }
+            if (CountFault > 0)
+            {
+                if (Hang_RowCheck >= 0)
+                    for (int i = 0; i < 9; i++)
+                    {
+                        if (dvgBangTroChoi.Rows[Hang].Cells[i].Value != null)
+                        {
+                            object value_check_1 = dvgBangTroChoi.Rows[Hang].Cells[i].Value;
+                            int Value_check;
+                            if (int.TryParse(value_check_1.ToString(), out Value_check)) // Kiểm tra xem có thể chuyển thành int không
+                            {
+                                if (Value_check == GiaTri)
+                                {
+                                    Set_RedColor_Cell(Hang, i);
+                                    Check_Loi[Hang, i] = 0;
+                                }
+                            }
+                            else
+                            {
+                                // Nếu không thể chuyển thành int, bạn có thể xử lý lỗi ở đây
+                                MessageBox.Show("Giá trị trong ô không phải là số hợp lệ.");
+                            }
+                        }
+                    }
+
+                if (Hang_ColCheck >= 0)
+                    for (int i = 0; i < 9; i++)
+                    {
+                        if (dvgBangTroChoi.Rows[i].Cells[Cot].Value != null)
+                        {
+                            object value_check_1 = dvgBangTroChoi.Rows[i].Cells[Cot].Value;
+                            int Value_check;
+                            if (int.TryParse(value_check_1.ToString(), out Value_check)) // Kiểm tra xem có thể chuyển thành int không
+                            {
+                                if (Value_check == GiaTri)
+                                {
+                                    Set_RedColor_Cell(i, Cot);
+                                    Check_Loi[i, Cot] = 0;
+                                }
+                            }
+                            else
+                            {
+                                // Nếu không thể chuyển thành int, bạn có thể xử lý lỗi ở đây
+                                MessageBox.Show("Giá trị trong ô không phải là số hợp lệ.");
+                            }
+                        }
+                    }
+
+                if (Hang_3x3Check >= 0)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        for (int j = 0; j < 3; j++)
+                        {
+                            if (dvgBangTroChoi.Rows[startRow + i].Cells[startCol + j].Value != null)
+                            {
+                                object value_check_1 = dvgBangTroChoi.Rows[startRow + i].Cells[startCol + j].Value;
+                                int value_check;
+                                if (int.TryParse(value_check_1.ToString(), out value_check)) // Kiểm tra xem có thể chuyển thành int không
+                                {
+                                    if (value_check == GiaTri)
+                                    {
+                                        Check_Loi[startRow + i, startCol + j] = 0;
+                                        Set_RedColor_Cell(startRow + i, startCol + j);
+                                    }
+                                }
+                                else
+                                {
+                                    // Nếu không thể chuyển thành int, bạn có thể xử lý lỗi ở đây
+                                    MessageBox.Show("Giá trị trong ô không phải là số hợp lệ.");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if (CountFault == 0)
+            {
+                Check_Diem[Hang, Cot] = 0;
+
+            }
+            for (int i = 0; i < 9; i++)
+                for (int j = 0; j < 9; j++)
+                    if (Check_Loi[i, j] == 1)
+                        dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.White;
+        }
         public void Set_RedColor_Cell(int i, int j)
         {
             dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.Red;
@@ -631,7 +840,7 @@ namespace Sudoku
             int[,] Table = new int[9,9];
             for (int i = 0; i < 9; i++)
                 for (int j = 0; j < 9; j++)
-                    Table[i, j] = Data[9 * i + j];
+                    Table[i, j] = Data[9 * i + j]-'0';
             return Table;
         }
         public int[,] Current_Table()
@@ -650,6 +859,64 @@ namespace Sudoku
                     }
                 }
             return current_table;
+        }
+        public bool Load_Game_Cu()
+        {
+            bool check = false;
+            try
+            {
+                banChoi = Convert_String_To_Matrix(Bang_Dau.Default_Sudoku);
+                BangSudoku = Convert_String_To_Matrix(Bang_Dau.Current_Sudoku);
+
+                Thoigian = Convert.ToInt32(Bang_Dau.time);
+                score = Convert.ToInt32(Bang_Dau.score);
+                //Check_Diem = Convert_String_To_Matrix(Bang_Dau.Check_Diem);
+                //Check_Loi = Convert_String_To_Matrix(Bang_Dau.Check_Loi);
+                Init_CheckLoi();
+                status = Bang_Dau.game_status == "Done";
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+
+                        if (banChoi[i, j] != 0 && BangSudoku[i, j] != 0)
+                        {
+                            dvgBangTroChoi.Rows[i].Cells[j].Value = banChoi[i, j];
+                            dvgBangTroChoi.Rows[i].Cells[j].ReadOnly = true;
+
+                        }
+                        else if (BangSudoku[i, j] != 0)
+                        {
+                            dvgBangTroChoi.Rows[i].Cells[j].ReadOnly = false;
+                            dvgBangTroChoi.Rows[i].Cells[j].Value = BangSudoku[i, j];
+                        }
+
+                    }
+                }
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+
+                        if (banChoi[i, j] == 0)
+                        {
+                            if (BangSudoku[i, j] != 0)
+                            {
+                                KiemTra_MoiLanNhap(i, j);
+                            }
+                        }
+
+                    }
+                }
+
+                lb_Score.Text =score.ToString();
+                check = true;
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+
+            return check;
         }
     }
 }

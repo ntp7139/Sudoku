@@ -308,7 +308,6 @@
             Name = "FormSudoKuDe";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Chế Độ Dễ";
-            Load += sodukuwinform_Load;
             ((System.ComponentModel.ISupportInitialize)dvgBangTroChoi).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
