@@ -53,3 +53,4 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSu
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuKho.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuTrungBinh.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormThongTinNguoiChoi.resources
+C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.Form1.resources
