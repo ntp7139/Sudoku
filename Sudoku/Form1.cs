@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sudoku
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            SuspendLayout();
+            // 
+            // Form1
+            // 
+            ClientSize = new Size(282, 253);
+            Name = "Form1";
+            
+            ResumeLayout(false);
+        }
+
+        
+    }
+}
