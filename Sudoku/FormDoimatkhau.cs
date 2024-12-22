@@ -36,5 +36,10 @@ namespace Sudoku
         {
 
         }
+
+        private void lb_TieuDeDoiMatKhau_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
