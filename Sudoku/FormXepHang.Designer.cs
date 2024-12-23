@@ -123,6 +123,7 @@ namespace Sudoku
             // FormXepHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
+            StartPosition = FormStartPosition.CenterScreen;
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.xanh_đạm1;
             ClientSize = new Size(800, 530);

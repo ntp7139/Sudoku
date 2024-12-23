@@ -20,12 +20,7 @@ namespace Sudoku
 
         private void lb_QuenMatKhau_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormQuenMatKhau newform = new FormQuenMatKhau();
-            newform.ShowDialog();
-
-            this.Show();
-
+          
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)

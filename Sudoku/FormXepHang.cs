@@ -18,7 +18,17 @@ namespace Sudoku
         {
             InitializeComponent();
             dataGridView1.RowPostPaint += dataGridView1_RowPostPaint;
-            
+            panel1.Visible = false;
+            string query = "Select score as SCORE,taikhoan as ID,game_id as GAME_ID,time as TIME from lichsudau\r\norder by Cast(score as unsigned) desc\r\nlimit 10;";
+            Connection Check = new Connection();
+            DataTable dataTable = new DataTable();
+
+            dataTable = Check.ExcuteQuery(query);
+
+
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = dataTable;
+
         }
         private void dataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {

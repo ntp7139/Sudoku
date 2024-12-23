@@ -123,7 +123,7 @@ namespace Sudoku
                 LichSuDau check = new LichSuDau();
                 check.game_id = nguoichoi.current_game_id;
                 check.Load_LSD();
-                
+
                 if (check.Che_Do == "Easy")
                 {
                     FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan, nguoichoi.current_game_id);
@@ -142,13 +142,13 @@ namespace Sudoku
                     newform.ShowDialog();
                     this.Show();
                 }
-                
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        
+
         }
 
         private void btn_ThongTinNguoiCHoi_Click(object sender, EventArgs e)
@@ -161,6 +161,11 @@ namespace Sudoku
         }
 
         private void pn_GiaoDien_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
