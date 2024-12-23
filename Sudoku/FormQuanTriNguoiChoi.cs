@@ -97,10 +97,10 @@ namespace Sudoku
             string email = tB_Email_Them.Text;
             string access = rB_admin_Them.Checked ? rB_admin_Them.Text : rB_user_Them.Text;
             string Check = $"Select * from nguoichoi where taikhoan ='{taikhoan}' or email = '{email}'";
-            string Insert = $"Insert into nguoichoi values('{taikhoan}','{matkhau}','{email}','{access}')";
+            string Insert = $"Insert into nguoichoi(taikhoan,matkhau,email,access) values('{taikhoan}','{matkhau}','{email}','{access}')";
             if (taikhoan == "" || email == "")
             {
-                MessageBox.Show("Không được để tài khoản hoặc email rỗng !");
+                MessageBox.Show("Không được để tài khoản hoặc email rỗng !", "Thông báo", MessageBoxButtons.OKCancel);
             }
             else
                 using (MySqlConnection connection = new MySqlConnection(strConnection))
@@ -113,7 +113,7 @@ namespace Sudoku
                         {
                             if (read.HasRows)
                             {
-                                MessageBox.Show("Tài khoản hoặc email đã tồn tại!");
+                                MessageBox.Show("Tài khoản hoặc email đã tồn tại!", "Thông báo", MessageBoxButtons.OKCancel);
                                 Them = false;
                             }
                             else Them = true;
@@ -123,7 +123,7 @@ namespace Sudoku
                         {
                             MySqlCommand Them_nguoichoi = new MySqlCommand(Insert, connection);
                             int row = Them_nguoichoi.ExecuteNonQuery();
-                            MessageBox.Show("Thêm thành công!");
+                            MessageBox.Show("Thêm thành công!","Thông báo",MessageBoxButtons.OKCancel);
                         }
 
 
@@ -200,7 +200,7 @@ namespace Sudoku
                                 read.Close();
 
                             }
-                            else MessageBox.Show("Tài khoản không tồn tại!");
+                            else MessageBox.Show("Tài khoản không tồn tại!","Thông báo",MessageBoxButtons.OKCancel);
 
                         }
                     }
@@ -228,7 +228,7 @@ namespace Sudoku
                     connection.Open();
                     MySqlCommand mySqlCommand = new MySqlCommand(Check, connection);
                     int row = mySqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Cập nhật thông tin thành công!");
+                    MessageBox.Show("Cập nhật thông tin thành công!","Thông báo",MessageBoxButtons.OKCancel);
                 }
                 catch (Exception ex)
                 {

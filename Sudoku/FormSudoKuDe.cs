@@ -55,6 +55,8 @@ namespace Sudoku
         {
             nguoichoi.taikhoan = player_ID;
             nguoichoi.Load_Player(player_ID);
+            nguoichoi.current_game_id = "0";
+            Bang_Dau.game_id = "0";
             Bang_Dau.game_id = Bang_Dau.Set_up_ID_game();
             InitializeComponent();
 

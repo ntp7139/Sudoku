@@ -1,4 +1,5 @@
 ﻿
+using Org.BouncyCastle.Math.Field;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -99,7 +100,7 @@ namespace Sudoku
         {
             this.Hide();
             nguoichoi.Load_Player(nguoichoi.taikhoan);
-            FormSudoKuTrungBinh newform = new FormSudoKuTrungBinh();
+            FormSudoKuTrungBinh newform = new FormSudoKuTrungBinh(nguoichoi.taikhoan);
             newform.ShowDialog();
             this.Show();
         }
@@ -108,7 +109,7 @@ namespace Sudoku
         {
             this.Hide();
             nguoichoi.Load_Player(nguoichoi.taikhoan);
-            FormSudoKuKho newform = new FormSudoKuKho();
+            FormSudoKuKho newform = new FormSudoKuKho(nguoichoi.taikhoan);
             newform.ShowDialog();
             this.Show();
         }
@@ -116,10 +117,38 @@ namespace Sudoku
         private void btn_Choitiep_Click(object sender, EventArgs e)
         {
             this.Hide();
-            nguoichoi.Load_Player(nguoichoi.taikhoan);
-            FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan, nguoichoi.current_game_id);
-            newform.ShowDialog();
-            this.Show();
+            try
+            {
+                nguoichoi.Load_Player(nguoichoi.taikhoan);
+                LichSuDau check = new LichSuDau();
+                check.game_id = nguoichoi.current_game_id;
+                check.Load_LSD();
+                
+                if (check.Che_Do == "Easy")
+                {
+                    FormSudoKuDe newform = new FormSudoKuDe(nguoichoi.taikhoan, nguoichoi.current_game_id);
+                    newform.ShowDialog();
+                    this.Show();
+                }
+                else if (check.Che_Do == "Medium")
+                {
+                    FormSudoKuTrungBinh newform = new FormSudoKuTrungBinh(nguoichoi.taikhoan, nguoichoi.current_game_id);
+                    newform.ShowDialog();
+                    this.Show();
+                }
+                else if (check.Che_Do == "Hard")
+                {
+                    FormSudoKuKho newform = new FormSudoKuKho(nguoichoi.taikhoan, nguoichoi.current_game_id);
+                    newform.ShowDialog();
+                    this.Show();
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        
         }
 
         private void btn_ThongTinNguoiCHoi_Click(object sender, EventArgs e)

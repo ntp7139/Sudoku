@@ -158,7 +158,7 @@ namespace Sudoku
             } else
             {
                 string query_1 = "update lichsudau " +
-                    $"set taikhoan = '{taikhoan}', Current_Sudoku = '{Current_Sudoku}', Default_Sudoku = '{Default_Sudoku}',Key_Sudoku = '{Key_Sudoku}',time = '{time}',score='{score}',game_status='{game_status}'" +
+                    $"set taikhoan = '{taikhoan}', Current_Sudoku = '{Current_Sudoku}', Default_Sudoku = '{Default_Sudoku}',Key_Sudoku = '{Key_Sudoku}',time = '{time}',score='{score}',game_status='{game_status}',Che_do = '{Che_Do}'" +
                     $"where game_id = '{game_id}'";
                 Check.ExcuteNonQuery(query_1);
             }
@@ -187,7 +187,8 @@ namespace Sudoku
                     this.Current_Sudoku = (string)FirstColumn["Current_Sudoku"];
                     this.Default_Sudoku = (string)FirstColumn["Default_Sudoku"];
                     this.Key_Sudoku = (string)FirstColumn["Key_Sudoku"];
-                  //  this.Check_Diem = (string)FirstColumn["Check_Diem"];
+                    this.Che_Do = (string)FirstColumn["Che_do"];
+                  //this.Check_Diem = (string)FirstColumn["Check_Diem"];
                    // this.Check_Loi = (string)FirstColumn["Check_Loi"];
 
                 }
@@ -203,9 +204,10 @@ namespace Sudoku
             if (!Count.Check_ID_Sudoku(game_id))
             {
                 id = Count.ExcuteScalar(query);
-                id++;
+                id += 10;
                 return id.ToString();
-            } return game_id;
+            }return game_id;
+           
          }
     }
     
