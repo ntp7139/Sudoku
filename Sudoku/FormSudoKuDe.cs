@@ -411,7 +411,7 @@ namespace Sudoku
                 MessageBox.Show("Bảng Sudoku không hợp lệ. Vui lòng kiểm tra lại.", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Hand);
             }
         }
-
+        // Tạm dừng trận đấu
         private void btn_TamDung_Click(object sender, EventArgs e)
         {
             TamDunghoacTieptuc newform = new TamDunghoacTieptuc();
@@ -420,7 +420,7 @@ namespace Sudoku
             time.Start();
 
         }
-
+        //Lưu trận đấu
         private void btn_Luu_Click(object sender, EventArgs e)
         {
             try
@@ -446,7 +446,7 @@ namespace Sudoku
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //Quay lại trận đấu
         private void btn_QuayLai_Click(object sender, EventArgs e)
         {
             Bang_Dau.Che_Do = "Easy";
@@ -467,7 +467,7 @@ namespace Sudoku
 
 
         }
-
+        //Chơi lại ván đấu
         private void btn_ChoiLai_Click(object sender, EventArgs e)
         {
             DialogResult Check = MessageBox.Show("Bạn có chắc là muốn chơi lại không ?", "Thông báo", MessageBoxButtons.OKCancel);
@@ -479,6 +479,7 @@ namespace Sudoku
                 lb_Score.Text = score.ToString();
             }
         }
+        // Procedure reset lại bảng để chơi lại
         private void Reset_Bang()
         {
             for (int i = 0; i < 9; i++)
@@ -667,6 +668,7 @@ namespace Sudoku
                     if (Check_Loi[i, j] == 1)
                         dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.White;
         }
+        // Kiểm tra sau mỗi lần nhập với địa chỉ có sẵn ( phục vụ cho tái khởi động bảng)
         private void KiemTra_MoiLanNhap(int m, int n)
         {
 
@@ -838,11 +840,13 @@ namespace Sudoku
                     if (Check_Loi[i, j] == 1)
                         dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.White;
         }
+        //Làm đỏ ô nhớ
         public void Set_RedColor_Cell(int i, int j)
         {
             dvgBangTroChoi.Rows[i].Cells[j].Style.BackColor = Color.Red;
 
         }
+        //Chuyển Chuyển ma trận về xâu
         public string Convert_Matrix_To_String(int[,] matrix)
         {
             string Answer = "";
@@ -851,6 +855,7 @@ namespace Sudoku
                     Answer += matrix[i, j].ToString();
             return Answer;
         }
+        //Chuyển xâu về ma trận
         public int[,] Convert_String_To_Matrix(string Data)
         {
             int[,] Table = new int[9, 9];
@@ -859,6 +864,7 @@ namespace Sudoku
                     Table[i, j] = Data[9 * i + j] - '0';
             return Table;
         }
+
         public int[,] Current_Table()
         {
             int[,] current_table = new int[9, 9];

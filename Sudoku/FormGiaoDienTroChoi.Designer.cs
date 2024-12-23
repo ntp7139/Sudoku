@@ -513,10 +513,10 @@
             // 
             // btn_Choilaivancu
             // 
-            btn_Choilaivancu.BackColor = SystemColors.ButtonHighlight;
+            btn_Choilaivancu.BackColor = SystemColors.ActiveCaption;
             btn_Choilaivancu.FlatStyle = FlatStyle.System;
             btn_Choilaivancu.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Choilaivancu.ForeColor = Color.PaleGreen;
+            btn_Choilaivancu.ForeColor = Color.Blue;
             btn_Choilaivancu.Location = new Point(28, 68);
             btn_Choilaivancu.Margin = new Padding(2);
             btn_Choilaivancu.Name = "btn_Choilaivancu";
@@ -524,7 +524,7 @@
             btn_Choilaivancu.TabIndex = 2;
             btn_Choilaivancu.Text = "           Chơi lại ván cũ";
             btn_Choilaivancu.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Choilaivancu.UseVisualStyleBackColor = false;
+            btn_Choilaivancu.UseVisualStyleBackColor = true;
             btn_Choilaivancu.Click += btn_Choilaivancu_Click;
             // 
             // btn_Thoat
@@ -568,6 +568,7 @@
             button1.Text = "           Luật chơi";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // btn_Quaylai
             // 
