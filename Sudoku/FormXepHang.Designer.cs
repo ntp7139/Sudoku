@@ -30,21 +30,19 @@ namespace Sudoku
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormXepHang));
             dataGridView1 = new DataGridView();
             btnXepHang = new Button();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             pictureBox4 = new PictureBox();
-            panel1 = new Panel();
+            lbLeaderBoard = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.AntiqueWhite;
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -58,96 +56,86 @@ namespace Sudoku
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Cursor = Cursors.No;
-            dataGridView1.Location = new Point(122, 137);
+            dataGridView1.Location = new Point(46, 97);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(553, 352);
+            dataGridView1.Size = new Size(712, 352);
             dataGridView1.TabIndex = 0;
-            dataGridView1.AutoGenerateColumns = true;
             // 
             // btnXepHang
             // 
             btnXepHang.BackgroundImage = Properties.Resources.hinh_nen_may_tinh_de_thuong_21;
             btnXepHang.BackgroundImageLayout = ImageLayout.Center;
-            btnXepHang.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXepHang.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnXepHang.ForeColor = SystemColors.Highlight;
-            btnXepHang.Location = new Point(279, 21);
+            btnXepHang.Location = new Point(303, 473);
             btnXepHang.Name = "btnXepHang";
-            btnXepHang.Size = new Size(250, 54);
+            btnXepHang.Size = new Size(197, 45);
             btnXepHang.TabIndex = 1;
             btnXepHang.Text = "LEADERBOARD";
             btnXepHang.UseVisualStyleBackColor = true;
+            btnXepHang.Visible = false;
             btnXepHang.Click += button1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = Properties.Resources.images1;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(776, 506);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = Properties.Resources.images;
-            pictureBox2.Image = Properties.Resources.Screenshot_2024_12_09_1631141;
-            pictureBox2.Location = new Point(355, 76);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(89, 37);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.Screenshot_2024_12_10_1407251;
-            pictureBox4.Location = new Point(648, 124);
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(12, 480);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 38);
+            pictureBox4.Size = new Size(45, 38);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // panel1
+            // lbLeaderBoard
             // 
-            panel1.BackgroundImage = Properties.Resources.hình_nền;
-            panel1.Location = new Point(12, 7);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(776, 516);
-            panel1.TabIndex = 6;
+            lbLeaderBoard.AutoSize = true;
+            lbLeaderBoard.Font = new Font("Gill Sans Ultra Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbLeaderBoard.ForeColor = Color.SteelBlue;
+            lbLeaderBoard.Location = new Point(288, 18);
+            lbLeaderBoard.Name = "lbLeaderBoard";
+            lbLeaderBoard.Size = new Size(242, 42);
+            lbLeaderBoard.TabIndex = 6;
+            lbLeaderBoard.Text = "Leaderboard";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(237, 60);
+            label1.Name = "label1";
+            label1.Size = new Size(328, 23);
+            label1.TabIndex = 7;
+            label1.Text = "Who’s the best? Check it out right here!";
             // 
             // FormXepHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.xanh_đạm1;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 530);
-            Controls.Add(pictureBox2);
+            Controls.Add(label1);
+            Controls.Add(lbLeaderBoard);
             Controls.Add(btnXepHang);
-            Controls.Add(panel1);
             Controls.Add(pictureBox4);
             Controls.Add(dataGridView1);
-            Controls.Add(pictureBox1);
             Name = "FormXepHang";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView dataGridView1;
         private Button btnXepHang;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox4;
-        private Panel panel1;
+        private Label lbLeaderBoard;
+        private Label label1;
     }
 }
