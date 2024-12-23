@@ -36,8 +36,7 @@ namespace Sudoku
         private void button1_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
-            string query = "select A.taikhoan,A.max_score,lichsudau.time,lichsudau.game_status\r\nfrom (Select taikhoan,Max(cast(score as unsigned))as max_score from lichsudau group by taikhoan ) as A\r\n\tleft join lichsudau\r\non A.max_score = lichsudau.score\r\n";
-
+            string query = "Select score as SCORE,taikhoan as ID,game_id as GAME_ID,time as TIME from lichsudau\r\norder by Cast(score as unsigned) desc\r\nlimit 10;";
            Connection Check = new Connection();
             DataTable dataTable = new DataTable();
             
