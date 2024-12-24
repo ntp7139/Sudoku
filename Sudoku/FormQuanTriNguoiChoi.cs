@@ -37,7 +37,7 @@ namespace Sudoku
         }
         private void LoadData()
         {
-           
+
             using (MySql.Data.MySqlClient.MySqlConnection connection = new MySql.Data.MySqlClient.MySqlConnection(strConnection))
             {
                 try
@@ -91,7 +91,7 @@ namespace Sudoku
         private void btn_Them_Click(object sender, EventArgs e)
         {
             bool Them = true;
-            
+
             string taikhoan = tB_Taikhoan_Them.Text;
             string matkhau = tB_Matkhau_Them.Text;
             string email = tB_Email_Them.Text;
@@ -123,7 +123,7 @@ namespace Sudoku
                         {
                             MySqlCommand Them_nguoichoi = new MySqlCommand(Insert, connection);
                             int row = Them_nguoichoi.ExecuteNonQuery();
-                            MessageBox.Show("Thêm thành công!","Thông báo",MessageBoxButtons.OKCancel);
+                            MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OKCancel);
                         }
 
 
@@ -167,7 +167,7 @@ namespace Sudoku
         {
             if (e.KeyCode == Keys.Enter)
             {
-               
+
                 string taikhoan = tB_Taikhoan_Sua.Text;
 
                 string Check = $"Select * from nguoichoi where taikhoan ='{taikhoan}'";
@@ -200,7 +200,7 @@ namespace Sudoku
                                 read.Close();
 
                             }
-                            else MessageBox.Show("Tài khoản không tồn tại!","Thông báo",MessageBoxButtons.OKCancel);
+                            else MessageBox.Show("Tài khoản không tồn tại!", "Thông báo", MessageBoxButtons.OKCancel);
 
                         }
                     }
@@ -215,7 +215,7 @@ namespace Sudoku
 
         private void btn_Thaydoi_Click(object sender, EventArgs e)
         {
-            
+
             string taikhoan = tB_Taikhoan_Sua.Text;
             string matkhau = tB_Matkhau_Sua.Text;
             string email = tB_Email_Sua.Text;
@@ -228,7 +228,7 @@ namespace Sudoku
                     connection.Open();
                     MySqlCommand mySqlCommand = new MySqlCommand(Check, connection);
                     int row = mySqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Cập nhật thông tin thành công!","Thông báo",MessageBoxButtons.OKCancel);
+                    MessageBox.Show("Cập nhật thông tin thành công!", "Thông báo", MessageBoxButtons.OKCancel);
                 }
                 catch (Exception ex)
                 {
@@ -237,23 +237,22 @@ namespace Sudoku
             }
         }
 
-        private void btn_Thoat_Xoa_Click(object sender, EventArgs e)
-        {
-            pn_Xoa.Visible = false;
-            tB_Taikhoan_xoa.Text = "";
-        }
-
         private void btn_Xoataikhoan_Click(object sender, EventArgs e)
         {
             pn_Xoa.Visible = true;
 
         }
 
-        private void btn_Xoa_Click(object sender, EventArgs e)
+
+        private void pn_Suanguoichoi_Paint(object sender, PaintEventArgs e)
         {
-            
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
             string taikhoan = tB_Taikhoan_xoa.Text;
-            
+
             string Check = $"Delete from nguoichoi  where taikhoan ='{taikhoan}'";
             using (MySqlConnection connection = new MySqlConnection(strConnection))
             {
@@ -270,6 +269,52 @@ namespace Sudoku
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void btnThoatXoa_Click(object sender, EventArgs e)
+        {
+            pn_Xoa.Visible = false;
+            tB_Taikhoan_xoa.Text = "";
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            string taikhoan = tB_Taikhoan_Sua.Text;
+            string matkhau = tB_Matkhau_Sua.Text;
+            string email = tB_Email_Sua.Text;
+            string access = rB_admin_Sua.Checked ? rB_admin_Sua.Text : rB_user_Sua.Text;
+            string Check = $"Update nguoichoi set matkhau ='{matkhau}',email ='{email}',access ='{access}'  where taikhoan ='{taikhoan}'";
+            using (MySqlConnection connection = new MySqlConnection(strConnection))
+            {
+                try
+                {
+                    connection.Open();
+                    MySqlCommand mySqlCommand = new MySqlCommand(Check, connection);
+                    int row = mySqlCommand.ExecuteNonQuery();
+                    MessageBox.Show("Cập nhật thông tin thành công!", "Thông báo", MessageBoxButtons.OKCancel);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void btnThoatSua_Click(object sender, EventArgs e)
+        {
+            pn_Suanguoichoi.Visible = false;
+            tB_Taikhoan_Sua.Text = "";
+            tB_Email_Sua.Text = "";
+            tB_Matkhau_Sua.Text = "";
+            rB_admin_Sua.Checked = false;
+            rB_user_Sua.Checked = false;
+            tB_Email_Sua.Visible = false;
+            tB_Matkhau_Sua.Visible = false;
+            lb_email_Sua.Visible = false;
+            lb_Matkhau_Sua.Visible = false;
+            lb_phanquyen_Sua.Visible = false;
+            rB_admin_Sua.Visible = false;
+            rB_user_Sua.Visible = false;
         }
     }
 }
