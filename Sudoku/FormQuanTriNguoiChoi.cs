@@ -142,6 +142,7 @@ namespace Sudoku
 
         private void btn_Suuataikhoan_Click(object sender, EventArgs e)
         {
+            
             pn_Suanguoichoi.Visible = true;
 
         }
