@@ -64,7 +64,7 @@ namespace Sudoku
                 }
             }
         }
-        private void btn_Thoat_Them_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             pn_Giaodienchinh.Visible = true;
             pn_Themnguoichoi.Visible = false;
@@ -82,13 +82,13 @@ namespace Sudoku
             }
         }
 
-        private void btn_Themtaikhoan_Click(object sender, EventArgs e)
+        private void btn_Add_Click(object sender, EventArgs e)
         {
             pn_Giaodienchinh.Visible = false;
             pn_Themnguoichoi.Visible = true;
         }
 
-        private void btn_Them_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             bool Them = true;
 
@@ -140,7 +140,7 @@ namespace Sudoku
 
         }
 
-        private void btn_Suuataikhoan_Click(object sender, EventArgs e)
+        private void btn_Edit_Click(object sender, EventArgs e)
         {
             
             pn_Suanguoichoi.Visible = true;
@@ -238,7 +238,7 @@ namespace Sudoku
             }
         }
 
-        private void btn_Xoataikhoan_Click(object sender, EventArgs e)
+        private void btn_Delete_Click(object sender, EventArgs e)
         {
             pn_Xoa.Visible = true;
 
@@ -250,7 +250,7 @@ namespace Sudoku
 
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
             string taikhoan = tB_Taikhoan_xoa.Text;
 
@@ -272,13 +272,13 @@ namespace Sudoku
             }
         }
 
-        private void btnThoatXoa_Click(object sender, EventArgs e)
+        private void btnExit_frmXoa_Click(object sender, EventArgs e)
         {
             pn_Xoa.Visible = false;
             tB_Taikhoan_xoa.Text = "";
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
             string taikhoan = tB_Taikhoan_Sua.Text;
             string matkhau = tB_Matkhau_Sua.Text;
@@ -301,7 +301,7 @@ namespace Sudoku
             }
         }
 
-        private void btnThoatSua_Click(object sender, EventArgs e)
+        private void btnExit_frmSua_Click(object sender, EventArgs e)
         {
             pn_Suanguoichoi.Visible = false;
             tB_Taikhoan_Sua.Text = "";

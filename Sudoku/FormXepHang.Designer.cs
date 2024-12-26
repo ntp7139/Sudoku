@@ -67,7 +67,7 @@ namespace Sudoku
             // 
             btnXepHang.BackgroundImage = Properties.Resources.hinh_nen_may_tinh_de_thuong_21;
             btnXepHang.BackgroundImageLayout = ImageLayout.Center;
-            btnXepHang.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXepHang.Font = new Font("Trebuchet MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnXepHang.ForeColor = SystemColors.Highlight;
             btnXepHang.Location = new Point(303, 473);
             btnXepHang.Name = "btnXepHang";
@@ -103,18 +103,17 @@ namespace Sudoku
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(237, 60);
             label1.Name = "label1";
-            label1.Size = new Size(328, 23);
+            label1.Size = new Size(330, 23);
             label1.TabIndex = 7;
             label1.Text = "Who’s the best? Check it out right here!";
             // 
             // FormXepHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
-            StartPosition = FormStartPosition.CenterScreen;
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 530);
@@ -124,6 +123,7 @@ namespace Sudoku
             Controls.Add(pictureBox4);
             Controls.Add(dataGridView1);
             Name = "FormXepHang";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();

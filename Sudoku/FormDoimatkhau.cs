@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sudoku
 {
-    public partial class FormDoimatkhau : Form
+    public partial class btnUpdatePassword : Form
     {
-        public FormDoimatkhau()
+        public btnUpdatePassword()
         {
             InitializeComponent();
         }
@@ -38,6 +38,11 @@ namespace Sudoku
         }
 
         private void lb_TieuDeDoiMatKhau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_UpdatePassword_Click(object sender, EventArgs e)
         {
 
         }

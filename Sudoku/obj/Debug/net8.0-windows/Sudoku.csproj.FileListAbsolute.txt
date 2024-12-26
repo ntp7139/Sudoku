@@ -16,7 +16,6 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\ref\Sudoku.dl
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormDangNhap.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.Properties.Resources.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormDangKy.resources
-C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormDoimatkhau.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\Google.Protobuf.dll
 C:\Users\Admin\source\repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
@@ -49,3 +48,4 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSu
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuKho.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSudoKuTrungBinh.resources
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormThongTinNguoiChoi.resources
+C:\Users\Admin\Source\Repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.btnUpdatePassword.resources

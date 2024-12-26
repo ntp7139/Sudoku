@@ -214,7 +214,7 @@ namespace Sudoku
             return banChoi[dong, cot] != 0;
         }
         // Nút xóa
-        private void bntXoa_Click(object sender, EventArgs e)
+        private void btnDelete_frmDe_Click(object sender, EventArgs e)
         {
             if (dvgBangTroChoi.CurrentCell != null)
             {
@@ -398,7 +398,7 @@ namespace Sudoku
             Fill_Default();
         }
         //Kiểm tra đúng sai của bảng
-        private void btnKiemTraDungSai_Click_1(object sender, EventArgs e)
+        private void btnCheck_frmDe_Click(object sender, EventArgs e)
         {
 
             if (KiemTraBangHopLe())
@@ -421,7 +421,7 @@ namespace Sudoku
 
         }
         //Lưu trận đấu
-        private void btn_Luu_Click(object sender, EventArgs e)
+        private void btnSave_frmDe_Click(object sender, EventArgs e)
         {
             try
             {
@@ -956,7 +956,7 @@ namespace Sudoku
 
         }
 
-        private void btn_hiendapan_Click(object sender, EventArgs e)
+        private void btnAnswer_frmDe_Click(object sender, EventArgs e)
         {
 
 
@@ -1011,7 +1011,7 @@ namespace Sudoku
 
         }
 
-        private void btnGoiY_Click(object sender, EventArgs e)
+        private void btnHint_frmDe_Click(object sender, EventArgs e)
         {
             if (Help == 0)
             {

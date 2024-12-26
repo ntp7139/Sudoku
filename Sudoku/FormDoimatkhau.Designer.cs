@@ -1,6 +1,6 @@
 ﻿namespace Sudoku
 {
-    partial class FormDoimatkhau
+    partial class btnUpdatePassword
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDoimatkhau));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnUpdatePassword));
             lb_TieuDeDoiMatKhau = new Label();
-            lb_TaiKhoan_Doimatkhau = new Label();
+            lbAccount = new Label();
             tb_TaiKhoan_Doimatkhau = new TextBox();
-            btn_Doimatkhau = new Button();
-            lb_MatKhau = new Label();
+            btn_UpdatePassword = new Button();
+            lb_PreviousPassword = new Label();
             tb_MatKhau = new TextBox();
             tb_NhapLaiMatKhau = new TextBox();
-            label2 = new Label();
+            lbNewPassword = new Label();
             pictureBox_QuayLai = new PictureBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -63,17 +63,17 @@
             lb_TieuDeDoiMatKhau.TextAlign = ContentAlignment.TopCenter;
             lb_TieuDeDoiMatKhau.Click += lb_TieuDeDoiMatKhau_Click;
             // 
-            // lb_TaiKhoan_Doimatkhau
+            // lbAccount
             // 
-            lb_TaiKhoan_Doimatkhau.AutoSize = true;
-            lb_TaiKhoan_Doimatkhau.BackColor = SystemColors.ControlLightLight;
-            lb_TaiKhoan_Doimatkhau.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_TaiKhoan_Doimatkhau.Location = new Point(30, 166);
-            lb_TaiKhoan_Doimatkhau.Margin = new Padding(2, 0, 2, 0);
-            lb_TaiKhoan_Doimatkhau.Name = "lb_TaiKhoan_Doimatkhau";
-            lb_TaiKhoan_Doimatkhau.Size = new Size(76, 20);
-            lb_TaiKhoan_Doimatkhau.TabIndex = 8;
-            lb_TaiKhoan_Doimatkhau.Text = "Tài Khoản";
+            lbAccount.AutoSize = true;
+            lbAccount.BackColor = SystemColors.ControlLightLight;
+            lbAccount.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
+            lbAccount.Location = new Point(30, 166);
+            lbAccount.Margin = new Padding(2, 0, 2, 0);
+            lbAccount.Name = "lbAccount";
+            lbAccount.Size = new Size(67, 20);
+            lbAccount.TabIndex = 8;
+            lbAccount.Text = "Account";
             // 
             // tb_TaiKhoan_Doimatkhau
             // 
@@ -83,29 +83,30 @@
             tb_TaiKhoan_Doimatkhau.Size = new Size(303, 27);
             tb_TaiKhoan_Doimatkhau.TabIndex = 10;
             // 
-            // btn_Doimatkhau
+            // btn_UpdatePassword
             // 
-            btn_Doimatkhau.BackColor = Color.SteelBlue;
-            btn_Doimatkhau.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Doimatkhau.ForeColor = SystemColors.ButtonHighlight;
-            btn_Doimatkhau.Location = new Point(86, 435);
-            btn_Doimatkhau.Margin = new Padding(2);
-            btn_Doimatkhau.Name = "btn_Doimatkhau";
-            btn_Doimatkhau.Size = new Size(197, 39);
-            btn_Doimatkhau.TabIndex = 12;
-            btn_Doimatkhau.Text = "Đổi mật khẩu";
-            btn_Doimatkhau.UseVisualStyleBackColor = false;
+            btn_UpdatePassword.BackColor = Color.SteelBlue;
+            btn_UpdatePassword.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_UpdatePassword.ForeColor = SystemColors.ButtonHighlight;
+            btn_UpdatePassword.Location = new Point(85, 435);
+            btn_UpdatePassword.Margin = new Padding(2);
+            btn_UpdatePassword.Name = "btn_UpdatePassword";
+            btn_UpdatePassword.Size = new Size(197, 39);
+            btn_UpdatePassword.TabIndex = 12;
+            btn_UpdatePassword.Text = "Update Password";
+            btn_UpdatePassword.UseVisualStyleBackColor = false;
+            btn_UpdatePassword.Click += btn_UpdatePassword_Click;
             // 
-            // lb_MatKhau
+            // lb_PreviousPassword
             // 
-            lb_MatKhau.AutoSize = true;
-            lb_MatKhau.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_MatKhau.Location = new Point(30, 253);
-            lb_MatKhau.Margin = new Padding(2, 0, 2, 0);
-            lb_MatKhau.Name = "lb_MatKhau";
-            lb_MatKhau.Size = new Size(94, 20);
-            lb_MatKhau.TabIndex = 14;
-            lb_MatKhau.Text = "Mật khẩu cũ";
+            lb_PreviousPassword.AutoSize = true;
+            lb_PreviousPassword.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
+            lb_PreviousPassword.Location = new Point(30, 253);
+            lb_PreviousPassword.Margin = new Padding(2, 0, 2, 0);
+            lb_PreviousPassword.Name = "lb_PreviousPassword";
+            lb_PreviousPassword.Size = new Size(137, 20);
+            lb_PreviousPassword.TabIndex = 14;
+            lb_PreviousPassword.Text = "Previous Password";
             // 
             // tb_MatKhau
             // 
@@ -125,23 +126,23 @@
             tb_NhapLaiMatKhau.Size = new Size(303, 27);
             tb_NhapLaiMatKhau.TabIndex = 17;
             // 
-            // label2
+            // lbNewPassword
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(30, 347);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(104, 20);
-            label2.TabIndex = 19;
-            label2.Text = "Mật khẩu mới";
+            lbNewPassword.AutoSize = true;
+            lbNewPassword.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
+            lbNewPassword.Location = new Point(30, 347);
+            lbNewPassword.Margin = new Padding(2, 0, 2, 0);
+            lbNewPassword.Name = "lbNewPassword";
+            lbNewPassword.Size = new Size(108, 20);
+            lbNewPassword.TabIndex = 19;
+            lbNewPassword.Text = "New Password";
             // 
             // pictureBox_QuayLai
             // 
             pictureBox_QuayLai.Image = (Image)resources.GetObject("pictureBox_QuayLai.Image");
-            pictureBox_QuayLai.Location = new Point(15, 436);
+            pictureBox_QuayLai.Location = new Point(750, 460);
             pictureBox_QuayLai.Name = "pictureBox_QuayLai";
-            pictureBox_QuayLai.Size = new Size(44, 38);
+            pictureBox_QuayLai.Size = new Size(38, 35);
             pictureBox_QuayLai.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox_QuayLai.TabIndex = 20;
             pictureBox_QuayLai.TabStop = false;
@@ -149,12 +150,12 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(23, 101);
+            label1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(15, 100);
             label1.Name = "label1";
-            label1.Size = new Size(310, 36);
+            label1.Size = new Size(356, 33);
             label1.TabIndex = 18;
-            label1.Text = "Bạn muốn đổi mật khẩu? Tạo mới tại đây!";
+            label1.Text = "Change your password? Create a new one here!";
             label1.TextAlign = ContentAlignment.MiddleLeft;
             label1.Click += label1_Click;
             // 
@@ -198,7 +199,7 @@
             pictureBox4.TabIndex = 24;
             pictureBox4.TabStop = false;
             // 
-            // FormDoimatkhau
+            // btnUpdatePassword
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -209,19 +210,19 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(tb_NhapLaiMatKhau);
-            Controls.Add(label2);
+            Controls.Add(lbNewPassword);
             Controls.Add(tb_MatKhau);
             Controls.Add(pictureBox_QuayLai);
             Controls.Add(tb_TaiKhoan_Doimatkhau);
             Controls.Add(label1);
-            Controls.Add(lb_MatKhau);
+            Controls.Add(lb_PreviousPassword);
             Controls.Add(lb_TieuDeDoiMatKhau);
-            Controls.Add(btn_Doimatkhau);
-            Controls.Add(lb_TaiKhoan_Doimatkhau);
+            Controls.Add(btn_UpdatePassword);
+            Controls.Add(lbAccount);
             Margin = new Padding(2);
-            Name = "FormDoimatkhau";
+            Name = "btnUpdatePassword";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Đổi Mật Khẩu";
+            Text = "Update Password";
             ((System.ComponentModel.ISupportInitialize)pictureBox_QuayLai).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -234,13 +235,13 @@
         #endregion
 
         private Label lb_TieuDeDoiMatKhau;
-        private Label lb_TaiKhoan_Doimatkhau;
+        private Label lbAccount;
         private TextBox tb_TaiKhoan_Doimatkhau;
-        private Button btn_Doimatkhau;
-        private Label lb_MatKhau;
+        private Button btn_UpdatePassword;
+        private Label lb_PreviousPassword;
         private TextBox tb_MatKhau;
         private TextBox tb_NhapLaiMatKhau;
-        private Label label2;
+        private Label lbNewPassword;
         private PictureBox pictureBox_QuayLai;
         private Label label1;
         private PictureBox pictureBox1;

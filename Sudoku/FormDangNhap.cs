@@ -112,7 +112,7 @@ namespace Sudoku
         private void lbChangePassword_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormDoimatkhau newform = new FormDoimatkhau();
+            btnUpdatePassword newform = new btnUpdatePassword();
             newform.ShowDialog();
             this.Show();
         }

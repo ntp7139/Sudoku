@@ -143,7 +143,7 @@ namespace Sudoku
             // 
             // label2
             // 
-            label2.Font = new System.Drawing.Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(12, 71);
             label2.Name = "label2";
             label2.Size = new Size(323, 42);

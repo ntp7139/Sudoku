@@ -23,29 +23,29 @@ namespace Sudoku
 
         }
 
-        private void btn_Choi_Click(object sender, EventArgs e)
+        private void btnPlayNewGame_Click(object sender, EventArgs e)
         {
-            button1.Visible = false;
-            btn_ThongTinNguoiCHoi.Visible = false;
-            btn_Choi.Visible = false;
-            btn_Choitiep.Visible = false;
-            btn_Bangxephang.Visible = false;
-            btn_Choilaivancu.Visible = false;
-            btn_Thongke.Visible = false;
-            btn_Thoat.Visible = false;
-            lb_Chedochoi.Visible = true;
-            btn_De.Visible = true;
-            btn_Kho.Visible = true;
-            btn_TrungBinh.Visible = true;
+            btnHowToPlay.Visible = false;
+            btnPlayerProfile.Visible = false;
+            btnPlayNewGame.Visible = false;
+            btnContiue.Visible = false;
+            btnLeaderboard.Visible = false;
+            btnReplay.Visible = false;
+            btnSatistics.Visible = false;
+            btnExit.Visible = false;
+            lbLevel.Visible = true;
+            btnEasy.Visible = true;
+            btnHard.Visible = true;
+            btnNormal.Visible = true;
             btn_Quaylai.Visible = true;
         }
 
-        private void btn_Thoat_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btn_Bangxephang_Click(object sender, EventArgs e)
+        private void btnLeaderboard_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormXepHang newform = new FormXepHang();
@@ -53,7 +53,7 @@ namespace Sudoku
             this.Show();
         }
 
-        private void btn_Thongke_Click(object sender, EventArgs e)
+        private void btnStatistics_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormThongKe newform = new FormThongKe();
@@ -61,7 +61,7 @@ namespace Sudoku
             this.Show();
         }
 
-        private void btn_Choilaivancu_Click(object sender, EventArgs e)
+        private void btnReplay_Click(object sender, EventArgs e)
         {
             this.Hide();
             TaiLaiTrangthai newform = new TaiLaiTrangthai(nguoichoi.taikhoan);
@@ -71,23 +71,23 @@ namespace Sudoku
 
         private void btn_Quaylai_Click(object sender, EventArgs e)
         {
-            btn_ThongTinNguoiCHoi.Visible = true;
-            btn_Choi.Visible = true;
-            btn_Choitiep.Visible = true;
-            btn_Bangxephang.Visible = true;
-            btn_Choilaivancu.Visible = true;
-            btn_Thongke.Visible = true;
-            btn_Thoat.Visible = true;
-            lb_Chedochoi.Visible = false;
-            btn_De.Visible = false;
-            btn_Kho.Visible = false;
-            btn_TrungBinh.Visible = false;
+            btnPlayerProfile.Visible = true;
+            btnPlayNewGame.Visible = true;
+            btnContiue.Visible = true;
+            btnLeaderboard.Visible = true;
+            btnReplay.Visible = true;
+            btnSatistics.Visible = true;
+            btnExit.Visible = true;
+            lbLevel.Visible = false;
+            btnEasy.Visible = false;
+            btnHard.Visible = false;
+            btnNormal.Visible = false;
             btn_Quaylai.Visible = false;
-            button1.Visible = true;
+            btnHowToPlay.Visible = true;
 
         }
 
-        private void btn_De_Click(object sender, EventArgs e)
+        private void btnEasy_Click(object sender, EventArgs e)
         {
             this.Hide();
             nguoichoi.Load_Player(nguoichoi.taikhoan);
@@ -96,7 +96,7 @@ namespace Sudoku
             this.Show();
         }
 
-        private void btn_TrungBinh_Click(object sender, EventArgs e)
+        private void btnNormal_Click(object sender, EventArgs e)
         {
             this.Hide();
             nguoichoi.Load_Player(nguoichoi.taikhoan);
@@ -105,7 +105,7 @@ namespace Sudoku
             this.Show();
         }
 
-        private void btn_Kho_Click(object sender, EventArgs e)
+        private void btnHard_Click(object sender, EventArgs e)
         {
             this.Hide();
             nguoichoi.Load_Player(nguoichoi.taikhoan);
@@ -114,7 +114,7 @@ namespace Sudoku
             this.Show();
         }
 
-        private void btn_Choitiep_Click(object sender, EventArgs e)
+        private void btnContiue_Click(object sender, EventArgs e)
         {
             this.Hide();
             try
@@ -151,7 +151,7 @@ namespace Sudoku
 
         }
 
-        private void btn_ThongTinNguoiCHoi_Click(object sender, EventArgs e)
+        private void btnPlayerProfile_Click(object sender, EventArgs e)
         {
             this.Hide();
             nguoichoi.Load_Player(nguoichoi.taikhoan);
@@ -165,7 +165,7 @@ namespace Sudoku
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnHowToPlay_Click(object sender, EventArgs e)
         {
 
         }

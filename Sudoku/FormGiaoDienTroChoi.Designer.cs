@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGiaoDienTroChoi));
             pn_GiaoDien = new Panel();
-            label3 = new Label();
+            lbOther = new Label();
             pictureBox22 = new PictureBox();
             pictureBox21 = new PictureBox();
             pictureBox20 = new PictureBox();
             pictureBox19 = new PictureBox();
             pictureBox18 = new PictureBox();
             pictureBox5 = new PictureBox();
-            label2 = new Label();
-            label1 = new Label();
+            lbRanking = new Label();
+            lbStatus = new Label();
             pictureBox17 = new PictureBox();
             pictureBox16 = new PictureBox();
             pictureBox15 = new PictureBox();
@@ -53,18 +53,18 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            btn_ThongTinNguoiCHoi = new Button();
-            btn_Choitiep = new Button();
-            lb_Chedochoi = new Label();
-            btn_Kho = new Button();
-            btn_TrungBinh = new Button();
-            btn_De = new Button();
-            btn_Thongke = new Button();
-            btn_Bangxephang = new Button();
-            btn_Choilaivancu = new Button();
-            btn_Thoat = new Button();
-            btn_Choi = new Button();
-            button1 = new Button();
+            btnPlayerProfile = new Button();
+            btnContiue = new Button();
+            lbLevel = new Label();
+            btnHard = new Button();
+            btnNormal = new Button();
+            btnEasy = new Button();
+            btnSatistics = new Button();
+            btnLeaderboard = new Button();
+            btnReplay = new Button();
+            btnExit = new Button();
+            btnPlayNewGame = new Button();
+            btnHowToPlay = new Button();
             btn_Quaylai = new Button();
             pn_GiaoDien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
@@ -92,15 +92,15 @@
             // pn_GiaoDien
             // 
             pn_GiaoDien.BackColor = SystemColors.ButtonFace;
-            pn_GiaoDien.Controls.Add(label3);
+            pn_GiaoDien.Controls.Add(lbOther);
             pn_GiaoDien.Controls.Add(pictureBox22);
             pn_GiaoDien.Controls.Add(pictureBox21);
             pn_GiaoDien.Controls.Add(pictureBox20);
             pn_GiaoDien.Controls.Add(pictureBox19);
             pn_GiaoDien.Controls.Add(pictureBox18);
             pn_GiaoDien.Controls.Add(pictureBox5);
-            pn_GiaoDien.Controls.Add(label2);
-            pn_GiaoDien.Controls.Add(label1);
+            pn_GiaoDien.Controls.Add(lbRanking);
+            pn_GiaoDien.Controls.Add(lbStatus);
             pn_GiaoDien.Controls.Add(pictureBox17);
             pn_GiaoDien.Controls.Add(pictureBox16);
             pn_GiaoDien.Controls.Add(pictureBox15);
@@ -115,48 +115,47 @@
             pn_GiaoDien.Controls.Add(pictureBox3);
             pn_GiaoDien.Controls.Add(pictureBox2);
             pn_GiaoDien.Controls.Add(pictureBox1);
-            pn_GiaoDien.Controls.Add(btn_ThongTinNguoiCHoi);
-            pn_GiaoDien.Controls.Add(btn_Choitiep);
-            pn_GiaoDien.Controls.Add(lb_Chedochoi);
-            pn_GiaoDien.Controls.Add(btn_Kho);
-            pn_GiaoDien.Controls.Add(btn_TrungBinh);
-            pn_GiaoDien.Controls.Add(btn_De);
-            pn_GiaoDien.Controls.Add(btn_Thongke);
-            pn_GiaoDien.Controls.Add(btn_Bangxephang);
-            pn_GiaoDien.Controls.Add(btn_Choilaivancu);
-            pn_GiaoDien.Controls.Add(btn_Thoat);
-            pn_GiaoDien.Controls.Add(btn_Choi);
-            pn_GiaoDien.Controls.Add(button1);
+            pn_GiaoDien.Controls.Add(btnPlayerProfile);
+            pn_GiaoDien.Controls.Add(btnContiue);
+            pn_GiaoDien.Controls.Add(lbLevel);
+            pn_GiaoDien.Controls.Add(btnHard);
+            pn_GiaoDien.Controls.Add(btnNormal);
+            pn_GiaoDien.Controls.Add(btnEasy);
+            pn_GiaoDien.Controls.Add(btnSatistics);
+            pn_GiaoDien.Controls.Add(btnLeaderboard);
+            pn_GiaoDien.Controls.Add(btnReplay);
+            pn_GiaoDien.Controls.Add(btnExit);
+            pn_GiaoDien.Controls.Add(btnPlayNewGame);
+            pn_GiaoDien.Controls.Add(btnHowToPlay);
             pn_GiaoDien.Controls.Add(btn_Quaylai);
             pn_GiaoDien.Dock = DockStyle.Fill;
             pn_GiaoDien.Location = new Point(0, 0);
             pn_GiaoDien.Margin = new Padding(2);
             pn_GiaoDien.Name = "pn_GiaoDien";
-            pn_GiaoDien.Size = new Size(608, 832);
+            pn_GiaoDien.Size = new Size(486, 666);
             pn_GiaoDien.TabIndex = 3;
             pn_GiaoDien.Paint += pn_GiaoDien_Paint;
             // 
-            // label3
+            // lbOther
             // 
-            label3.AutoSize = true;
-            label3.BackColor = SystemColors.ButtonFace;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(15, 622);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(80, 38);
-            label3.TabIndex = 39;
-            label3.Text = "Khác";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            lbOther.AutoSize = true;
+            lbOther.BackColor = SystemColors.ButtonFace;
+            lbOther.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold);
+            lbOther.ForeColor = SystemColors.ActiveCaptionText;
+            lbOther.Location = new Point(12, 501);
+            lbOther.Margin = new Padding(2, 0, 2, 0);
+            lbOther.Name = "lbOther";
+            lbOther.Size = new Size(74, 28);
+            lbOther.TabIndex = 39;
+            lbOther.Text = "Other";
+            lbOther.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox22
             // 
             pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
-            pictureBox22.Location = new Point(548, 510);
-            pictureBox22.Margin = new Padding(4);
+            pictureBox22.Location = new Point(438, 408);
             pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(16, 25);
+            pictureBox22.Size = new Size(13, 20);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox22.TabIndex = 37;
             pictureBox22.TabStop = false;
@@ -164,10 +163,9 @@
             // pictureBox21
             // 
             pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(546, 560);
-            pictureBox21.Margin = new Padding(4);
+            pictureBox21.Location = new Point(437, 448);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(16, 25);
+            pictureBox21.Size = new Size(13, 20);
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox21.TabIndex = 36;
             pictureBox21.TabStop = false;
@@ -175,10 +173,9 @@
             // pictureBox20
             // 
             pictureBox20.Image = (Image)resources.GetObject("pictureBox20.Image");
-            pictureBox20.Location = new Point(41, 505);
-            pictureBox20.Margin = new Padding(4);
+            pictureBox20.Location = new Point(33, 404);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(38, 38);
+            pictureBox20.Size = new Size(30, 30);
             pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox20.TabIndex = 35;
             pictureBox20.TabStop = false;
@@ -186,10 +183,9 @@
             // pictureBox19
             // 
             pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(41, 555);
-            pictureBox19.Margin = new Padding(4);
+            pictureBox19.Location = new Point(33, 444);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(38, 38);
+            pictureBox19.Size = new Size(30, 30);
             pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox19.TabIndex = 34;
             pictureBox19.TabStop = false;
@@ -197,10 +193,9 @@
             // pictureBox18
             // 
             pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
-            pictureBox18.Location = new Point(42, 714);
-            pictureBox18.Margin = new Padding(4);
+            pictureBox18.Location = new Point(34, 571);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(38, 38);
+            pictureBox18.Size = new Size(30, 30);
             pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox18.TabIndex = 33;
             pictureBox18.TabStop = false;
@@ -208,49 +203,47 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(42, 668);
-            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Location = new Point(34, 534);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(38, 38);
+            pictureBox5.Size = new Size(30, 30);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 32;
             pictureBox5.TabStop = false;
             // 
-            // label2
+            // lbRanking
             // 
-            label2.AutoSize = true;
-            label2.BackColor = SystemColors.ButtonFace;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(14, 455);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(141, 38);
-            label2.TabIndex = 30;
-            label2.Text = "Xếp hạng";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            lbRanking.AutoSize = true;
+            lbRanking.BackColor = SystemColors.ButtonFace;
+            lbRanking.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold);
+            lbRanking.ForeColor = SystemColors.ActiveCaptionText;
+            lbRanking.Location = new Point(11, 368);
+            lbRanking.Margin = new Padding(2, 0, 2, 0);
+            lbRanking.Name = "lbRanking";
+            lbRanking.Size = new Size(98, 28);
+            lbRanking.TabIndex = 30;
+            lbRanking.Text = "Ranking";
+            lbRanking.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lbStatus
             // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.ButtonFace;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(14, 29);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(140, 38);
-            label1.TabIndex = 29;
-            label1.Text = "Màn chơi";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            lbStatus.AutoSize = true;
+            lbStatus.BackColor = SystemColors.ButtonFace;
+            lbStatus.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbStatus.ForeColor = SystemColors.ActiveCaptionText;
+            lbStatus.Location = new Point(11, 25);
+            lbStatus.Margin = new Padding(2, 0, 2, 0);
+            lbStatus.Name = "lbStatus";
+            lbStatus.Size = new Size(78, 28);
+            lbStatus.TabIndex = 29;
+            lbStatus.Text = "Status";
+            lbStatus.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox17
             // 
             pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(41, 304);
-            pictureBox17.Margin = new Padding(4);
+            pictureBox17.Location = new Point(33, 243);
             pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(38, 38);
+            pictureBox17.Size = new Size(30, 30);
             pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox17.TabIndex = 28;
             pictureBox17.TabStop = false;
@@ -258,10 +251,9 @@
             // pictureBox16
             // 
             pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
-            pictureBox16.Location = new Point(41, 348);
-            pictureBox16.Margin = new Padding(4);
+            pictureBox16.Location = new Point(33, 278);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(38, 38);
+            pictureBox16.Size = new Size(30, 30);
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 27;
             pictureBox16.TabStop = false;
@@ -269,10 +261,9 @@
             // pictureBox15
             // 
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(41, 394);
-            pictureBox15.Margin = new Padding(4);
+            pictureBox15.Location = new Point(33, 315);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(38, 38);
+            pictureBox15.Size = new Size(30, 30);
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox15.TabIndex = 26;
             pictureBox15.TabStop = false;
@@ -280,10 +271,9 @@
             // pictureBox14
             // 
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(546, 311);
-            pictureBox14.Margin = new Padding(4);
+            pictureBox14.Location = new Point(437, 249);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(16, 25);
+            pictureBox14.Size = new Size(13, 20);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox14.TabIndex = 25;
             pictureBox14.TabStop = false;
@@ -291,10 +281,9 @@
             // pictureBox13
             // 
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(546, 356);
-            pictureBox13.Margin = new Padding(4);
+            pictureBox13.Location = new Point(437, 285);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(16, 25);
+            pictureBox13.Size = new Size(13, 20);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox13.TabIndex = 24;
             pictureBox13.TabStop = false;
@@ -302,10 +291,9 @@
             // pictureBox12
             // 
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(546, 400);
-            pictureBox12.Margin = new Padding(4);
+            pictureBox12.Location = new Point(437, 320);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(16, 25);
+            pictureBox12.Size = new Size(13, 20);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 23;
             pictureBox12.TabStop = false;
@@ -313,10 +301,9 @@
             // pictureBox11
             // 
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(548, 675);
-            pictureBox11.Margin = new Padding(4);
+            pictureBox11.Location = new Point(438, 540);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(16, 25);
+            pictureBox11.Size = new Size(13, 20);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 22;
             pictureBox11.TabStop = false;
@@ -324,10 +311,9 @@
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(546, 720);
-            pictureBox10.Margin = new Padding(4);
+            pictureBox10.Location = new Point(437, 576);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(16, 25);
+            pictureBox10.Size = new Size(13, 20);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 21;
             pictureBox10.TabStop = false;
@@ -335,10 +321,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(548, 139);
-            pictureBox8.Margin = new Padding(4);
+            pictureBox8.Location = new Point(438, 111);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(16, 25);
+            pictureBox8.Size = new Size(13, 20);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 19;
             pictureBox8.TabStop = false;
@@ -346,10 +331,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(548, 192);
-            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Location = new Point(438, 154);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(16, 25);
+            pictureBox7.Size = new Size(13, 20);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 18;
             pictureBox7.TabStop = false;
@@ -357,10 +341,9 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(548, 85);
-            pictureBox6.Margin = new Padding(4);
+            pictureBox6.Location = new Point(438, 68);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(16, 25);
+            pictureBox6.Size = new Size(13, 20);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 17;
             pictureBox6.TabStop = false;
@@ -368,10 +351,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(41, 131);
-            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Location = new Point(33, 105);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(38, 38);
+            pictureBox3.Size = new Size(30, 30);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 14;
             pictureBox3.TabStop = false;
@@ -379,10 +361,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(41, 189);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Location = new Point(33, 151);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(38, 38);
+            pictureBox2.Size = new Size(30, 30);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
@@ -390,197 +371,197 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(42, 75);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(34, 60);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(38, 38);
+            pictureBox1.Size = new Size(30, 30);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
-            // btn_ThongTinNguoiCHoi
+            // btnPlayerProfile
             // 
-            btn_ThongTinNguoiCHoi.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_ThongTinNguoiCHoi.ForeColor = Color.SteelBlue;
-            btn_ThongTinNguoiCHoi.Location = new Point(28, 708);
-            btn_ThongTinNguoiCHoi.Margin = new Padding(2);
-            btn_ThongTinNguoiCHoi.Name = "btn_ThongTinNguoiCHoi";
-            btn_ThongTinNguoiCHoi.Size = new Size(561, 49);
-            btn_ThongTinNguoiCHoi.TabIndex = 11;
-            btn_ThongTinNguoiCHoi.Text = "           Thông tin người chơi";
-            btn_ThongTinNguoiCHoi.TextAlign = ContentAlignment.MiddleLeft;
-            btn_ThongTinNguoiCHoi.UseVisualStyleBackColor = true;
-            btn_ThongTinNguoiCHoi.Click += btn_ThongTinNguoiCHoi_Click;
+            btnPlayerProfile.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnPlayerProfile.ForeColor = Color.SteelBlue;
+            btnPlayerProfile.Location = new Point(22, 566);
+            btnPlayerProfile.Margin = new Padding(2);
+            btnPlayerProfile.Name = "btnPlayerProfile";
+            btnPlayerProfile.Size = new Size(449, 39);
+            btnPlayerProfile.TabIndex = 11;
+            btnPlayerProfile.Text = "           Player profile";
+            btnPlayerProfile.TextAlign = ContentAlignment.MiddleLeft;
+            btnPlayerProfile.UseVisualStyleBackColor = true;
+            btnPlayerProfile.Click += btnPlayerProfile_Click;
             // 
-            // btn_Choitiep
+            // btnContiue
             // 
-            btn_Choitiep.BackColor = SystemColors.ActiveCaption;
-            btn_Choitiep.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Choitiep.ForeColor = Color.SteelBlue;
-            btn_Choitiep.Location = new Point(28, 176);
-            btn_Choitiep.Margin = new Padding(2);
-            btn_Choitiep.Name = "btn_Choitiep";
-            btn_Choitiep.Size = new Size(561, 58);
-            btn_Choitiep.TabIndex = 10;
-            btn_Choitiep.Text = "          Chơi tiếp";
-            btn_Choitiep.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Choitiep.UseVisualStyleBackColor = true;
-            btn_Choitiep.Click += btn_Choitiep_Click;
+            btnContiue.BackColor = SystemColors.ActiveCaption;
+            btnContiue.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnContiue.ForeColor = Color.SteelBlue;
+            btnContiue.Location = new Point(22, 141);
+            btnContiue.Margin = new Padding(2);
+            btnContiue.Name = "btnContiue";
+            btnContiue.Size = new Size(449, 46);
+            btnContiue.TabIndex = 10;
+            btnContiue.Text = "          Continue";
+            btnContiue.TextAlign = ContentAlignment.MiddleLeft;
+            btnContiue.UseVisualStyleBackColor = true;
+            btnContiue.Click += btnContiue_Click;
             // 
-            // lb_Chedochoi
+            // lbLevel
             // 
-            lb_Chedochoi.AutoSize = true;
-            lb_Chedochoi.BackColor = SystemColors.ButtonFace;
-            lb_Chedochoi.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_Chedochoi.ForeColor = SystemColors.ActiveCaptionText;
-            lb_Chedochoi.Location = new Point(14, 258);
-            lb_Chedochoi.Margin = new Padding(2, 0, 2, 0);
-            lb_Chedochoi.Name = "lb_Chedochoi";
-            lb_Chedochoi.Size = new Size(112, 38);
-            lb_Chedochoi.TabIndex = 8;
-            lb_Chedochoi.Text = "Chế Độ";
-            lb_Chedochoi.TextAlign = ContentAlignment.MiddleCenter;
+            lbLevel.AutoSize = true;
+            lbLevel.BackColor = SystemColors.ButtonFace;
+            lbLevel.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold);
+            lbLevel.ForeColor = SystemColors.ActiveCaptionText;
+            lbLevel.Location = new Point(11, 210);
+            lbLevel.Margin = new Padding(2, 0, 2, 0);
+            lbLevel.Name = "lbLevel";
+            lbLevel.Size = new Size(70, 28);
+            lbLevel.TabIndex = 8;
+            lbLevel.Text = "Level";
+            lbLevel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btn_Kho
+            // btnHard
             // 
-            btn_Kho.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Kho.ForeColor = Color.SteelBlue;
-            btn_Kho.Location = new Point(28, 389);
-            btn_Kho.Margin = new Padding(2);
-            btn_Kho.Name = "btn_Kho";
-            btn_Kho.Size = new Size(561, 46);
-            btn_Kho.TabIndex = 7;
-            btn_Kho.Text = "           Khó";
-            btn_Kho.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Kho.UseVisualStyleBackColor = true;
-            btn_Kho.Click += btn_Kho_Click;
+            btnHard.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnHard.ForeColor = Color.SteelBlue;
+            btnHard.Location = new Point(22, 311);
+            btnHard.Margin = new Padding(2);
+            btnHard.Name = "btnHard";
+            btnHard.Size = new Size(449, 37);
+            btnHard.TabIndex = 7;
+            btnHard.Text = "          Hard";
+            btnHard.TextAlign = ContentAlignment.MiddleLeft;
+            btnHard.UseVisualStyleBackColor = true;
+            btnHard.Click += btnHard_Click;
             // 
-            // btn_TrungBinh
+            // btnNormal
             // 
-            btn_TrungBinh.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_TrungBinh.ForeColor = Color.SteelBlue;
-            btn_TrungBinh.Location = new Point(28, 342);
-            btn_TrungBinh.Margin = new Padding(2);
-            btn_TrungBinh.Name = "btn_TrungBinh";
-            btn_TrungBinh.Size = new Size(561, 49);
-            btn_TrungBinh.TabIndex = 6;
-            btn_TrungBinh.Text = "          Trung Bình";
-            btn_TrungBinh.TextAlign = ContentAlignment.MiddleLeft;
-            btn_TrungBinh.UseVisualStyleBackColor = true;
-            btn_TrungBinh.Click += btn_TrungBinh_Click;
+            btnNormal.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnNormal.ForeColor = Color.SteelBlue;
+            btnNormal.Location = new Point(22, 274);
+            btnNormal.Margin = new Padding(2);
+            btnNormal.Name = "btnNormal";
+            btnNormal.Size = new Size(449, 39);
+            btnNormal.TabIndex = 6;
+            btnNormal.Text = "          Normal";
+            btnNormal.TextAlign = ContentAlignment.MiddleLeft;
+            btnNormal.UseVisualStyleBackColor = true;
+            btnNormal.Click += btnNormal_Click;
             // 
-            // btn_De
+            // btnEasy
             // 
-            btn_De.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_De.ForeColor = Color.SteelBlue;
-            btn_De.Location = new Point(28, 299);
-            btn_De.Margin = new Padding(2);
-            btn_De.Name = "btn_De";
-            btn_De.Size = new Size(561, 49);
-            btn_De.TabIndex = 5;
-            btn_De.Text = "          Dễ";
-            btn_De.TextAlign = ContentAlignment.MiddleLeft;
-            btn_De.UseVisualStyleBackColor = true;
-            btn_De.Click += btn_De_Click;
+            btnEasy.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnEasy.ForeColor = Color.SteelBlue;
+            btnEasy.Location = new Point(22, 239);
+            btnEasy.Margin = new Padding(2);
+            btnEasy.Name = "btnEasy";
+            btnEasy.Size = new Size(449, 39);
+            btnEasy.TabIndex = 5;
+            btnEasy.Text = "          Easy";
+            btnEasy.TextAlign = ContentAlignment.MiddleLeft;
+            btnEasy.UseVisualStyleBackColor = true;
+            btnEasy.Click += btnEasy_Click;
             // 
-            // btn_Thongke
+            // btnSatistics
             // 
-            btn_Thongke.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Thongke.ForeColor = Color.SteelBlue;
-            btn_Thongke.Location = new Point(28, 548);
-            btn_Thongke.Margin = new Padding(2);
-            btn_Thongke.Name = "btn_Thongke";
-            btn_Thongke.Size = new Size(561, 51);
-            btn_Thongke.TabIndex = 4;
-            btn_Thongke.Text = "           Thống kê";
-            btn_Thongke.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Thongke.UseVisualStyleBackColor = true;
-            btn_Thongke.Click += btn_Thongke_Click;
+            btnSatistics.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnSatistics.ForeColor = Color.SteelBlue;
+            btnSatistics.Location = new Point(22, 438);
+            btnSatistics.Margin = new Padding(2);
+            btnSatistics.Name = "btnSatistics";
+            btnSatistics.Size = new Size(449, 41);
+            btnSatistics.TabIndex = 4;
+            btnSatistics.Text = "           Statistics";
+            btnSatistics.TextAlign = ContentAlignment.MiddleLeft;
+            btnSatistics.UseVisualStyleBackColor = true;
+            btnSatistics.Click += btnStatistics_Click;
             // 
-            // btn_Bangxephang
+            // btnLeaderboard
             // 
-            btn_Bangxephang.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Bangxephang.ForeColor = Color.SteelBlue;
-            btn_Bangxephang.Location = new Point(28, 496);
-            btn_Bangxephang.Margin = new Padding(2);
-            btn_Bangxephang.Name = "btn_Bangxephang";
-            btn_Bangxephang.Size = new Size(561, 54);
-            btn_Bangxephang.TabIndex = 3;
-            btn_Bangxephang.Text = "           Bảng xếp hạng";
-            btn_Bangxephang.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Bangxephang.UseVisualStyleBackColor = true;
-            btn_Bangxephang.Click += btn_Bangxephang_Click;
+            btnLeaderboard.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnLeaderboard.ForeColor = Color.SteelBlue;
+            btnLeaderboard.Location = new Point(22, 397);
+            btnLeaderboard.Margin = new Padding(2);
+            btnLeaderboard.Name = "btnLeaderboard";
+            btnLeaderboard.Size = new Size(449, 43);
+            btnLeaderboard.TabIndex = 3;
+            btnLeaderboard.Text = "           Leaderboard";
+            btnLeaderboard.TextAlign = ContentAlignment.MiddleLeft;
+            btnLeaderboard.UseVisualStyleBackColor = true;
+            btnLeaderboard.Click += btnLeaderboard_Click;
             // 
-            // btn_Choilaivancu
+            // btnReplay
             // 
-            btn_Choilaivancu.BackColor = SystemColors.ActiveCaption;
-            btn_Choilaivancu.FlatStyle = FlatStyle.System;
-            btn_Choilaivancu.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Choilaivancu.ForeColor = Color.Blue;
-            btn_Choilaivancu.Location = new Point(28, 68);
-            btn_Choilaivancu.Margin = new Padding(2);
-            btn_Choilaivancu.Name = "btn_Choilaivancu";
-            btn_Choilaivancu.Size = new Size(561, 58);
-            btn_Choilaivancu.TabIndex = 2;
-            btn_Choilaivancu.Text = "           Chơi lại ván cũ";
-            btn_Choilaivancu.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Choilaivancu.UseVisualStyleBackColor = true;
-            btn_Choilaivancu.Click += btn_Choilaivancu_Click;
+            btnReplay.BackColor = SystemColors.ActiveCaption;
+            btnReplay.FlatStyle = FlatStyle.System;
+            btnReplay.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReplay.ForeColor = Color.Blue;
+            btnReplay.Location = new Point(22, 54);
+            btnReplay.Margin = new Padding(2);
+            btnReplay.Name = "btnReplay";
+            btnReplay.Size = new Size(449, 46);
+            btnReplay.TabIndex = 2;
+            btnReplay.Text = "           Replay";
+            btnReplay.TextAlign = ContentAlignment.MiddleLeft;
+            btnReplay.UseVisualStyleBackColor = true;
+            btnReplay.Click += btnReplay_Click;
             // 
-            // btn_Thoat
+            // btnExit
             // 
-            btn_Thoat.BackColor = Color.SteelBlue;
-            btn_Thoat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Thoat.ForeColor = SystemColors.ButtonHighlight;
-            btn_Thoat.Location = new Point(221, 779);
-            btn_Thoat.Margin = new Padding(2);
-            btn_Thoat.Name = "btn_Thoat";
-            btn_Thoat.Size = new Size(158, 42);
-            btn_Thoat.TabIndex = 1;
-            btn_Thoat.Text = "Thoát";
-            btn_Thoat.UseVisualStyleBackColor = false;
-            btn_Thoat.Click += btn_Thoat_Click;
+            btnExit.BackColor = Color.SteelBlue;
+            btnExit.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnExit.ForeColor = SystemColors.ButtonHighlight;
+            btnExit.Location = new Point(177, 623);
+            btnExit.Margin = new Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(126, 34);
+            btnExit.TabIndex = 1;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
-            // btn_Choi
+            // btnPlayNewGame
             // 
-            btn_Choi.BackColor = SystemColors.ActiveCaption;
-            btn_Choi.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Choi.ForeColor = Color.SteelBlue;
-            btn_Choi.Location = new Point(28, 121);
-            btn_Choi.Margin = new Padding(2);
-            btn_Choi.Name = "btn_Choi";
-            btn_Choi.Size = new Size(561, 58);
-            btn_Choi.TabIndex = 0;
-            btn_Choi.Text = "          Chơi ván mới";
-            btn_Choi.TextAlign = ContentAlignment.MiddleLeft;
-            btn_Choi.UseVisualStyleBackColor = true;
-            btn_Choi.Click += btn_Choi_Click;
+            btnPlayNewGame.BackColor = SystemColors.ActiveCaption;
+            btnPlayNewGame.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnPlayNewGame.ForeColor = Color.SteelBlue;
+            btnPlayNewGame.Location = new Point(22, 97);
+            btnPlayNewGame.Margin = new Padding(2);
+            btnPlayNewGame.Name = "btnPlayNewGame";
+            btnPlayNewGame.Size = new Size(449, 46);
+            btnPlayNewGame.TabIndex = 0;
+            btnPlayNewGame.Text = "          Play new game";
+            btnPlayNewGame.TextAlign = ContentAlignment.MiddleLeft;
+            btnPlayNewGame.UseVisualStyleBackColor = true;
+            btnPlayNewGame.Click += btnPlayNewGame_Click;
             // 
-            // button1
+            // btnHowToPlay
             // 
-            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.SteelBlue;
-            button1.Location = new Point(28, 662);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(561, 52);
-            button1.TabIndex = 38;
-            button1.Text = "           Luật chơi";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnHowToPlay.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
+            btnHowToPlay.ForeColor = Color.SteelBlue;
+            btnHowToPlay.Location = new Point(22, 530);
+            btnHowToPlay.Margin = new Padding(2);
+            btnHowToPlay.Name = "btnHowToPlay";
+            btnHowToPlay.Size = new Size(449, 42);
+            btnHowToPlay.TabIndex = 38;
+            btnHowToPlay.Text = "           How to play";
+            btnHowToPlay.TextAlign = ContentAlignment.MiddleLeft;
+            btnHowToPlay.UseVisualStyleBackColor = true;
+            btnHowToPlay.Click += btnHowToPlay_Click;
             // 
             // btn_Quaylai
             // 
             btn_Quaylai.AutoSize = true;
             btn_Quaylai.BackColor = SystemColors.ButtonFace;
             btn_Quaylai.BackgroundImageLayout = ImageLayout.None;
+            btn_Quaylai.FlatStyle = FlatStyle.Flat;
             btn_Quaylai.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btn_Quaylai.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Quaylai.Location = new Point(427, 11);
+            btn_Quaylai.ForeColor = SystemColors.ButtonFace;
+            btn_Quaylai.Location = new Point(320, -9);
             btn_Quaylai.Margin = new Padding(2);
             btn_Quaylai.Name = "btn_Quaylai";
-            btn_Quaylai.Size = new Size(162, 45);
+            btn_Quaylai.Size = new Size(130, 36);
             btn_Quaylai.TabIndex = 9;
             btn_Quaylai.Text = "QUAY LẠI";
             btn_Quaylai.UseVisualStyleBackColor = false;
@@ -589,9 +570,9 @@
             // 
             // FormGiaoDienTroChoi
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(608, 832);
+            ClientSize = new Size(486, 666);
             Controls.Add(pn_GiaoDien);
             Margin = new Padding(2);
             Name = "FormGiaoDienTroChoi";
@@ -625,17 +606,17 @@
         #endregion
 
         private Panel pn_GiaoDien;
-        private Button btn_Thoat;
-        private Button btn_Choi;
-        private Button btn_Choilaivancu;
-        private Button btn_Thongke;
-        private Button btn_Bangxephang;
-        private Label lb_Chedochoi;
-        private Button btn_Kho;
-        private Button btn_TrungBinh;
-        private Button btn_De;
-        private Button btn_Choitiep;
-        private Button btn_ThongTinNguoiCHoi;
+        private Button btnExit;
+        private Button btnPlayNewGame;
+        private Button btnReplay;
+        private Button btnSatistics;
+        private Button btnLeaderboard;
+        private Label lbLevel;
+        private Button btnHard;
+        private Button btnNormal;
+        private Button btnEasy;
+        private Button btnContiue;
+        private Button btnPlayerProfile;
         private PictureBox pictureBox1;
         private PictureBox pictureBox6;
         private PictureBox pictureBox3;
@@ -650,16 +631,16 @@
         private PictureBox pictureBox17;
         private PictureBox pictureBox16;
         private PictureBox pictureBox15;
-        private Label label1;
-        private Label label2;
+        private Label lbStatus;
+        private Label lbRanking;
         private PictureBox pictureBox20;
         private PictureBox pictureBox19;
         private PictureBox pictureBox18;
         private PictureBox pictureBox5;
         private PictureBox pictureBox22;
         private PictureBox pictureBox21;
-        private Button button1;
-        private Label label3;
+        private Button btnHowToPlay;
+        private Label lbOther;
         private Button btn_Quaylai;
     }
 }
