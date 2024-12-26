@@ -19,12 +19,12 @@ namespace Sudoku
             InitializeComponent();
         }
 
-        private void btn_QuayLai_DangKy_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btn_DangKy_Click(object sender, EventArgs e)
+        private void btnSignup_Click(object sender, EventArgs e)
         {
 
             string strConnection = "server=127.0.0.1;uid=root;pwd=phatbaoan112;database=sudoku";

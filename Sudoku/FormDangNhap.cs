@@ -43,7 +43,7 @@ namespace Sudoku
         }
 
 
-        private void btn_DongY_Click(object sender, EventArgs e)
+        private void btnLogIn_Click(object sender, EventArgs e)
         {
             if (tB_TaiKhoan.Text == "admin" && tB_MatKhau.Text == "admin")
             {
@@ -109,7 +109,7 @@ namespace Sudoku
 
         }
 
-        private void lbDoimatkhau_Click(object sender, EventArgs e)
+        private void lbChangePassword_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormDoimatkhau newform = new FormDoimatkhau();
@@ -122,7 +122,7 @@ namespace Sudoku
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormDangKy newform = new FormDangKy();
@@ -130,7 +130,7 @@ namespace Sudoku
             this.Show();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void lbExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

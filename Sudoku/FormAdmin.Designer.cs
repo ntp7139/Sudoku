@@ -29,83 +29,83 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
-            btn_Quantringuoichoi = new Button();
-            btn_Quantrimanchoi = new Button();
-            btn_Thoat = new Button();
-            btn_Choitrochoi = new Button();
+            btnPlayerManagement = new Button();
+            btnLevelManagement = new Button();
+            btnExit = new Button();
+            btnPlayGame = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // btn_Quantringuoichoi
+            // btnPlayerManagement
             // 
-            btn_Quantringuoichoi.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Quantringuoichoi.Location = new Point(166, 148);
-            btn_Quantringuoichoi.Margin = new Padding(2);
-            btn_Quantringuoichoi.Name = "btn_Quantringuoichoi";
-            btn_Quantringuoichoi.Size = new Size(191, 75);
-            btn_Quantringuoichoi.TabIndex = 0;
-            btn_Quantringuoichoi.Text = "Quản trị người chơi";
-            btn_Quantringuoichoi.UseVisualStyleBackColor = true;
-            btn_Quantringuoichoi.Click += btn_Quantringuoichoi_Click;
+            btnPlayerManagement.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPlayerManagement.Location = new Point(133, 118);
+            btnPlayerManagement.Margin = new Padding(2);
+            btnPlayerManagement.Name = "btnPlayerManagement";
+            btnPlayerManagement.Size = new Size(153, 60);
+            btnPlayerManagement.TabIndex = 0;
+            btnPlayerManagement.Text = "Player Management";
+            btnPlayerManagement.UseVisualStyleBackColor = true;
+            btnPlayerManagement.Click += btnPlayerManagement_Click;
             // 
-            // btn_Quantrimanchoi
+            // btnLevelManagement
             // 
-            btn_Quantrimanchoi.Enabled = false;
-            btn_Quantrimanchoi.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Quantrimanchoi.Location = new Point(410, 148);
-            btn_Quantrimanchoi.Margin = new Padding(2);
-            btn_Quantrimanchoi.Name = "btn_Quantrimanchoi";
-            btn_Quantrimanchoi.Size = new Size(206, 75);
-            btn_Quantrimanchoi.TabIndex = 1;
-            btn_Quantrimanchoi.Text = "Quản trị màn chơi";
-            btn_Quantrimanchoi.UseVisualStyleBackColor = true;
+            btnLevelManagement.Enabled = false;
+            btnLevelManagement.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
+            btnLevelManagement.Location = new Point(328, 118);
+            btnLevelManagement.Margin = new Padding(2);
+            btnLevelManagement.Name = "btnLevelManagement";
+            btnLevelManagement.Size = new Size(165, 60);
+            btnLevelManagement.TabIndex = 1;
+            btnLevelManagement.Text = "Level Management";
+            btnLevelManagement.UseVisualStyleBackColor = true;
+            btnLevelManagement.Click += btnLevelManagement_Click;
             // 
-            // btn_Thoat
+            // btnExit
             // 
-            btn_Thoat.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Thoat.Location = new Point(410, 256);
-            btn_Thoat.Margin = new Padding(2);
-            btn_Thoat.Name = "btn_Thoat";
-            btn_Thoat.Size = new Size(206, 68);
-            btn_Thoat.TabIndex = 2;
-            btn_Thoat.Text = "Thoát";
-            btn_Thoat.UseVisualStyleBackColor = true;
-            btn_Thoat.Click += btn_Thoat_Click;
+            btnExit.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
+            btnExit.Location = new Point(328, 205);
+            btnExit.Margin = new Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(165, 54);
+            btnExit.TabIndex = 2;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
-            // btn_Choitrochoi
+            // btnPlayGame
             // 
-            btn_Choitrochoi.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Choitrochoi.Location = new Point(166, 256);
-            btn_Choitrochoi.Margin = new Padding(2);
-            btn_Choitrochoi.Name = "btn_Choitrochoi";
-            btn_Choitrochoi.Size = new Size(191, 68);
-            btn_Choitrochoi.TabIndex = 3;
-            btn_Choitrochoi.Text = "Chơi trò chơi";
-            btn_Choitrochoi.UseVisualStyleBackColor = true;
-            btn_Choitrochoi.Click += btn_Choitrochoi_Click;
+            btnPlayGame.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
+            btnPlayGame.Location = new Point(133, 205);
+            btnPlayGame.Margin = new Padding(2);
+            btnPlayGame.Name = "btnPlayGame";
+            btnPlayGame.Size = new Size(153, 54);
+            btnPlayGame.TabIndex = 3;
+            btnPlayGame.Text = "Play Game";
+            btnPlayGame.UseVisualStyleBackColor = true;
+            btnPlayGame.Click += btnPlayGame_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, -2);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(801, 454);
+            pictureBox1.Size = new Size(641, 363);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
             // FormAdmin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btn_Choitrochoi);
-            Controls.Add(btn_Thoat);
-            Controls.Add(btn_Quantrimanchoi);
-            Controls.Add(btn_Quantringuoichoi);
+            ClientSize = new Size(640, 360);
+            Controls.Add(btnPlayGame);
+            Controls.Add(btnExit);
+            Controls.Add(btnLevelManagement);
+            Controls.Add(btnPlayerManagement);
             Controls.Add(pictureBox1);
             Margin = new Padding(2);
             Name = "FormAdmin";
@@ -117,10 +117,10 @@
 
         #endregion
 
-        private Button btn_Quantringuoichoi;
-        private Button btn_Quantrimanchoi;
-        private Button btn_Thoat;
-        private Button btn_Choitrochoi;
+        private Button btnPlayerManagement;
+        private Button btnLevelManagement;
+        private Button btnExit;
+        private Button btnPlayGame;
         private PictureBox pictureBox1;
     }
 }

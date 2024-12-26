@@ -14,20 +14,20 @@ namespace Sudoku
     public partial class FormAdmin : Form
     {
         Nguoichoi Admin = new Nguoichoi();
-        public FormAdmin(string  ID_player)
+        public FormAdmin(string ID_player)
         {
             Admin.taikhoan = ID_player;
             InitializeComponent();
-            
-           
+
+
         }
 
-        private void btn_Thoat_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btn_Quantringuoichoi_Click(object sender, EventArgs e)
+        private void btnPlayerManagement_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormQuanTriNguoiChoi newform = new FormQuanTriNguoiChoi();
@@ -35,12 +35,18 @@ namespace Sudoku
             this.Show();
         }
 
-        private void btn_Choitrochoi_Click(object sender, EventArgs e)
+        private void btnPlayGame_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormGiaoDienTroChoi newform = new FormGiaoDienTroChoi(Admin.taikhoan );
+            FormGiaoDienTroChoi newform = new FormGiaoDienTroChoi(Admin.taikhoan);
             newform.ShowDialog();
             this.Show();
+
+        }
+
+        private void btnLevelManagement_Click(object sender, EventArgs e)
+        {
+            
 
         }
     }
