@@ -19,6 +19,7 @@ namespace Sudoku
             InitializeComponent();
             dtgLuuTrangThaiVanCu.RowPostPaint += dataGridView1_RowPostPaint;
             player.Load_Player(ID_Player);
+            lbthu.Text = ID_Player + "!";
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace Sudoku
                 string player_id = (string)dtgLuuTrangThaiVanCu.Rows[rowIndex].Cells[0].Value;
                 string game_id = (string)dtgLuuTrangThaiVanCu.Rows[rowIndex].Cells[1].Value;
                 this.Hide();
-                FormSudoKuDe newform = new FormSudoKuDe(player_id,game_id);
+                FormSudoKuDe newform = new FormSudoKuDe(player_id, game_id);
                 newform.ShowDialog();
                 this.Show();
             }
@@ -74,5 +75,23 @@ namespace Sudoku
             }
         }
 
+        private void lbthu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbTaiDuLieuManChoi_Click(object sender, EventArgs e)
+        {
+            string query = $"SELECT taikhoan,game_id,score,time,che_do FROM lichsudau WHERE taikhoan = '{player.taikhoan}';";
+            Connection Check = new Connection();
+            DataTable dt = Check.ExcuteQuery(query);
+            dtgLuuTrangThaiVanCu.DataSource = dt;
+            dtgLuuTrangThaiVanCu.AutoGenerateColumns = true;
+        }
     }
 }

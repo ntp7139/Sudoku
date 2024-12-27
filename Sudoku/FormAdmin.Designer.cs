@@ -34,7 +34,9 @@
             btnExit = new Button();
             btnPlayGame = new Button();
             pictureBox1 = new PictureBox();
+            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             SuspendLayout();
             // 
             // btnPlayerManagement
@@ -96,12 +98,22 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // axWindowsMediaPlayer1
+            // 
+            axWindowsMediaPlayer1.Enabled = true;
+            axWindowsMediaPlayer1.Location = new Point(65, 227);
+            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
+            axWindowsMediaPlayer1.Size = new Size(189, 119);
+            axWindowsMediaPlayer1.TabIndex = 5;
+            // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
             ClientSize = new Size(640, 360);
+            Controls.Add(axWindowsMediaPlayer1);
             Controls.Add(btnPlayGame);
             Controls.Add(btnExit);
             Controls.Add(btnLevelManagement);
@@ -112,6 +124,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAdmin";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             ResumeLayout(false);
         }
 
@@ -122,5 +135,6 @@
         private Button btnExit;
         private Button btnPlayGame;
         private PictureBox pictureBox1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
