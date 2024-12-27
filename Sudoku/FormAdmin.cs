@@ -46,8 +46,18 @@ namespace Sudoku
 
         private void btnLevelManagement_Click(object sender, EventArgs e)
         {
-            
+
 
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // Đặt đường dẫn đến file MP3
+            string musicFile = @"D:\ẢNH GAME\nhạc.mp3";
+
+            // Phát nhạc tự động khi form mở
+            axWindowsMediaPlayer1.URL = musicFile;
+        }
+        
     }
 }

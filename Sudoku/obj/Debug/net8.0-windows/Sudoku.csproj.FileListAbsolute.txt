@@ -50,3 +50,8 @@ C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormSu
 C:\Users\Admin\source\repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormThongTinNguoiChoi.resources
 C:\Users\Admin\Source\Repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.btnUpdatePassword.resources
 C:\Users\Admin\Source\Repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.FormHuongDanChoi.resources
+C:\Users\Admin\Source\Repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\Interop.WMPLib.dll
+C:\Users\Admin\Source\Repos\Sudoku\Sudoku\bin\Debug\net8.0-windows\AxInterop.WMPLib.dll
+C:\Users\Admin\Source\Repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Interop.WMPLib.dll
+C:\Users\Admin\Source\Repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\AxInterop.WMPLib.dll
+C:\Users\Admin\Source\Repos\Sudoku\Sudoku\obj\Debug\net8.0-windows\Sudoku.csproj.ResolveComReference.cache

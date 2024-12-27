@@ -101,10 +101,10 @@
             // axWindowsMediaPlayer1
             // 
             axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(65, 227);
+            axWindowsMediaPlayer1.Location = new Point(65, 282);
             axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
-            axWindowsMediaPlayer1.Size = new Size(189, 119);
+            axWindowsMediaPlayer1.Size = new Size(536, 64);
             axWindowsMediaPlayer1.TabIndex = 5;
             // 
             // FormAdmin
