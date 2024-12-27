@@ -69,7 +69,7 @@
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(165, 54);
-            btnExit.TabIndex = 2;
+            btnExit.TabIndex = 3;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
@@ -81,7 +81,7 @@
             btnPlayGame.Margin = new Padding(2);
             btnPlayGame.Name = "btnPlayGame";
             btnPlayGame.Size = new Size(153, 54);
-            btnPlayGame.TabIndex = 3;
+            btnPlayGame.TabIndex = 2;
             btnPlayGame.Text = "Play Game";
             btnPlayGame.UseVisualStyleBackColor = true;
             btnPlayGame.Click += btnPlayGame_Click;

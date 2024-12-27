@@ -27,7 +27,6 @@ namespace Sudoku
         {
             btnHowToPlay.Visible = false;
             btnPlayerProfile.Visible = false;
-            btnPlayNewGame.Visible = false;
             btnContiue.Visible = false;
             btnLeaderboard.Visible = false;
             btnReplay.Visible = false;
@@ -72,7 +71,6 @@ namespace Sudoku
         private void btn_Quaylai_Click(object sender, EventArgs e)
         {
             btnPlayerProfile.Visible = true;
-            btnPlayNewGame.Visible = true;
             btnContiue.Visible = true;
             btnLeaderboard.Visible = true;
             btnReplay.Visible = true;

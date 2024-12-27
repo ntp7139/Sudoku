@@ -115,7 +115,7 @@
             lbExit.Margin = new Padding(2, 0, 2, 0);
             lbExit.Name = "lbExit";
             lbExit.Size = new Size(33, 18);
-            lbExit.TabIndex = 15;
+            lbExit.TabIndex = 5;
             lbExit.Text = "Exit";
             lbExit.Click += lbExit_Click;
             // 
@@ -127,7 +127,7 @@
             btnSignUp.Location = new Point(478, 395);
             btnSignUp.Name = "btnSignUp";
             btnSignUp.Size = new Size(269, 35);
-            btnSignUp.TabIndex = 14;
+            btnSignUp.TabIndex = 3;
             btnSignUp.Text = "Sign up";
             btnSignUp.UseVisualStyleBackColor = false;
             btnSignUp.Click += btnSignUp_Click;
@@ -171,7 +171,7 @@
             lbChangePassword.Margin = new Padding(2, 0, 2, 0);
             lbChangePassword.Name = "lbChangePassword";
             lbChangePassword.Size = new Size(117, 18);
-            lbChangePassword.TabIndex = 9;
+            lbChangePassword.TabIndex = 4;
             lbChangePassword.Text = "Change Password";
             lbChangePassword.Click += lbChangePassword_Click;
             // 
@@ -184,7 +184,7 @@
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(269, 35);
-            btnLogIn.TabIndex = 5;
+            btnLogIn.TabIndex = 2;
             btnLogIn.Text = "Log in";
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
@@ -196,7 +196,7 @@
             tB_MatKhau.Name = "tB_MatKhau";
             tB_MatKhau.PasswordChar = '*';
             tB_MatKhau.Size = new Size(294, 27);
-            tB_MatKhau.TabIndex = 3;
+            tB_MatKhau.TabIndex = 1;
             // 
             // lbPassword
             // 

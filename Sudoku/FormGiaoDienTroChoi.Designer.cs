@@ -47,10 +47,8 @@
             pictureBox12 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
-            pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
-            pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             btnPlayerProfile = new Button();
@@ -63,7 +61,6 @@
             btnLeaderboard = new Button();
             btnReplay = new Button();
             btnExit = new Button();
-            btnPlayNewGame = new Button();
             btnHowToPlay = new Button();
             btn_Quaylai = new Button();
             pn_GiaoDien.SuspendLayout();
@@ -81,10 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -109,10 +104,8 @@
             pn_GiaoDien.Controls.Add(pictureBox12);
             pn_GiaoDien.Controls.Add(pictureBox11);
             pn_GiaoDien.Controls.Add(pictureBox10);
-            pn_GiaoDien.Controls.Add(pictureBox8);
             pn_GiaoDien.Controls.Add(pictureBox7);
             pn_GiaoDien.Controls.Add(pictureBox6);
-            pn_GiaoDien.Controls.Add(pictureBox3);
             pn_GiaoDien.Controls.Add(pictureBox2);
             pn_GiaoDien.Controls.Add(pictureBox1);
             pn_GiaoDien.Controls.Add(btnPlayerProfile);
@@ -125,14 +118,13 @@
             pn_GiaoDien.Controls.Add(btnLeaderboard);
             pn_GiaoDien.Controls.Add(btnReplay);
             pn_GiaoDien.Controls.Add(btnExit);
-            pn_GiaoDien.Controls.Add(btnPlayNewGame);
             pn_GiaoDien.Controls.Add(btnHowToPlay);
             pn_GiaoDien.Controls.Add(btn_Quaylai);
             pn_GiaoDien.Dock = DockStyle.Fill;
             pn_GiaoDien.Location = new Point(0, 0);
             pn_GiaoDien.Margin = new Padding(2);
             pn_GiaoDien.Name = "pn_GiaoDien";
-            pn_GiaoDien.Size = new Size(486, 666);
+            pn_GiaoDien.Size = new Size(486, 627);
             pn_GiaoDien.TabIndex = 3;
             pn_GiaoDien.Paint += pn_GiaoDien_Paint;
             // 
@@ -142,7 +134,7 @@
             lbOther.BackColor = SystemColors.ButtonFace;
             lbOther.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold);
             lbOther.ForeColor = SystemColors.ActiveCaptionText;
-            lbOther.Location = new Point(12, 501);
+            lbOther.Location = new Point(12, 451);
             lbOther.Margin = new Padding(2, 0, 2, 0);
             lbOther.Name = "lbOther";
             lbOther.Size = new Size(74, 28);
@@ -153,7 +145,7 @@
             // pictureBox22
             // 
             pictureBox22.Image = (Image)resources.GetObject("pictureBox22.Image");
-            pictureBox22.Location = new Point(438, 408);
+            pictureBox22.Location = new Point(439, 358);
             pictureBox22.Name = "pictureBox22";
             pictureBox22.Size = new Size(13, 20);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -163,7 +155,7 @@
             // pictureBox21
             // 
             pictureBox21.Image = (Image)resources.GetObject("pictureBox21.Image");
-            pictureBox21.Location = new Point(437, 448);
+            pictureBox21.Location = new Point(438, 398);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(13, 20);
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -173,7 +165,7 @@
             // pictureBox20
             // 
             pictureBox20.Image = (Image)resources.GetObject("pictureBox20.Image");
-            pictureBox20.Location = new Point(33, 404);
+            pictureBox20.Location = new Point(33, 354);
             pictureBox20.Name = "pictureBox20";
             pictureBox20.Size = new Size(30, 30);
             pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -183,7 +175,7 @@
             // pictureBox19
             // 
             pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(33, 444);
+            pictureBox19.Location = new Point(33, 394);
             pictureBox19.Name = "pictureBox19";
             pictureBox19.Size = new Size(30, 30);
             pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -193,7 +185,7 @@
             // pictureBox18
             // 
             pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
-            pictureBox18.Location = new Point(34, 571);
+            pictureBox18.Location = new Point(34, 521);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(30, 30);
             pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -203,7 +195,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(34, 534);
+            pictureBox5.Location = new Point(34, 484);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(30, 30);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -216,7 +208,7 @@
             lbRanking.BackColor = SystemColors.ButtonFace;
             lbRanking.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold);
             lbRanking.ForeColor = SystemColors.ActiveCaptionText;
-            lbRanking.Location = new Point(11, 368);
+            lbRanking.Location = new Point(11, 318);
             lbRanking.Margin = new Padding(2, 0, 2, 0);
             lbRanking.Name = "lbRanking";
             lbRanking.Size = new Size(98, 28);
@@ -241,7 +233,7 @@
             // pictureBox17
             // 
             pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(33, 243);
+            pictureBox17.Location = new Point(33, 193);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(30, 30);
             pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -251,7 +243,7 @@
             // pictureBox16
             // 
             pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
-            pictureBox16.Location = new Point(33, 278);
+            pictureBox16.Location = new Point(33, 228);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(30, 30);
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -261,7 +253,7 @@
             // pictureBox15
             // 
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(33, 315);
+            pictureBox15.Location = new Point(33, 265);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(30, 30);
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -271,7 +263,7 @@
             // pictureBox14
             // 
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(437, 249);
+            pictureBox14.Location = new Point(438, 199);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(13, 20);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -281,7 +273,7 @@
             // pictureBox13
             // 
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(437, 285);
+            pictureBox13.Location = new Point(438, 235);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(13, 20);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -291,7 +283,7 @@
             // pictureBox12
             // 
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(437, 320);
+            pictureBox12.Location = new Point(438, 270);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(13, 20);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -301,7 +293,7 @@
             // pictureBox11
             // 
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(438, 540);
+            pictureBox11.Location = new Point(439, 490);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(13, 20);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -311,27 +303,17 @@
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(437, 576);
+            pictureBox10.Location = new Point(438, 526);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(13, 20);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 21;
             pictureBox10.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(438, 111);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(13, 20);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 19;
-            pictureBox8.TabStop = false;
-            // 
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(438, 154);
+            pictureBox7.Location = new Point(438, 108);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(13, 20);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -348,20 +330,10 @@
             pictureBox6.TabIndex = 17;
             pictureBox6.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(33, 105);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(30, 30);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 14;
-            pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(33, 151);
+            pictureBox2.Location = new Point(33, 105);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(30, 30);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -382,11 +354,11 @@
             // 
             btnPlayerProfile.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnPlayerProfile.ForeColor = Color.SteelBlue;
-            btnPlayerProfile.Location = new Point(22, 566);
+            btnPlayerProfile.Location = new Point(22, 516);
             btnPlayerProfile.Margin = new Padding(2);
             btnPlayerProfile.Name = "btnPlayerProfile";
             btnPlayerProfile.Size = new Size(449, 39);
-            btnPlayerProfile.TabIndex = 11;
+            btnPlayerProfile.TabIndex = 8;
             btnPlayerProfile.Text = "           Player profile";
             btnPlayerProfile.TextAlign = ContentAlignment.MiddleLeft;
             btnPlayerProfile.UseVisualStyleBackColor = true;
@@ -397,11 +369,11 @@
             btnContiue.BackColor = SystemColors.ActiveCaption;
             btnContiue.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnContiue.ForeColor = Color.SteelBlue;
-            btnContiue.Location = new Point(22, 141);
+            btnContiue.Location = new Point(22, 95);
             btnContiue.Margin = new Padding(2);
             btnContiue.Name = "btnContiue";
             btnContiue.Size = new Size(449, 46);
-            btnContiue.TabIndex = 10;
+            btnContiue.TabIndex = 1;
             btnContiue.Text = "          Continue";
             btnContiue.TextAlign = ContentAlignment.MiddleLeft;
             btnContiue.UseVisualStyleBackColor = true;
@@ -413,7 +385,7 @@
             lbLevel.BackColor = SystemColors.ButtonFace;
             lbLevel.Font = new Font("Trebuchet MS", 13.2000008F, FontStyle.Bold);
             lbLevel.ForeColor = SystemColors.ActiveCaptionText;
-            lbLevel.Location = new Point(11, 210);
+            lbLevel.Location = new Point(11, 160);
             lbLevel.Margin = new Padding(2, 0, 2, 0);
             lbLevel.Name = "lbLevel";
             lbLevel.Size = new Size(70, 28);
@@ -425,11 +397,11 @@
             // 
             btnHard.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnHard.ForeColor = Color.SteelBlue;
-            btnHard.Location = new Point(22, 311);
+            btnHard.Location = new Point(22, 261);
             btnHard.Margin = new Padding(2);
             btnHard.Name = "btnHard";
             btnHard.Size = new Size(449, 37);
-            btnHard.TabIndex = 7;
+            btnHard.TabIndex = 4;
             btnHard.Text = "          Hard";
             btnHard.TextAlign = ContentAlignment.MiddleLeft;
             btnHard.UseVisualStyleBackColor = true;
@@ -439,11 +411,11 @@
             // 
             btnNormal.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnNormal.ForeColor = Color.SteelBlue;
-            btnNormal.Location = new Point(22, 274);
+            btnNormal.Location = new Point(22, 224);
             btnNormal.Margin = new Padding(2);
             btnNormal.Name = "btnNormal";
             btnNormal.Size = new Size(449, 39);
-            btnNormal.TabIndex = 6;
+            btnNormal.TabIndex = 3;
             btnNormal.Text = "          Normal";
             btnNormal.TextAlign = ContentAlignment.MiddleLeft;
             btnNormal.UseVisualStyleBackColor = true;
@@ -453,11 +425,11 @@
             // 
             btnEasy.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnEasy.ForeColor = Color.SteelBlue;
-            btnEasy.Location = new Point(22, 239);
+            btnEasy.Location = new Point(22, 189);
             btnEasy.Margin = new Padding(2);
             btnEasy.Name = "btnEasy";
             btnEasy.Size = new Size(449, 39);
-            btnEasy.TabIndex = 5;
+            btnEasy.TabIndex = 2;
             btnEasy.Text = "          Easy";
             btnEasy.TextAlign = ContentAlignment.MiddleLeft;
             btnEasy.UseVisualStyleBackColor = true;
@@ -467,11 +439,11 @@
             // 
             btnSatistics.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnSatistics.ForeColor = Color.SteelBlue;
-            btnSatistics.Location = new Point(22, 438);
+            btnSatistics.Location = new Point(22, 388);
             btnSatistics.Margin = new Padding(2);
             btnSatistics.Name = "btnSatistics";
             btnSatistics.Size = new Size(449, 41);
-            btnSatistics.TabIndex = 4;
+            btnSatistics.TabIndex = 6;
             btnSatistics.Text = "           Statistics";
             btnSatistics.TextAlign = ContentAlignment.MiddleLeft;
             btnSatistics.UseVisualStyleBackColor = true;
@@ -481,11 +453,11 @@
             // 
             btnLeaderboard.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnLeaderboard.ForeColor = Color.SteelBlue;
-            btnLeaderboard.Location = new Point(22, 397);
+            btnLeaderboard.Location = new Point(22, 347);
             btnLeaderboard.Margin = new Padding(2);
             btnLeaderboard.Name = "btnLeaderboard";
             btnLeaderboard.Size = new Size(449, 43);
-            btnLeaderboard.TabIndex = 3;
+            btnLeaderboard.TabIndex = 5;
             btnLeaderboard.Text = "           Leaderboard";
             btnLeaderboard.TextAlign = ContentAlignment.MiddleLeft;
             btnLeaderboard.UseVisualStyleBackColor = true;
@@ -501,7 +473,7 @@
             btnReplay.Margin = new Padding(2);
             btnReplay.Name = "btnReplay";
             btnReplay.Size = new Size(449, 46);
-            btnReplay.TabIndex = 2;
+            btnReplay.TabIndex = 0;
             btnReplay.Text = "           Replay";
             btnReplay.TextAlign = ContentAlignment.MiddleLeft;
             btnReplay.UseVisualStyleBackColor = true;
@@ -512,39 +484,24 @@
             btnExit.BackColor = Color.SteelBlue;
             btnExit.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnExit.ForeColor = SystemColors.ButtonHighlight;
-            btnExit.Location = new Point(177, 623);
+            btnExit.Location = new Point(177, 573);
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(126, 34);
-            btnExit.TabIndex = 1;
+            btnExit.TabIndex = 9;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
-            // 
-            // btnPlayNewGame
-            // 
-            btnPlayNewGame.BackColor = SystemColors.ActiveCaption;
-            btnPlayNewGame.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
-            btnPlayNewGame.ForeColor = Color.SteelBlue;
-            btnPlayNewGame.Location = new Point(22, 97);
-            btnPlayNewGame.Margin = new Padding(2);
-            btnPlayNewGame.Name = "btnPlayNewGame";
-            btnPlayNewGame.Size = new Size(449, 46);
-            btnPlayNewGame.TabIndex = 0;
-            btnPlayNewGame.Text = "          Play new game";
-            btnPlayNewGame.TextAlign = ContentAlignment.MiddleLeft;
-            btnPlayNewGame.UseVisualStyleBackColor = true;
-            btnPlayNewGame.Click += btnPlayNewGame_Click;
             // 
             // btnHowToPlay
             // 
             btnHowToPlay.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold);
             btnHowToPlay.ForeColor = Color.SteelBlue;
-            btnHowToPlay.Location = new Point(22, 530);
+            btnHowToPlay.Location = new Point(22, 480);
             btnHowToPlay.Margin = new Padding(2);
             btnHowToPlay.Name = "btnHowToPlay";
             btnHowToPlay.Size = new Size(449, 42);
-            btnHowToPlay.TabIndex = 38;
+            btnHowToPlay.TabIndex = 7;
             btnHowToPlay.Text = "           How to play";
             btnHowToPlay.TextAlign = ContentAlignment.MiddleLeft;
             btnHowToPlay.UseVisualStyleBackColor = true;
@@ -572,7 +529,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(486, 666);
+            ClientSize = new Size(486, 627);
             Controls.Add(pn_GiaoDien);
             Margin = new Padding(2);
             Name = "FormGiaoDienTroChoi";
@@ -594,10 +551,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -607,7 +562,6 @@
 
         private Panel pn_GiaoDien;
         private Button btnExit;
-        private Button btnPlayNewGame;
         private Button btnReplay;
         private Button btnSatistics;
         private Button btnLeaderboard;
@@ -619,9 +573,7 @@
         private Button btnPlayerProfile;
         private PictureBox pictureBox1;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox8;
         private PictureBox pictureBox7;
         private PictureBox pictureBox14;
         private PictureBox pictureBox13;
