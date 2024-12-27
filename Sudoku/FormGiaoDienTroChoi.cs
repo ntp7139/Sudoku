@@ -167,7 +167,10 @@ namespace Sudoku
 
         private void btnHowToPlay_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormHuongDanChoi newform = new FormHuongDanChoi();
+            newform.ShowDialog();
+            this.Show();
         }
     }
 }
