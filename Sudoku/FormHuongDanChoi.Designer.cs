@@ -99,9 +99,10 @@
             // pBHD1
             // 
             pBHD1.Image = (Image)resources.GetObject("pBHD1.Image");
-            pBHD1.Location = new Point(73, 29);
+            pBHD1.Location = new Point(91, 36);
+            pBHD1.Margin = new Padding(4, 4, 4, 4);
             pBHD1.Name = "pBHD1";
-            pBHD1.Size = new Size(383, 373);
+            pBHD1.Size = new Size(479, 466);
             pBHD1.SizeMode = PictureBoxSizeMode.StretchImage;
             pBHD1.TabIndex = 0;
             pBHD1.TabStop = false;
@@ -110,9 +111,10 @@
             // 
             lbHD1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbHD1.ForeColor = Color.SteelBlue;
-            lbHD1.Location = new Point(55, 406);
+            lbHD1.Location = new Point(69, 508);
+            lbHD1.Margin = new Padding(4, 0, 4, 0);
             lbHD1.Name = "lbHD1";
-            lbHD1.Size = new Size(419, 41);
+            lbHD1.Size = new Size(524, 51);
             lbHD1.TabIndex = 1;
             lbHD1.Text = "On each line, you need to use the numbers from 1 to 9 so that no number is repeated.";
             lbHD1.TextAlign = ContentAlignment.MiddleCenter;
@@ -121,9 +123,10 @@
             // pbHD11
             // 
             pbHD11.Image = (Image)resources.GetObject("pbHD11.Image");
-            pbHD11.Location = new Point(204, 480);
+            pbHD11.Location = new Point(255, 600);
+            pbHD11.Margin = new Padding(4, 4, 4, 4);
             pbHD11.Name = "pbHD11";
-            pbHD11.Size = new Size(104, 13);
+            pbHD11.Size = new Size(130, 16);
             pbHD11.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD11.TabIndex = 2;
             pbHD11.TabStop = false;
@@ -131,9 +134,10 @@
             // pbNextTo2
             // 
             pbNextTo2.Image = (Image)resources.GetObject("pbNextTo2.Image");
-            pbNextTo2.Location = new Point(471, 461);
+            pbNextTo2.Location = new Point(589, 576);
+            pbNextTo2.Margin = new Padding(4, 4, 4, 4);
             pbNextTo2.Name = "pbNextTo2";
-            pbNextTo2.Size = new Size(36, 36);
+            pbNextTo2.Size = new Size(45, 45);
             pbNextTo2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNextTo2.TabIndex = 3;
             pbNextTo2.TabStop = false;
@@ -142,9 +146,10 @@
             // pbBack
             // 
             pbBack.Image = (Image)resources.GetObject("pbBack.Image");
-            pbBack.Location = new Point(12, 461);
+            pbBack.Location = new Point(15, 576);
+            pbBack.Margin = new Padding(4, 4, 4, 4);
             pbBack.Name = "pbBack";
-            pbBack.Size = new Size(36, 36);
+            pbBack.Size = new Size(45, 45);
             pbBack.SizeMode = PictureBoxSizeMode.StretchImage;
             pbBack.TabIndex = 4;
             pbBack.TabStop = false;
@@ -153,9 +158,10 @@
             // pbHD2
             // 
             pbHD2.Image = (Image)resources.GetObject("pbHD2.Image");
-            pbHD2.Location = new Point(68, 26);
+            pbHD2.Location = new Point(85, 32);
+            pbHD2.Margin = new Padding(4, 4, 4, 4);
             pbHD2.Name = "pbHD2";
-            pbHD2.Size = new Size(381, 383);
+            pbHD2.Size = new Size(476, 479);
             pbHD2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD2.TabIndex = 5;
             pbHD2.TabStop = false;
@@ -164,9 +170,10 @@
             // 
             lbHD2.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbHD2.ForeColor = Color.SteelBlue;
-            lbHD2.Location = new Point(40, 410);
+            lbHD2.Location = new Point(50, 512);
+            lbHD2.Margin = new Padding(4, 0, 4, 0);
             lbHD2.Name = "lbHD2";
-            lbHD2.Size = new Size(436, 42);
+            lbHD2.Size = new Size(545, 52);
             lbHD2.TabIndex = 6;
             lbHD2.Text = "On each column, you need to use the numbers from 1 to 9 so that no number is repeated.";
             lbHD2.TextAlign = ContentAlignment.MiddleCenter;
@@ -175,9 +182,10 @@
             // pbHD22
             // 
             pbHD22.Image = (Image)resources.GetObject("pbHD22.Image");
-            pbHD22.Location = new Point(202, 481);
+            pbHD22.Location = new Point(252, 601);
+            pbHD22.Margin = new Padding(4, 4, 4, 4);
             pbHD22.Name = "pbHD22";
-            pbHD22.Size = new Size(104, 13);
+            pbHD22.Size = new Size(130, 16);
             pbHD22.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD22.TabIndex = 7;
             pbHD22.TabStop = false;
@@ -185,9 +193,10 @@
             // pbNextTo3
             // 
             pbNextTo3.Image = (Image)resources.GetObject("pbNextTo3.Image");
-            pbNextTo3.Location = new Point(471, 461);
+            pbNextTo3.Location = new Point(589, 576);
+            pbNextTo3.Margin = new Padding(4, 4, 4, 4);
             pbNextTo3.Name = "pbNextTo3";
-            pbNextTo3.Size = new Size(36, 36);
+            pbNextTo3.Size = new Size(45, 45);
             pbNextTo3.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNextTo3.TabIndex = 8;
             pbNextTo3.TabStop = false;
@@ -196,9 +205,10 @@
             // pbReturn1
             // 
             pbReturn1.Image = (Image)resources.GetObject("pbReturn1.Image");
-            pbReturn1.Location = new Point(11, 461);
+            pbReturn1.Location = new Point(14, 576);
+            pbReturn1.Margin = new Padding(4, 4, 4, 4);
             pbReturn1.Name = "pbReturn1";
-            pbReturn1.Size = new Size(36, 36);
+            pbReturn1.Size = new Size(45, 45);
             pbReturn1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbReturn1.TabIndex = 9;
             pbReturn1.TabStop = false;
@@ -207,9 +217,10 @@
             // pbHD3
             // 
             pbHD3.Image = (Image)resources.GetObject("pbHD3.Image");
-            pbHD3.Location = new Point(70, 23);
+            pbHD3.Location = new Point(88, 29);
+            pbHD3.Margin = new Padding(4, 4, 4, 4);
             pbHD3.Name = "pbHD3";
-            pbHD3.Size = new Size(376, 381);
+            pbHD3.Size = new Size(470, 476);
             pbHD3.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD3.TabIndex = 10;
             pbHD3.TabStop = false;
@@ -217,9 +228,10 @@
             // pbHD5
             // 
             pbHD5.Image = (Image)resources.GetObject("pbHD5.Image");
-            pbHD5.Location = new Point(77, 30);
+            pbHD5.Location = new Point(96, 38);
+            pbHD5.Margin = new Padding(4, 4, 4, 4);
             pbHD5.Name = "pbHD5";
-            pbHD5.Size = new Size(373, 394);
+            pbHD5.Size = new Size(466, 492);
             pbHD5.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD5.TabIndex = 11;
             pbHD5.TabStop = false;
@@ -227,9 +239,10 @@
             // pbHD4
             // 
             pbHD4.Image = (Image)resources.GetObject("pbHD4.Image");
-            pbHD4.Location = new Point(65, 30);
+            pbHD4.Location = new Point(81, 38);
+            pbHD4.Margin = new Padding(4, 4, 4, 4);
             pbHD4.Name = "pbHD4";
-            pbHD4.Size = new Size(387, 384);
+            pbHD4.Size = new Size(484, 480);
             pbHD4.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD4.TabIndex = 12;
             pbHD4.TabStop = false;
@@ -237,9 +250,10 @@
             // pbHD6
             // 
             pbHD6.Image = (Image)resources.GetObject("pbHD6.Image");
-            pbHD6.Location = new Point(67, 30);
+            pbHD6.Location = new Point(84, 38);
+            pbHD6.Margin = new Padding(4, 4, 4, 4);
             pbHD6.Name = "pbHD6";
-            pbHD6.Size = new Size(388, 397);
+            pbHD6.Size = new Size(485, 496);
             pbHD6.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD6.TabIndex = 13;
             pbHD6.TabStop = false;
@@ -247,9 +261,10 @@
             // pbHD33
             // 
             pbHD33.Image = (Image)resources.GetObject("pbHD33.Image");
-            pbHD33.Location = new Point(208, 483);
+            pbHD33.Location = new Point(260, 604);
+            pbHD33.Margin = new Padding(4, 4, 4, 4);
             pbHD33.Name = "pbHD33";
-            pbHD33.Size = new Size(104, 13);
+            pbHD33.Size = new Size(130, 16);
             pbHD33.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD33.TabIndex = 14;
             pbHD33.TabStop = false;
@@ -257,9 +272,10 @@
             // pbHD44
             // 
             pbHD44.Image = (Image)resources.GetObject("pbHD44.Image");
-            pbHD44.Location = new Point(209, 479);
+            pbHD44.Location = new Point(261, 599);
+            pbHD44.Margin = new Padding(4, 4, 4, 4);
             pbHD44.Name = "pbHD44";
-            pbHD44.Size = new Size(104, 13);
+            pbHD44.Size = new Size(130, 16);
             pbHD44.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD44.TabIndex = 15;
             pbHD44.TabStop = false;
@@ -267,9 +283,10 @@
             // pbHD55
             // 
             pbHD55.Image = (Image)resources.GetObject("pbHD55.Image");
-            pbHD55.Location = new Point(201, 481);
+            pbHD55.Location = new Point(251, 601);
+            pbHD55.Margin = new Padding(4, 4, 4, 4);
             pbHD55.Name = "pbHD55";
-            pbHD55.Size = new Size(104, 13);
+            pbHD55.Size = new Size(130, 16);
             pbHD55.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD55.TabIndex = 16;
             pbHD55.TabStop = false;
@@ -277,9 +294,10 @@
             // pbHD66
             // 
             pbHD66.Image = (Image)resources.GetObject("pbHD66.Image");
-            pbHD66.Location = new Point(206, 483);
+            pbHD66.Location = new Point(258, 604);
+            pbHD66.Margin = new Padding(4, 4, 4, 4);
             pbHD66.Name = "pbHD66";
-            pbHD66.Size = new Size(104, 10);
+            pbHD66.Size = new Size(130, 12);
             pbHD66.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHD66.TabIndex = 17;
             pbHD66.TabStop = false;
@@ -288,9 +306,10 @@
             // 
             lbHD3.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbHD3.ForeColor = Color.SteelBlue;
-            lbHD3.Location = new Point(8, 408);
+            lbHD3.Location = new Point(10, 510);
+            lbHD3.Margin = new Padding(4, 0, 4, 0);
             lbHD3.Name = "lbHD3";
-            lbHD3.Size = new Size(495, 41);
+            lbHD3.Size = new Size(619, 51);
             lbHD3.TabIndex = 18;
             lbHD3.Text = "In each 3x3 subgrid within the 9 subgrids, you must use the numbers from 1 to 9 without repeating any of them.";
             lbHD3.TextAlign = ContentAlignment.MiddleCenter;
@@ -299,9 +318,10 @@
             // 
             lbHD4.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbHD4.ForeColor = Color.SteelBlue;
-            lbHD4.Location = new Point(46, 419);
+            lbHD4.Location = new Point(58, 524);
+            lbHD4.Margin = new Padding(4, 0, 4, 0);
             lbHD4.Name = "lbHD4";
-            lbHD4.Size = new Size(431, 21);
+            lbHD4.Size = new Size(539, 26);
             lbHD4.TabIndex = 19;
             lbHD4.Text = "For example, you can only fill in the number \"8\".";
             lbHD4.TextAlign = ContentAlignment.MiddleCenter;
@@ -309,9 +329,10 @@
             // pbNextTo6
             // 
             pbNextTo6.Image = (Image)resources.GetObject("pbNextTo6.Image");
-            pbNextTo6.Location = new Point(473, 461);
+            pbNextTo6.Location = new Point(591, 576);
+            pbNextTo6.Margin = new Padding(4, 4, 4, 4);
             pbNextTo6.Name = "pbNextTo6";
-            pbNextTo6.Size = new Size(36, 36);
+            pbNextTo6.Size = new Size(45, 45);
             pbNextTo6.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNextTo6.TabIndex = 23;
             pbNextTo6.TabStop = false;
@@ -320,9 +341,10 @@
             // pbNextTo5
             // 
             pbNextTo5.Image = (Image)resources.GetObject("pbNextTo5.Image");
-            pbNextTo5.Location = new Point(472, 461);
+            pbNextTo5.Location = new Point(590, 576);
+            pbNextTo5.Margin = new Padding(4, 4, 4, 4);
             pbNextTo5.Name = "pbNextTo5";
-            pbNextTo5.Size = new Size(36, 36);
+            pbNextTo5.Size = new Size(45, 45);
             pbNextTo5.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNextTo5.TabIndex = 24;
             pbNextTo5.TabStop = false;
@@ -331,9 +353,10 @@
             // pbReturn5
             // 
             pbReturn5.Image = (Image)resources.GetObject("pbReturn5.Image");
-            pbReturn5.Location = new Point(11, 459);
+            pbReturn5.Location = new Point(14, 574);
+            pbReturn5.Margin = new Padding(4, 4, 4, 4);
             pbReturn5.Name = "pbReturn5";
-            pbReturn5.Size = new Size(36, 36);
+            pbReturn5.Size = new Size(45, 45);
             pbReturn5.SizeMode = PictureBoxSizeMode.StretchImage;
             pbReturn5.TabIndex = 25;
             pbReturn5.TabStop = false;
@@ -342,9 +365,10 @@
             // pbReturn4
             // 
             pbReturn4.Image = (Image)resources.GetObject("pbReturn4.Image");
-            pbReturn4.Location = new Point(12, 461);
+            pbReturn4.Location = new Point(15, 576);
+            pbReturn4.Margin = new Padding(4, 4, 4, 4);
             pbReturn4.Name = "pbReturn4";
-            pbReturn4.Size = new Size(36, 36);
+            pbReturn4.Size = new Size(45, 45);
             pbReturn4.SizeMode = PictureBoxSizeMode.StretchImage;
             pbReturn4.TabIndex = 26;
             pbReturn4.TabStop = false;
@@ -353,9 +377,10 @@
             // pbReturn3
             // 
             pbReturn3.Image = (Image)resources.GetObject("pbReturn3.Image");
-            pbReturn3.Location = new Point(11, 461);
+            pbReturn3.Location = new Point(14, 576);
+            pbReturn3.Margin = new Padding(4, 4, 4, 4);
             pbReturn3.Name = "pbReturn3";
-            pbReturn3.Size = new Size(36, 36);
+            pbReturn3.Size = new Size(45, 45);
             pbReturn3.SizeMode = PictureBoxSizeMode.StretchImage;
             pbReturn3.TabIndex = 27;
             pbReturn3.TabStop = false;
@@ -369,8 +394,9 @@
             pnHuongDan1.Controls.Add(pbHD11);
             pnHuongDan1.Controls.Add(pbNextTo2);
             pnHuongDan1.Location = new Point(1, 0);
+            pnHuongDan1.Margin = new Padding(4, 4, 4, 4);
             pnHuongDan1.Name = "pnHuongDan1";
-            pnHuongDan1.Size = new Size(520, 502);
+            pnHuongDan1.Size = new Size(650, 628);
             pnHuongDan1.TabIndex = 29;
             // 
             // pnHuongDan2
@@ -382,8 +408,9 @@
             pnHuongDan2.Controls.Add(pbHD2);
             pnHuongDan2.Controls.Add(lbHD2);
             pnHuongDan2.Location = new Point(1, 0);
+            pnHuongDan2.Margin = new Padding(4, 4, 4, 4);
             pnHuongDan2.Name = "pnHuongDan2";
-            pnHuongDan2.Size = new Size(520, 502);
+            pnHuongDan2.Size = new Size(650, 628);
             pnHuongDan2.TabIndex = 30;
             // 
             // pnHuongDan4
@@ -395,21 +422,22 @@
             pnHuongDan4.Controls.Add(pbHD44);
             pnHuongDan4.Controls.Add(pbNextTo5);
             pnHuongDan4.Location = new Point(0, 0);
+            pnHuongDan4.Margin = new Padding(4, 4, 4, 4);
             pnHuongDan4.Name = "pnHuongDan4";
-            pnHuongDan4.Size = new Size(520, 502);
+            pnHuongDan4.Size = new Size(650, 628);
             pnHuongDan4.TabIndex = 32;
             // 
             // pnHuongDan6
             // 
-            pnHuongDan6.Controls.Add(pnHuongDan3);
             pnHuongDan6.Controls.Add(lbHuongDan6);
             pnHuongDan6.Controls.Add(button1);
             pnHuongDan6.Controls.Add(pbHD6);
             pnHuongDan6.Controls.Add(pbHD66);
             pnHuongDan6.Controls.Add(pbReturn5);
             pnHuongDan6.Location = new Point(0, 0);
+            pnHuongDan6.Margin = new Padding(4, 4, 4, 4);
             pnHuongDan6.Name = "pnHuongDan6";
-            pnHuongDan6.Size = new Size(520, 502);
+            pnHuongDan6.Size = new Size(650, 628);
             pnHuongDan6.TabIndex = 34;
             // 
             // pnHuongDan3
@@ -419,17 +447,19 @@
             pnHuongDan3.Controls.Add(pbHD3);
             pnHuongDan3.Controls.Add(lbHD3);
             pnHuongDan3.Controls.Add(pbHD33);
-            pnHuongDan3.Location = new Point(0, 0);
+            pnHuongDan3.Location = new Point(1, 0);
+            pnHuongDan3.Margin = new Padding(4, 4, 4, 4);
             pnHuongDan3.Name = "pnHuongDan3";
-            pnHuongDan3.Size = new Size(520, 502);
+            pnHuongDan3.Size = new Size(650, 628);
             pnHuongDan3.TabIndex = 31;
             // 
             // pbNextTo4
             // 
             pbNextTo4.Image = (Image)resources.GetObject("pbNextTo4.Image");
-            pbNextTo4.Location = new Point(472, 461);
+            pbNextTo4.Location = new Point(590, 576);
+            pbNextTo4.Margin = new Padding(4, 4, 4, 4);
             pbNextTo4.Name = "pbNextTo4";
-            pbNextTo4.Size = new Size(36, 36);
+            pbNextTo4.Size = new Size(45, 45);
             pbNextTo4.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNextTo4.TabIndex = 8;
             pbNextTo4.TabStop = false;
@@ -438,9 +468,10 @@
             // pbReturn2
             // 
             pbReturn2.Image = (Image)resources.GetObject("pbReturn2.Image");
-            pbReturn2.Location = new Point(11, 461);
+            pbReturn2.Location = new Point(14, 576);
+            pbReturn2.Margin = new Padding(4, 4, 4, 4);
             pbReturn2.Name = "pbReturn2";
-            pbReturn2.Size = new Size(36, 36);
+            pbReturn2.Size = new Size(45, 45);
             pbReturn2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbReturn2.TabIndex = 9;
             pbReturn2.TabStop = false;
@@ -450,9 +481,10 @@
             // 
             lbHuongDan6.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbHuongDan6.ForeColor = Color.SteelBlue;
-            lbHuongDan6.Location = new Point(46, 431);
+            lbHuongDan6.Location = new Point(58, 539);
+            lbHuongDan6.Margin = new Padding(4, 0, 4, 0);
             lbHuongDan6.Name = "lbHuongDan6";
-            lbHuongDan6.Size = new Size(431, 21);
+            lbHuongDan6.Size = new Size(539, 26);
             lbHuongDan6.TabIndex = 19;
             lbHuongDan6.Text = "Here, you can only fill in the number \"8\".";
             lbHuongDan6.TextAlign = ContentAlignment.MiddleCenter;
@@ -462,9 +494,10 @@
             button1.BackColor = Color.SteelBlue;
             button1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(455, 464);
+            button1.Location = new Point(569, 580);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(47, 29);
+            button1.Size = new Size(59, 36);
             button1.TabIndex = 26;
             button1.Text = "Exit";
             button1.UseVisualStyleBackColor = false;
@@ -478,30 +511,36 @@
             pnHuongDan5.Controls.Add(pbReturn4);
             pnHuongDan5.Controls.Add(pbNextTo6);
             pnHuongDan5.Location = new Point(1, 0);
+            pnHuongDan5.Margin = new Padding(4, 4, 4, 4);
             pnHuongDan5.Name = "pnHuongDan5";
-            pnHuongDan5.Size = new Size(520, 502);
+            pnHuongDan5.Size = new Size(650, 628);
             pnHuongDan5.TabIndex = 33;
             // 
             // lbHuongDan5
             // 
             lbHuongDan5.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbHuongDan5.ForeColor = Color.SteelBlue;
-            lbHuongDan5.Location = new Point(46, 427);
+            lbHuongDan5.Location = new Point(58, 534);
+            lbHuongDan5.Margin = new Padding(4, 0, 4, 0);
             lbHuongDan5.Name = "lbHuongDan5";
-            lbHuongDan5.Size = new Size(431, 21);
+            lbHuongDan5.Size = new Size(539, 26);
             lbHuongDan5.TabIndex = 19;
             lbHuongDan5.Text = "Here, you can only fill in the number \"8\".";
             lbHuongDan5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormHuongDanChoi
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(523, 502);
+            ClientSize = new Size(654, 628);
+            Controls.Add(pnHuongDan3);
             Controls.Add(pnHuongDan2);
             Controls.Add(pnHuongDan1);
+            Controls.Add(pnHuongDan4);
             Controls.Add(pnHuongDan5);
+            Controls.Add(pnHuongDan6);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "FormHuongDanChoi";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormHuongDanChoi";
