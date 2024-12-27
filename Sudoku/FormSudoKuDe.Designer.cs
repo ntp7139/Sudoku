@@ -442,7 +442,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(521, 698);
+            ClientSize = new Size(520, 700);
             Controls.Add(btnAnswer_frmDe);
             Controls.Add(pbChoiLai);
             Controls.Add(pictureBox7);

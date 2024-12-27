@@ -16,6 +16,9 @@
     <Compile Update="FormGiaoDienTroChoi.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormHuongDanChoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormQuanTriNguoiChoi.cs">
       <SubType>Form</SubType>
     </Compile>
