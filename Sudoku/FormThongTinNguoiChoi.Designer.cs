@@ -62,9 +62,9 @@
             lb_Quyentruycap.Location = new Point(66, 98);
             lb_Quyentruycap.Margin = new Padding(2, 0, 2, 0);
             lb_Quyentruycap.Name = "lb_Quyentruycap";
-            lb_Quyentruycap.Size = new Size(82, 20);
+            lb_Quyentruycap.Size = new Size(56, 20);
             lb_Quyentruycap.TabIndex = 1;
-            lb_Quyentruycap.Text = "Permission";
+            lb_Quyentruycap.Text = "Access";
             // 
             // lb_Game_played
             // 
@@ -113,7 +113,7 @@
             // tB_taikhoan
             // 
             tB_taikhoan.Location = new Point(247, 42);
-            tB_taikhoan.Margin = new Padding(2, 2, 2, 2);
+            tB_taikhoan.Margin = new Padding(2);
             tB_taikhoan.Name = "tB_taikhoan";
             tB_taikhoan.Size = new Size(412, 25);
             tB_taikhoan.TabIndex = 6;
@@ -121,7 +121,7 @@
             // tB_QuyenTruyCap
             // 
             tB_QuyenTruyCap.Location = new Point(247, 98);
-            tB_QuyenTruyCap.Margin = new Padding(2, 2, 2, 2);
+            tB_QuyenTruyCap.Margin = new Padding(2);
             tB_QuyenTruyCap.Name = "tB_QuyenTruyCap";
             tB_QuyenTruyCap.Size = new Size(412, 25);
             tB_QuyenTruyCap.TabIndex = 7;
@@ -129,7 +129,7 @@
             // tB_game_played
             // 
             tB_game_played.Location = new Point(247, 156);
-            tB_game_played.Margin = new Padding(2, 2, 2, 2);
+            tB_game_played.Margin = new Padding(2);
             tB_game_played.Name = "tB_game_played";
             tB_game_played.Size = new Size(412, 25);
             tB_game_played.TabIndex = 8;
@@ -137,7 +137,7 @@
             // tB_Game_won
             // 
             tB_Game_won.Location = new Point(247, 218);
-            tB_Game_won.Margin = new Padding(2, 2, 2, 2);
+            tB_Game_won.Margin = new Padding(2);
             tB_Game_won.Name = "tB_Game_won";
             tB_Game_won.Size = new Size(412, 25);
             tB_Game_won.TabIndex = 9;
@@ -145,7 +145,7 @@
             // tB_time_played
             // 
             tB_time_played.Location = new Point(247, 270);
-            tB_time_played.Margin = new Padding(2, 2, 2, 2);
+            tB_time_played.Margin = new Padding(2);
             tB_time_played.Name = "tB_time_played";
             tB_time_played.Size = new Size(412, 25);
             tB_time_played.TabIndex = 10;
@@ -153,7 +153,7 @@
             // tB_game_id_current
             // 
             tB_game_id_current.Location = new Point(247, 314);
-            tB_game_id_current.Margin = new Padding(2, 2, 2, 2);
+            tB_game_id_current.Margin = new Padding(2);
             tB_game_id_current.Name = "tB_game_id_current";
             tB_game_id_current.Size = new Size(412, 25);
             tB_game_id_current.TabIndex = 11;
@@ -164,7 +164,7 @@
             btn_Update.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
             btn_Update.ForeColor = SystemColors.ButtonHighlight;
             btn_Update.Location = new Point(176, 375);
-            btn_Update.Margin = new Padding(2, 2, 2, 2);
+            btn_Update.Margin = new Padding(2);
             btn_Update.Name = "btn_Update";
             btn_Update.Size = new Size(130, 29);
             btn_Update.TabIndex = 12;
@@ -178,7 +178,7 @@
             btn_Thoat.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
             btn_Thoat.ForeColor = SystemColors.ButtonHighlight;
             btn_Thoat.Location = new Point(434, 375);
-            btn_Thoat.Margin = new Padding(2, 2, 2, 2);
+            btn_Thoat.Margin = new Padding(2);
             btn_Thoat.Name = "btn_Thoat";
             btn_Thoat.Size = new Size(108, 28);
             btn_Thoat.TabIndex = 13;
@@ -207,7 +207,7 @@
             Controls.Add(lb_Quyentruycap);
             Controls.Add(lb_Taikhoan);
             Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormThongTinNguoiChoi";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormThongTinNguoiChoi";

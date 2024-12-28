@@ -142,8 +142,10 @@ namespace Sudoku
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            
+            pn_Giaodienchinh.Visible = false;
+            pn_Themnguoichoi.Visible = false;
             pn_Suanguoichoi.Visible = true;
+            pn_Xoa.Visible = false;
 
         }
 
@@ -240,6 +242,9 @@ namespace Sudoku
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
+            pn_Giaodienchinh.Visible = false;
+            pn_Themnguoichoi.Visible = false;
+            pn_Suanguoichoi.Visible = false;
             pn_Xoa.Visible = true;
 
         }
@@ -276,6 +281,7 @@ namespace Sudoku
         {
             pn_Xoa.Visible = false;
             tB_Taikhoan_xoa.Text = "";
+            pn_Giaodienchinh.Visible = true;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -316,6 +322,7 @@ namespace Sudoku
             lb_phanquyen_Sua.Visible = false;
             rB_admin_Sua.Visible = false;
             rB_user_Sua.Visible = false;
+            pn_Giaodienchinh.Visible = true;
         }
     }
 }

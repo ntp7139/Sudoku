@@ -54,9 +54,9 @@ namespace Sudoku
             try
             {
                 string name = txtTen.Text;
-                string id = txtID.Text;
+               
 
-                string query = $"SELECT taikhoan,game_id,score,time FROM lichsudau WHERE taikhoan = '{name}';";
+                string query = $"SELECT taikhoan as Account,game_id as ID,score as Score,time as Time FROM lichsudau WHERE taikhoan = '{name}';";
                 con.Open();
                 MySqlCommand command = new MySqlCommand(query, con);
                 MySqlDataReader read = command.ExecuteReader();
@@ -102,9 +102,9 @@ namespace Sudoku
             {
                 pb.Visible = false;
                 string name = txtTen.Text;
-                string id = txtID.Text;
+     
                 
-                string query = $"SELECT taikhoan,game_id,score,time FROM lichsudau WHERE taikhoan = '{name}';";
+                string query = $"SELECT taikhoan as Account,game_id as ID,score as Score,time as Time FROM lichsudau WHERE taikhoan = '{name}';";
                 con.Open();
                 MySqlCommand command = new MySqlCommand(query, con);
                 MySqlDataReader read = command.ExecuteReader();

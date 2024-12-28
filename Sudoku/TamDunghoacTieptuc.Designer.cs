@@ -36,51 +36,54 @@
             // lbTroChoiDaDuocTamDung
             // 
             lbTroChoiDaDuocTamDung.BackColor = Color.Transparent;
-            lbTroChoiDaDuocTamDung.Font = new Font("Microsoft Sans Serif", 19.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTroChoiDaDuocTamDung.Location = new Point(73, 41);
-            lbTroChoiDaDuocTamDung.Margin = new Padding(6, 0, 6, 0);
+            lbTroChoiDaDuocTamDung.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTroChoiDaDuocTamDung.Location = new Point(46, 9);
+            lbTroChoiDaDuocTamDung.Margin = new Padding(5, 0, 5, 0);
             lbTroChoiDaDuocTamDung.Name = "lbTroChoiDaDuocTamDung";
-            lbTroChoiDaDuocTamDung.Size = new Size(538, 78);
+            lbTroChoiDaDuocTamDung.Size = new Size(283, 34);
             lbTroChoiDaDuocTamDung.TabIndex = 3;
-            lbTroChoiDaDuocTamDung.Text = "Trò chơi đã được tạm dừng";
+            lbTroChoiDaDuocTamDung.Text = "The game has been paused";
+            lbTroChoiDaDuocTamDung.TextAlign = ContentAlignment.MiddleCenter;
             lbTroChoiDaDuocTamDung.Click += lbTroChoiDaDuocTamDung_Click;
             // 
             // button1
             // 
-            button1.BackColor = Color.Chartreuse;
-            button1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(364, 152);
-            button1.Margin = new Padding(6, 8, 6, 8);
+            button1.BackColor = Color.SteelBlue;
+            button1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(221, 51);
+            button1.Margin = new Padding(5, 6, 5, 6);
             button1.Name = "button1";
-            button1.Size = new Size(247, 49);
+            button1.Size = new Size(89, 40);
             button1.TabIndex = 8;
-            button1.Text = "Thoát Game";
+            button1.Text = "Exit";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // btnChoiTiep
             // 
-            btnChoiTiep.BackColor = Color.Chartreuse;
-            btnChoiTiep.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnChoiTiep.Location = new Point(73, 150);
-            btnChoiTiep.Margin = new Padding(6, 8, 6, 8);
+            btnChoiTiep.BackColor = Color.SteelBlue;
+            btnChoiTiep.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChoiTiep.ForeColor = SystemColors.ButtonHighlight;
+            btnChoiTiep.Location = new Point(60, 51);
+            btnChoiTiep.Margin = new Padding(5, 6, 5, 6);
             btnChoiTiep.Name = "btnChoiTiep";
-            btnChoiTiep.Size = new Size(226, 51);
+            btnChoiTiep.Size = new Size(89, 39);
             btnChoiTiep.TabIndex = 9;
-            btnChoiTiep.Text = "Chơi tiếp";
+            btnChoiTiep.Text = "Continue";
             btnChoiTiep.UseVisualStyleBackColor = false;
             btnChoiTiep.Click += btnChoiTiep_Click;
             // 
             // TamDunghoacTieptuc
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SeaShell;
-            ClientSize = new Size(657, 242);
+            BackColor = SystemColors.ButtonHighlight;
+            ClientSize = new Size(374, 106);
             Controls.Add(btnChoiTiep);
             Controls.Add(button1);
             Controls.Add(lbTroChoiDaDuocTamDung);
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "TamDunghoacTieptuc";
             StartPosition = FormStartPosition.CenterParent;
             Text = "TamDunghoacTieptuc";

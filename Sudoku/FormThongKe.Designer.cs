@@ -32,15 +32,16 @@ namespace Sudoku
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongKe));
             txtTen = new TextBox();
-            txtID = new TextBox();
             dataGridView1 = new DataGridView();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pb = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -48,40 +49,51 @@ namespace Sudoku
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // txtTen
             // 
-            txtTen.Location = new Point(72, 170);
+            txtTen.Location = new Point(54, 259);
             txtTen.Name = "txtTen";
-            txtTen.Size = new Size(254, 27);
-            txtTen.TabIndex = 2;
+            txtTen.Size = new Size(228, 27);
+            txtTen.TabIndex = 0;
             txtTen.TextChanged += txtTen_TextChanged;
-            // 
-            // txtID
-            // 
-            txtID.Location = new Point(71, 235);
-            txtID.Name = "txtID";
-            txtID.Size = new Size(255, 27);
-            txtID.TabIndex = 3;
-            txtID.TextChanged += textBox2_TextChanged;
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.BackColor = Color.AliceBlue;
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(373, 71);
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.Location = new Point(296, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(428, 333);
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 45;
+            dataGridView1.Size = new Size(500, 476);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (System.Drawing.Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(262, 352);
+            pictureBox4.Location = new Point(201, 452);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(41, 36);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -92,7 +104,7 @@ namespace Sudoku
             // pictureBox5
             // 
             pictureBox5.Image = (System.Drawing.Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(56, 352);
+            pictureBox5.Location = new Point(38, 452);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(40, 36);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -103,9 +115,9 @@ namespace Sudoku
             // pb
             // 
             pb.Image = Properties.Resources.anhbia1;
-            pb.Location = new Point(357, -3);
+            pb.Location = new Point(316, -2);
             pb.Name = "pb";
-            pb.Size = new Size(444, 409);
+            pb.Size = new Size(482, 504);
             pb.SizeMode = PictureBoxSizeMode.CenterImage;
             pb.TabIndex = 14;
             pb.TabStop = false;
@@ -114,28 +126,18 @@ namespace Sudoku
             // pictureBox2
             // 
             pictureBox2.Image = (System.Drawing.Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(22, 166);
+            pictureBox2.Location = new Point(12, 257);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(37, 34);
+            pictureBox2.Size = new Size(32, 31);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (System.Drawing.Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(26, 233);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(32, 30);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 16;
-            pictureBox3.TabStop = false;
             // 
             // label1
             // 
             label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.SteelBlue;
-            label1.Location = new Point(44, 24);
+            label1.Location = new Point(17, 81);
             label1.Name = "label1";
             label1.Size = new Size(259, 47);
             label1.TabIndex = 17;
@@ -144,9 +146,9 @@ namespace Sudoku
             // label2
             // 
             label2.Font = new System.Drawing.Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 71);
+            label2.Location = new Point(-1, 117);
             label2.Name = "label2";
-            label2.Size = new Size(323, 42);
+            label2.Size = new Size(291, 42);
             label2.TabIndex = 18;
             label2.Text = "Review your game history and track your progress here!";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -157,16 +159,14 @@ namespace Sudoku
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(800, 400);
+            ClientSize = new Size(800, 500);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pb);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(dataGridView1);
-            Controls.Add(txtID);
             Controls.Add(txtTen);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "FormThongKe";
@@ -177,20 +177,17 @@ namespace Sudoku
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private TextBox txtTen;
-        private TextBox txtID;
         private DataGridView dataGridView1;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pb;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
         private Label label1;
         private Label label2;
     }

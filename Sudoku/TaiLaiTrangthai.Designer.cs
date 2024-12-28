@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaiLaiTrangthai));
             dtgLuuTrangThaiVanCu = new DataGridView();
             taikhoan = new DataGridViewTextBoxColumn();
             game_id = new DataGridViewTextBoxColumn();
@@ -49,7 +51,19 @@
             label2 = new Label();
             label3 = new Label();
             lbTaiDuLieuManChoi = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dtgLuuTrangThaiVanCu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // dtgLuuTrangThaiVanCu
@@ -73,6 +87,14 @@
             dtgLuuTrangThaiVanCu.Name = "dtgLuuTrangThaiVanCu";
             dtgLuuTrangThaiVanCu.ReadOnly = true;
             dtgLuuTrangThaiVanCu.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = SystemColors.Control;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = Color.AliceBlue;
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dtgLuuTrangThaiVanCu.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             dtgLuuTrangThaiVanCu.RowHeadersWidth = 51;
             dtgLuuTrangThaiVanCu.RowTemplate.Height = 24;
             dtgLuuTrangThaiVanCu.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -251,12 +273,74 @@
             lbTaiDuLieuManChoi.Text = "here";
             lbTaiDuLieuManChoi.Click += lbTaiDuLieuManChoi_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(36, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(43, 43);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(673, 13);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(43, 43);
+            pictureBox3.TabIndex = 11;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(-1, 239);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(43, 43);
+            pictureBox9.TabIndex = 16;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(745, 200);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(43, 43);
+            pictureBox5.TabIndex = 17;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(710, 521);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(35, 33);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 18;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(36, 511);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(33, 39);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 19;
+            pictureBox2.TabStop = false;
+            // 
             // TaiLaiTrangthai
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 562);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox8);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox9);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox1);
             Controls.Add(lbTaiDuLieuManChoi);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -270,6 +354,12 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TaiLaiTrangthai";
             ((System.ComponentModel.ISupportInitialize)dtgLuuTrangThaiVanCu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,5 +381,11 @@
         private DataGridViewTextBoxColumn score;
         private DataGridViewTextBoxColumn time;
         private DataGridViewTextBoxColumn che_do;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox2;
     }
 }
