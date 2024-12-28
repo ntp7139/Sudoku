@@ -204,7 +204,7 @@ namespace Sudoku
             if (!Count.Check_ID_Sudoku(game_id))
             {
                 id = Count.ExcuteScalar(query);
-                id += 10;
+                id += 10000;
                 return id.ToString();
             }return game_id;
            
