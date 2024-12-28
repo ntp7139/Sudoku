@@ -142,7 +142,7 @@ namespace Sudoku
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            
+
             pn_Suanguoichoi.Visible = true;
 
         }
@@ -316,6 +316,11 @@ namespace Sudoku
             lb_phanquyen_Sua.Visible = false;
             rB_admin_Sua.Visible = false;
             rB_user_Sua.Visible = false;
+        }
+
+        private void dtGV_Quantritaikhoan_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -29,22 +29,18 @@
         private void InitializeComponent()
         {
             dtGV_Quantritaikhoan = new DataGridView();
-            column_Taikhoan = new DataGridViewTextBoxColumn();
-            column_Matkhau = new DataGridViewTextBoxColumn();
-            column_email = new DataGridViewTextBoxColumn();
-            column_phanquyen = new DataGridViewTextBoxColumn();
             btn_Add = new Button();
             btn_Edit = new Button();
             btn_Delete = new Button();
             btn_Tailai = new Button();
             pn_Giaodienchinh = new Panel();
+            pn_Themnguoichoi = new Panel();
+            btnExit = new Button();
             pn_Xoa = new Panel();
             btnExit_frmXoa = new Button();
             btnDelete = new Button();
             tB_Taikhoan_xoa = new TextBox();
             lb_taikhoan_xoa = new Label();
-            pn_Themnguoichoi = new Panel();
-            btnExit = new Button();
             btnAdd = new Button();
             rB_admin_Them = new RadioButton();
             rB_user_Them = new RadioButton();
@@ -67,52 +63,29 @@
             lb_Matkhau_Sua = new Label();
             tB_Taikhoan_Sua = new TextBox();
             lb_Nhaptaikhoan_sua = new Label();
+            column_Account = new DataGridViewTextBoxColumn();
+            column_Password = new DataGridViewTextBoxColumn();
+            column_email = new DataGridViewTextBoxColumn();
+            column_Access = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtGV_Quantritaikhoan).BeginInit();
             pn_Giaodienchinh.SuspendLayout();
-            pn_Xoa.SuspendLayout();
             pn_Themnguoichoi.SuspendLayout();
+            pn_Xoa.SuspendLayout();
             pn_Suanguoichoi.SuspendLayout();
             SuspendLayout();
             // 
             // dtGV_Quantritaikhoan
             // 
             dtGV_Quantritaikhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtGV_Quantritaikhoan.Columns.AddRange(new DataGridViewColumn[] { column_Taikhoan, column_Matkhau, column_email, column_phanquyen });
+            dtGV_Quantritaikhoan.Columns.AddRange(new DataGridViewColumn[] { column_Account, column_Password, column_email, column_Access });
             dtGV_Quantritaikhoan.Location = new Point(35, 105);
             dtGV_Quantritaikhoan.Margin = new Padding(2);
             dtGV_Quantritaikhoan.Name = "dtGV_Quantritaikhoan";
             dtGV_Quantritaikhoan.RowHeadersWidth = 62;
             dtGV_Quantritaikhoan.Size = new Size(726, 298);
             dtGV_Quantritaikhoan.TabIndex = 0;
+            dtGV_Quantritaikhoan.CellContentClick += dtGV_Quantritaikhoan_CellContentClick;
             dtGV_Quantritaikhoan.RowPostPaint += dataGridView1_RowPostPaint;
-            // 
-            // column_Taikhoan
-            // 
-            column_Taikhoan.HeaderText = "Tài khoản";
-            column_Taikhoan.MinimumWidth = 8;
-            column_Taikhoan.Name = "column_Taikhoan";
-            column_Taikhoan.Width = 150;
-            // 
-            // column_Matkhau
-            // 
-            column_Matkhau.HeaderText = "Mật khẩu";
-            column_Matkhau.MinimumWidth = 8;
-            column_Matkhau.Name = "column_Matkhau";
-            column_Matkhau.Width = 150;
-            // 
-            // column_email
-            // 
-            column_email.HeaderText = "Email";
-            column_email.MinimumWidth = 8;
-            column_email.Name = "column_email";
-            column_email.Width = 230;
-            // 
-            // column_phanquyen
-            // 
-            column_phanquyen.HeaderText = "Quyền truy cập";
-            column_phanquyen.MinimumWidth = 8;
-            column_phanquyen.Name = "column_phanquyen";
-            column_phanquyen.Width = 200;
             // 
             // btn_Add
             // 
@@ -183,6 +156,43 @@
             pn_Giaodienchinh.Size = new Size(794, 501);
             pn_Giaodienchinh.TabIndex = 6;
             // 
+            // pn_Themnguoichoi
+            // 
+            pn_Themnguoichoi.BackColor = SystemColors.ButtonHighlight;
+            pn_Themnguoichoi.Controls.Add(btnExit);
+            pn_Themnguoichoi.Controls.Add(pn_Xoa);
+            pn_Themnguoichoi.Controls.Add(btnAdd);
+            pn_Themnguoichoi.Controls.Add(rB_admin_Them);
+            pn_Themnguoichoi.Controls.Add(rB_user_Them);
+            pn_Themnguoichoi.Controls.Add(tB_Email_Them);
+            pn_Themnguoichoi.Controls.Add(tB_Matkhau_Them);
+            pn_Themnguoichoi.Controls.Add(tB_Taikhoan_Them);
+            pn_Themnguoichoi.Controls.Add(lbPermisson);
+            pn_Themnguoichoi.Controls.Add(lbEmail);
+            pn_Themnguoichoi.Controls.Add(lbPassword);
+            pn_Themnguoichoi.Controls.Add(lbAccount);
+            pn_Themnguoichoi.Location = new Point(74, 75);
+            pn_Themnguoichoi.Margin = new Padding(2);
+            pn_Themnguoichoi.Name = "pn_Themnguoichoi";
+            pn_Themnguoichoi.Size = new Size(640, 328);
+            pn_Themnguoichoi.TabIndex = 12;
+            pn_Themnguoichoi.Visible = false;
+            pn_Themnguoichoi.Paint += pn_Themnguoichoi_Paint;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.SteelBlue;
+            btnExit.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
+            btnExit.ForeColor = SystemColors.ButtonHighlight;
+            btnExit.Location = new Point(364, 264);
+            btnExit.Margin = new Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(116, 31);
+            btnExit.TabIndex = 10;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
+            // 
             // pn_Xoa
             // 
             pn_Xoa.Controls.Add(btnExit_frmXoa);
@@ -240,43 +250,6 @@
             lb_taikhoan_xoa.Size = new Size(67, 20);
             lb_taikhoan_xoa.TabIndex = 0;
             lb_taikhoan_xoa.Text = "Account";
-            // 
-            // pn_Themnguoichoi
-            // 
-            pn_Themnguoichoi.BackColor = SystemColors.ButtonHighlight;
-            pn_Themnguoichoi.Controls.Add(btnExit);
-            pn_Themnguoichoi.Controls.Add(pn_Xoa);
-            pn_Themnguoichoi.Controls.Add(btnAdd);
-            pn_Themnguoichoi.Controls.Add(rB_admin_Them);
-            pn_Themnguoichoi.Controls.Add(rB_user_Them);
-            pn_Themnguoichoi.Controls.Add(tB_Email_Them);
-            pn_Themnguoichoi.Controls.Add(tB_Matkhau_Them);
-            pn_Themnguoichoi.Controls.Add(tB_Taikhoan_Them);
-            pn_Themnguoichoi.Controls.Add(lbPermisson);
-            pn_Themnguoichoi.Controls.Add(lbEmail);
-            pn_Themnguoichoi.Controls.Add(lbPassword);
-            pn_Themnguoichoi.Controls.Add(lbAccount);
-            pn_Themnguoichoi.Location = new Point(74, 75);
-            pn_Themnguoichoi.Margin = new Padding(2);
-            pn_Themnguoichoi.Name = "pn_Themnguoichoi";
-            pn_Themnguoichoi.Size = new Size(640, 328);
-            pn_Themnguoichoi.TabIndex = 12;
-            pn_Themnguoichoi.Visible = false;
-            pn_Themnguoichoi.Paint += pn_Themnguoichoi_Paint;
-            // 
-            // btnExit
-            // 
-            btnExit.BackColor = Color.SteelBlue;
-            btnExit.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold);
-            btnExit.ForeColor = SystemColors.ButtonHighlight;
-            btnExit.Location = new Point(364, 264);
-            btnExit.Margin = new Padding(2);
-            btnExit.Name = "btnExit";
-            btnExit.Size = new Size(116, 31);
-            btnExit.TabIndex = 10;
-            btnExit.Text = "Exit";
-            btnExit.UseVisualStyleBackColor = false;
-            btnExit.Click += btnExit_Click;
             // 
             // btnAdd
             // 
@@ -534,6 +507,39 @@
             lb_Nhaptaikhoan_sua.TabIndex = 0;
             lb_Nhaptaikhoan_sua.Text = "Account";
             // 
+            // column_Account
+            // 
+            column_Account.DataPropertyName = "taikhoan";
+            column_Account.HeaderText = "Account";
+            column_Account.MinimumWidth = 8;
+            column_Account.Name = "column_Account";
+            column_Account.ReadOnly = true;
+            column_Account.Width = 150;
+            // 
+            // column_Password
+            // 
+            column_Password.DataPropertyName = "matkhau";
+            column_Password.HeaderText = "Password";
+            column_Password.MinimumWidth = 8;
+            column_Password.Name = "column_Password";
+            column_Password.Width = 150;
+            // 
+            // column_email
+            // 
+            column_email.DataPropertyName = "email";
+            column_email.HeaderText = "Email";
+            column_email.MinimumWidth = 8;
+            column_email.Name = "column_email";
+            column_email.Width = 230;
+            // 
+            // column_Access
+            // 
+            column_Access.DataPropertyName = "access";
+            column_Access.HeaderText = "Access";
+            column_Access.MinimumWidth = 8;
+            column_Access.Name = "column_Access";
+            column_Access.Width = 200;
+            // 
             // FormQuanTriNguoiChoi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -549,10 +555,10 @@
             Load += FormQuanTriHeThong_Load;
             ((System.ComponentModel.ISupportInitialize)dtGV_Quantritaikhoan).EndInit();
             pn_Giaodienchinh.ResumeLayout(false);
-            pn_Xoa.ResumeLayout(false);
-            pn_Xoa.PerformLayout();
             pn_Themnguoichoi.ResumeLayout(false);
             pn_Themnguoichoi.PerformLayout();
+            pn_Xoa.ResumeLayout(false);
+            pn_Xoa.PerformLayout();
             pn_Suanguoichoi.ResumeLayout(false);
             pn_Suanguoichoi.PerformLayout();
             ResumeLayout(false);
@@ -566,10 +572,6 @@
         private Button btn_Edit;
         private Button btn_Add;
         private DataGridView dtGV_Quantritaikhoan;
-        private DataGridViewTextBoxColumn column_Taikhoan;
-        private DataGridViewTextBoxColumn column_Matkhau;
-        private DataGridViewTextBoxColumn column_email;
-        private DataGridViewTextBoxColumn column_phanquyen;
         private TabControl tbC_QuanTriHeThong;
         private Panel pn_Giaodienchinh;
         private Panel pn_Themnguoichoi;
@@ -601,5 +603,9 @@
         private Button btnDelete;
         private Button btnExit_frmSua;
         private Button btnEdit;
+        private DataGridViewTextBoxColumn column_Account;
+        private DataGridViewTextBoxColumn column_Password;
+        private DataGridViewTextBoxColumn column_email;
+        private DataGridViewTextBoxColumn column_Access;
     }
 }
