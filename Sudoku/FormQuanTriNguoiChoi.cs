@@ -142,8 +142,12 @@ namespace Sudoku
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             pn_Giaodienchinh.Visible = false;
             pn_Themnguoichoi.Visible = false;
+=======
+
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             pn_Suanguoichoi.Visible = true;
             pn_Xoa.Visible = false;
 
@@ -323,6 +327,11 @@ namespace Sudoku
             rB_admin_Sua.Visible = false;
             rB_user_Sua.Visible = false;
             pn_Giaodienchinh.Visible = true;
+        }
+
+        private void dtGV_Quantritaikhoan_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

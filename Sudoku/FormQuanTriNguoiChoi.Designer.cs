@@ -36,10 +36,6 @@
             DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
             dtGV_Quantritaikhoan = new DataGridView();
-            column_Taikhoan = new DataGridViewTextBoxColumn();
-            column_Matkhau = new DataGridViewTextBoxColumn();
-            column_email = new DataGridViewTextBoxColumn();
-            column_phanquyen = new DataGridViewTextBoxColumn();
             btn_Add = new Button();
             btn_Edit = new Button();
             btn_Delete = new Button();
@@ -47,6 +43,14 @@
             pn_Giaodienchinh = new Panel();
             pn_Themnguoichoi = new Panel();
             btnExit = new Button();
+<<<<<<< HEAD
+=======
+            pn_Xoa = new Panel();
+            btnExit_frmXoa = new Button();
+            btnDelete = new Button();
+            tB_Taikhoan_xoa = new TextBox();
+            lb_taikhoan_xoa = new Label();
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             btnAdd = new Button();
             rB_admin_Them = new RadioButton();
             rB_user_Them = new RadioButton();
@@ -69,14 +73,22 @@
             lb_Matkhau_Sua = new Label();
             tB_Taikhoan_Sua = new TextBox();
             lb_Nhaptaikhoan_sua = new Label();
+<<<<<<< HEAD
             pn_Xoa = new Panel();
             btnExit_frmXoa = new Button();
             btnDelete = new Button();
             tB_Taikhoan_xoa = new TextBox();
             lb_taikhoan_xoa = new Label();
+=======
+            column_Account = new DataGridViewTextBoxColumn();
+            column_Password = new DataGridViewTextBoxColumn();
+            column_email = new DataGridViewTextBoxColumn();
+            column_Access = new DataGridViewTextBoxColumn();
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             ((System.ComponentModel.ISupportInitialize)dtGV_Quantritaikhoan).BeginInit();
             pn_Giaodienchinh.SuspendLayout();
             pn_Themnguoichoi.SuspendLayout();
+            pn_Xoa.SuspendLayout();
             pn_Suanguoichoi.SuspendLayout();
             pn_Xoa.SuspendLayout();
             SuspendLayout();
@@ -93,6 +105,7 @@
             dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
             dtGV_Quantritaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             dtGV_Quantritaikhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             dtGV_Quantritaikhoan.Columns.AddRange(new DataGridViewColumn[] { column_Taikhoan, column_Matkhau, column_email, column_phanquyen });
             dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle13.BackColor = SystemColors.Window;
@@ -103,6 +116,10 @@
             dataGridViewCellStyle13.WrapMode = DataGridViewTriState.False;
             dtGV_Quantritaikhoan.DefaultCellStyle = dataGridViewCellStyle13;
             dtGV_Quantritaikhoan.Location = new Point(36, 77);
+=======
+            dtGV_Quantritaikhoan.Columns.AddRange(new DataGridViewColumn[] { column_Account, column_Password, column_email, column_Access });
+            dtGV_Quantritaikhoan.Location = new Point(35, 105);
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             dtGV_Quantritaikhoan.Margin = new Padding(2);
             dtGV_Quantritaikhoan.Name = "dtGV_Quantritaikhoan";
             dtGV_Quantritaikhoan.RowHeadersWidth = 62;
@@ -111,8 +128,10 @@
             dtGV_Quantritaikhoan.RowsDefaultCellStyle = dataGridViewCellStyle14;
             dtGV_Quantritaikhoan.Size = new Size(729, 400);
             dtGV_Quantritaikhoan.TabIndex = 0;
+            dtGV_Quantritaikhoan.CellContentClick += dtGV_Quantritaikhoan_CellContentClick;
             dtGV_Quantritaikhoan.RowPostPaint += dataGridView1_RowPostPaint;
             // 
+<<<<<<< HEAD
             // column_Taikhoan
             // 
             column_Taikhoan.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -161,6 +180,8 @@
             column_phanquyen.ReadOnly = true;
             column_phanquyen.Width = 125;
             // 
+=======
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             // btn_Add
             // 
             btn_Add.BackColor = Color.SteelBlue;
@@ -234,6 +255,10 @@
             // 
             pn_Themnguoichoi.BackColor = SystemColors.ButtonHighlight;
             pn_Themnguoichoi.Controls.Add(btnExit);
+<<<<<<< HEAD
+=======
+            pn_Themnguoichoi.Controls.Add(pn_Xoa);
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             pn_Themnguoichoi.Controls.Add(btnAdd);
             pn_Themnguoichoi.Controls.Add(rB_admin_Them);
             pn_Themnguoichoi.Controls.Add(rB_user_Them);
@@ -244,7 +269,11 @@
             pn_Themnguoichoi.Controls.Add(lbEmail);
             pn_Themnguoichoi.Controls.Add(lbPassword);
             pn_Themnguoichoi.Controls.Add(lbAccount);
+<<<<<<< HEAD
             pn_Themnguoichoi.Location = new Point(88, 101);
+=======
+            pn_Themnguoichoi.Location = new Point(74, 75);
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             pn_Themnguoichoi.Margin = new Padding(2);
             pn_Themnguoichoi.Name = "pn_Themnguoichoi";
             pn_Themnguoichoi.Size = new Size(640, 328);
@@ -266,6 +295,67 @@
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
+<<<<<<< HEAD
+=======
+            // pn_Xoa
+            // 
+            pn_Xoa.Controls.Add(btnExit_frmXoa);
+            pn_Xoa.Controls.Add(btnDelete);
+            pn_Xoa.Controls.Add(tB_Taikhoan_xoa);
+            pn_Xoa.Controls.Add(lb_taikhoan_xoa);
+            pn_Xoa.Location = new Point(92, 82);
+            pn_Xoa.Margin = new Padding(2);
+            pn_Xoa.Name = "pn_Xoa";
+            pn_Xoa.Size = new Size(498, 138);
+            pn_Xoa.TabIndex = 14;
+            pn_Xoa.Visible = false;
+            // 
+            // btnExit_frmXoa
+            // 
+            btnExit_frmXoa.BackColor = Color.SteelBlue;
+            btnExit_frmXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit_frmXoa.ForeColor = SystemColors.ButtonHighlight;
+            btnExit_frmXoa.Location = new Point(266, 82);
+            btnExit_frmXoa.Name = "btnExit_frmXoa";
+            btnExit_frmXoa.Size = new Size(94, 29);
+            btnExit_frmXoa.TabIndex = 15;
+            btnExit_frmXoa.Text = "Exit";
+            btnExit_frmXoa.UseVisualStyleBackColor = false;
+            btnExit_frmXoa.Click += btnExit_frmXoa_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.SteelBlue;
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.ForeColor = SystemColors.ButtonHighlight;
+            btnDelete.Location = new Point(94, 82);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(94, 29);
+            btnDelete.TabIndex = 14;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // tB_Taikhoan_xoa
+            // 
+            tB_Taikhoan_xoa.Location = new Point(146, 14);
+            tB_Taikhoan_xoa.Margin = new Padding(2);
+            tB_Taikhoan_xoa.Name = "tB_Taikhoan_xoa";
+            tB_Taikhoan_xoa.Size = new Size(311, 27);
+            tB_Taikhoan_xoa.TabIndex = 1;
+            // 
+            // lb_taikhoan_xoa
+            // 
+            lb_taikhoan_xoa.AutoSize = true;
+            lb_taikhoan_xoa.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb_taikhoan_xoa.Location = new Point(14, 19);
+            lb_taikhoan_xoa.Margin = new Padding(2, 0, 2, 0);
+            lb_taikhoan_xoa.Name = "lb_taikhoan_xoa";
+            lb_taikhoan_xoa.Size = new Size(67, 20);
+            lb_taikhoan_xoa.TabIndex = 0;
+            lb_taikhoan_xoa.Text = "Account";
+            // 
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             // btnAdd
             // 
             btnAdd.BackColor = Color.SteelBlue;
@@ -522,6 +612,7 @@
             lb_Nhaptaikhoan_sua.TabIndex = 0;
             lb_Nhaptaikhoan_sua.Text = "Account";
             // 
+<<<<<<< HEAD
             // pn_Xoa
             // 
             pn_Xoa.Controls.Add(btnExit_frmXoa);
@@ -579,6 +670,40 @@
             lb_taikhoan_xoa.Size = new Size(67, 20);
             lb_taikhoan_xoa.TabIndex = 0;
             lb_taikhoan_xoa.Text = "Account";
+=======
+            // column_Account
+            // 
+            column_Account.DataPropertyName = "taikhoan";
+            column_Account.HeaderText = "Account";
+            column_Account.MinimumWidth = 8;
+            column_Account.Name = "column_Account";
+            column_Account.ReadOnly = true;
+            column_Account.Width = 150;
+            // 
+            // column_Password
+            // 
+            column_Password.DataPropertyName = "matkhau";
+            column_Password.HeaderText = "Password";
+            column_Password.MinimumWidth = 8;
+            column_Password.Name = "column_Password";
+            column_Password.Width = 150;
+            // 
+            // column_email
+            // 
+            column_email.DataPropertyName = "email";
+            column_email.HeaderText = "Email";
+            column_email.MinimumWidth = 8;
+            column_email.Name = "column_email";
+            column_email.Width = 230;
+            // 
+            // column_Access
+            // 
+            column_Access.DataPropertyName = "access";
+            column_Access.HeaderText = "Access";
+            column_Access.MinimumWidth = 8;
+            column_Access.Name = "column_Access";
+            column_Access.Width = 200;
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
             // 
             // FormQuanTriNguoiChoi
             // 
@@ -599,6 +724,8 @@
             pn_Giaodienchinh.ResumeLayout(false);
             pn_Themnguoichoi.ResumeLayout(false);
             pn_Themnguoichoi.PerformLayout();
+            pn_Xoa.ResumeLayout(false);
+            pn_Xoa.PerformLayout();
             pn_Suanguoichoi.ResumeLayout(false);
             pn_Suanguoichoi.PerformLayout();
             pn_Xoa.ResumeLayout(false);
@@ -645,9 +772,16 @@
         private Button btnDelete;
         private Button btnExit_frmSua;
         private Button btnEdit;
+<<<<<<< HEAD
         private DataGridViewTextBoxColumn column_Taikhoan;
         private DataGridViewTextBoxColumn column_Matkhau;
         private DataGridViewTextBoxColumn column_email;
         private DataGridViewTextBoxColumn column_phanquyen;
+=======
+        private DataGridViewTextBoxColumn column_Account;
+        private DataGridViewTextBoxColumn column_Password;
+        private DataGridViewTextBoxColumn column_email;
+        private DataGridViewTextBoxColumn column_Access;
+>>>>>>> cdc827902a7f8bda413aeb9f012a285d1b068c1f
     }
 }
