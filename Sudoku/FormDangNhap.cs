@@ -7,7 +7,7 @@ namespace Sudoku
     {
         public Nguoichoi nguoichoi = new Nguoichoi();
         public LichSuDau lichsudau = new LichSuDau();
-        private string strConnection = "server=127.0.0.1;uid=root;pwd=phatbaoan112;database=sudoku";
+        private string strConnection = "server=phatchison-phatbaoan112-1d4a.d.aivencloud.com;port = 28938;uid=avnadmin;pwd=AVNS_UF7t0kMFhSmIyxPG8M5;database=defaultdb";
         public void Test()
         {
 

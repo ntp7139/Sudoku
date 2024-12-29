@@ -18,7 +18,7 @@ namespace Sudoku
         {
             Admin.taikhoan = ID_player;
             InitializeComponent();
-
+          //  this.Load += MainForm_Load;
 
         }
 
@@ -56,7 +56,7 @@ namespace Sudoku
             string musicFile = @"D:\ẢNH GAME\nhạc.mp3";
 
             // Phát nhạc tự động khi form mở
-            axWindowsMediaPlayer1.URL = musicFile;
+            //axWindowsMediaPlayer1.URL = musicFile;
         }
         
     }

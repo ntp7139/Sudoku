@@ -34,18 +34,16 @@
             btnExit = new Button();
             btnPlayGame = new Button();
             pictureBox1 = new PictureBox();
-            axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).BeginInit();
             SuspendLayout();
             // 
             // btnPlayerManagement
             // 
             btnPlayerManagement.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPlayerManagement.Location = new Point(133, 118);
+            btnPlayerManagement.Location = new Point(166, 148);
             btnPlayerManagement.Margin = new Padding(2);
             btnPlayerManagement.Name = "btnPlayerManagement";
-            btnPlayerManagement.Size = new Size(153, 60);
+            btnPlayerManagement.Size = new Size(191, 75);
             btnPlayerManagement.TabIndex = 0;
             btnPlayerManagement.Text = "Player Management";
             btnPlayerManagement.UseVisualStyleBackColor = true;
@@ -55,10 +53,10 @@
             // 
             btnLevelManagement.Enabled = false;
             btnLevelManagement.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
-            btnLevelManagement.Location = new Point(328, 118);
+            btnLevelManagement.Location = new Point(410, 148);
             btnLevelManagement.Margin = new Padding(2);
             btnLevelManagement.Name = "btnLevelManagement";
-            btnLevelManagement.Size = new Size(165, 60);
+            btnLevelManagement.Size = new Size(206, 75);
             btnLevelManagement.TabIndex = 1;
             btnLevelManagement.Text = "Level Management";
             btnLevelManagement.UseVisualStyleBackColor = true;
@@ -67,10 +65,10 @@
             // btnExit
             // 
             btnExit.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
-            btnExit.Location = new Point(328, 205);
+            btnExit.Location = new Point(410, 256);
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(165, 54);
+            btnExit.Size = new Size(206, 68);
             btnExit.TabIndex = 3;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
@@ -79,10 +77,10 @@
             // btnPlayGame
             // 
             btnPlayGame.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
-            btnPlayGame.Location = new Point(133, 205);
+            btnPlayGame.Location = new Point(166, 256);
             btnPlayGame.Margin = new Padding(2);
             btnPlayGame.Name = "btnPlayGame";
-            btnPlayGame.Size = new Size(153, 54);
+            btnPlayGame.Size = new Size(191, 68);
             btnPlayGame.TabIndex = 2;
             btnPlayGame.Text = "Play Game";
             btnPlayGame.UseVisualStyleBackColor = true;
@@ -92,28 +90,19 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, -2);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(641, 363);
+            pictureBox1.Size = new Size(801, 454);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
-            // axWindowsMediaPlayer1
-            // 
-            axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(65, 282);
-            axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
-            axWindowsMediaPlayer1.Size = new Size(536, 64);
-            axWindowsMediaPlayer1.TabIndex = 5;
-            // 
             // FormAdmin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
-            ClientSize = new Size(640, 360);
-            Controls.Add(axWindowsMediaPlayer1);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnPlayGame);
             Controls.Add(btnExit);
             Controls.Add(btnLevelManagement);
@@ -124,7 +113,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAdmin";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)axWindowsMediaPlayer1).EndInit();
             ResumeLayout(false);
         }
 
@@ -135,6 +123,5 @@
         private Button btnExit;
         private Button btnPlayGame;
         private PictureBox pictureBox1;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

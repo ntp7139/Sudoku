@@ -30,6 +30,7 @@ namespace Sudoku
         private bool status = false;
         private bool Answer_status = false;
         private int Help = 1;
+        private string Che_Do = "Easy";
         public void Init_CheckLoi()
         {
             for (int i = 0; i < 9; i++)
