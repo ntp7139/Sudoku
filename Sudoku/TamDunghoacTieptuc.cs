@@ -19,7 +19,7 @@ namespace Sudoku
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnChoiTiep_Click(object sender, EventArgs e)

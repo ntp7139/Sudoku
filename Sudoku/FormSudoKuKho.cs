@@ -30,6 +30,8 @@ namespace Sudoku
         private bool status = false;
         private bool Answer_status = false;
         private int Help = 1;
+        protected string Che_Do = "Hard";
+        protected Dictionary<(int, int), List<int>> draftValues = new Dictionary<(int, int), List<int>>(); // Giá trị nháp
         public void Init_CheckLoi()
         {
             for (int i = 0; i < 9; i++)
@@ -47,7 +49,9 @@ namespace Sudoku
             KhoiTaoBangSudoku();
             DienDuLieuBang();
             KhoitaoBoDemThoiGian();
-
+            dvgBangTroChoi.CellPainting += dvgBangTroChoi_CellPainting;
+            dvgBangTroChoi.KeyDown += dvgBangTroChoi_KeyDown;
+            this.KeyPreview = true;
 
         }
         // Khởi chạy chơi màn mới
@@ -57,13 +61,16 @@ namespace Sudoku
             nguoichoi.Load_Player(player_ID);
             nguoichoi.current_game_id = "0";
             Bang_Dau.game_id = "0";
-            Bang_Dau.game_id = Bang_Dau.Set_up_ID_game();
+            Bang_Dau.game_id = Bang_Dau.Set_up_ID_game(Che_Do);
             InitializeComponent();
 
             KhoiTaoBangSudoku();
             DienDuLieuBang();
             KhoitaoBoDemThoiGian();
             lb_Sudoku_title.Text += "_ID: " + Bang_Dau.game_id;
+            dvgBangTroChoi.CellPainting += dvgBangTroChoi_CellPainting;
+            dvgBangTroChoi.KeyDown += dvgBangTroChoi_KeyDown;
+            this.KeyPreview = true;
             //lb_game_id.Text += Bang_Dau.game_id;
         }
         //Khởi chạy chơi màn đang chơi
@@ -79,9 +86,105 @@ namespace Sudoku
             Load_Game_Cu();
             KhoitaoBoDemThoiGian();
             lb_Sudoku_title.Text +="_ID:" + Bang_Dau.game_id;
+            dvgBangTroChoi.CellPainting += dvgBangTroChoi_CellPainting;
+            dvgBangTroChoi.KeyDown += dvgBangTroChoi_KeyDown;
+            this.KeyPreview = true;
             // lb_game_id.Text += Bang_Dau.game_id;
         }
-        
+
+
+        // Thêm giá trị nháp
+        protected void AddDraft(int row, int col, int draftValue)
+        {
+            if (!draftValues.ContainsKey((row, col)))
+            {
+                draftValues[(row, col)] = new List<int>();
+            }
+            if (!draftValues[(row, col)].Contains(draftValue))
+            {
+                draftValues[(row, col)].Add(draftValue);
+            }
+        }
+
+        // Vẽ giá trị nháp trong DataGridView
+        protected void dvgBangTroChoi_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            // Kiểm tra nếu ô hiện tại không hợp lệ
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                return;
+
+            // Hiển thị giá trị bản nháp nếu tồn tại
+            if (draftValues.ContainsKey((e.RowIndex, e.ColumnIndex)))
+            {
+                // Lấy danh sách giá trị nháp
+                string drafts = string.Join(", ", draftValues[(e.RowIndex, e.ColumnIndex)]);
+
+                // Vẽ giá trị chính thức (nếu có)
+                if (e.FormattedValue != null && !string.IsNullOrEmpty(e.FormattedValue.ToString()))
+                {
+
+                }
+
+                // Vẽ giá trị bản nháp (ở góc dưới bên phải)
+                e.Graphics.DrawString(
+                    drafts,
+                    new Font("Arial", 8),
+                    Brushes.Green,
+                    e.CellBounds.X + 5,
+                    e.CellBounds.Y + 5
+                );
+
+                // Ngăn không cho vẽ lại nội dung mặc định
+                e.Handled = true;
+            }
+        }
+
+        // Xử lý khi nhấn phím (Ctrl + Số 1-9) để thêm giá trị nháp
+        protected void dvgBangTroChoi_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                // Kiểm tra nếu người dùng nhấn Ctrl và phím số từ 1 đến 9
+                if (e.Control && e.KeyCode >= Keys.D1 && e.KeyCode <= Keys.D9)
+                {
+                    int draftValue = e.KeyCode - Keys.D0; // Chuyển phím D1, D2,... về giá trị số 1, 2,...
+
+                    // Lấy ô hiện tại (CurrentCell)
+                    int row = dvgBangTroChoi.CurrentCell.RowIndex;
+                    int col = dvgBangTroChoi.CurrentCell.ColumnIndex;
+
+                    // Thêm giá trị nháp vào ô
+                    AddDraft(row, col, draftValue);
+
+                    // Cập nhật giao diện
+                    dvgBangTroChoi.InvalidateCell(col, row);
+
+                    // Ngăn chặn hành động mặc định của phím
+                    e.Handled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        // Xóa giá trị nháp trong ô
+        protected void ClearDraft(int row, int col)
+        {
+            if (draftValues.ContainsKey((row, col)))
+            {
+                draftValues.Remove((row, col));
+                dvgBangTroChoi.InvalidateCell(col, row); // Cập nhật lại hiển thị sau khi xóa nháp
+            }
+        }
+        // Xóa bản nháp
+        protected void Clear_Draft(object sender, EventArgs e)
+        {
+            int hang = dvgBangTroChoi.CurrentCell.RowIndex;
+            int cot = dvgBangTroChoi.CurrentCell.ColumnIndex;
+            ClearDraft(hang, cot);
+        }
         //Khởi tạo sự kiện chạy 
         private void time_Tick(object sender, EventArgs e)
         {
@@ -93,6 +196,11 @@ namespace Sudoku
             string Phut_Text = Phut < 10 ? "0" + Phut.ToString() : Phut.ToString();
             string Giay_Text = Giay < 10 ? "0" + Giay.ToString() : Giay.ToString();
             lb_Time.Text = $"{Phut_Text}:{Giay_Text}";
+            if (KiemTraBangHopLe() && Answer_status == false && status == false)
+            {
+                MessageBox.Show("You're winner!");
+                status = true;
+            }
         }
         //Khởi tạo một bộ đếm thời gian
 
@@ -427,7 +535,7 @@ namespace Sudoku
             {
                 Bang_Dau.Che_Do = "Hard";
                 Bang_Dau.taikhoan = nguoichoi.taikhoan;
-                Bang_Dau.game_id = Bang_Dau.game_id == "0" ? Bang_Dau.Set_up_ID_game() : Bang_Dau.game_id;
+                Bang_Dau.game_id = Bang_Dau.game_id == "0" ? Bang_Dau.Set_up_ID_game(Che_Do) : Bang_Dau.game_id;
                 Bang_Dau.time = Thoigian.ToString();
                 Bang_Dau.score = lb_Score.Text == "Score" ? "0" : lb_Score.Text;
                 // Bang_Dau.Check_Diem = Convert_Matrix_To_String(Check_Diem);
@@ -451,7 +559,7 @@ namespace Sudoku
         {
             Bang_Dau.Che_Do = "Hard";
             Bang_Dau.taikhoan = nguoichoi.taikhoan;
-            Bang_Dau.game_id = Bang_Dau.Set_up_ID_game();
+            Bang_Dau.game_id = Bang_Dau.Set_up_ID_game(Che_Do);
             Bang_Dau.time = Thoigian.ToString();
             Bang_Dau.score = lb_Score.Text == "Score" ? "0" : lb_Score.Text;
             // Bang_Dau.Check_Diem = Convert_Matrix_To_String(Check_Diem);

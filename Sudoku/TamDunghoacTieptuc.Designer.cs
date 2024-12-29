@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             lbTroChoiDaDuocTamDung = new Label();
-            button1 = new Button();
             btnChoiTiep = new Button();
             SuspendLayout();
             // 
@@ -37,38 +36,24 @@
             // 
             lbTroChoiDaDuocTamDung.BackColor = Color.Transparent;
             lbTroChoiDaDuocTamDung.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbTroChoiDaDuocTamDung.Location = new Point(46, 9);
-            lbTroChoiDaDuocTamDung.Margin = new Padding(5, 0, 5, 0);
+            lbTroChoiDaDuocTamDung.Location = new Point(58, 11);
+            lbTroChoiDaDuocTamDung.Margin = new Padding(6, 0, 6, 0);
             lbTroChoiDaDuocTamDung.Name = "lbTroChoiDaDuocTamDung";
-            lbTroChoiDaDuocTamDung.Size = new Size(283, 34);
+            lbTroChoiDaDuocTamDung.Size = new Size(354, 42);
             lbTroChoiDaDuocTamDung.TabIndex = 3;
             lbTroChoiDaDuocTamDung.Text = "The game has been paused";
             lbTroChoiDaDuocTamDung.TextAlign = ContentAlignment.MiddleCenter;
             lbTroChoiDaDuocTamDung.Click += lbTroChoiDaDuocTamDung_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.SteelBlue;
-            button1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(221, 51);
-            button1.Margin = new Padding(5, 6, 5, 6);
-            button1.Name = "button1";
-            button1.Size = new Size(89, 40);
-            button1.TabIndex = 8;
-            button1.Text = "Exit";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // btnChoiTiep
             // 
             btnChoiTiep.BackColor = Color.SteelBlue;
             btnChoiTiep.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnChoiTiep.ForeColor = SystemColors.ButtonHighlight;
-            btnChoiTiep.Location = new Point(60, 51);
-            btnChoiTiep.Margin = new Padding(5, 6, 5, 6);
+            btnChoiTiep.Location = new Point(172, 66);
+            btnChoiTiep.Margin = new Padding(6, 8, 6, 8);
             btnChoiTiep.Name = "btnChoiTiep";
-            btnChoiTiep.Size = new Size(89, 39);
+            btnChoiTiep.Size = new Size(111, 49);
             btnChoiTiep.TabIndex = 9;
             btnChoiTiep.Text = "Continue";
             btnChoiTiep.UseVisualStyleBackColor = false;
@@ -76,14 +61,13 @@
             // 
             // TamDunghoacTieptuc
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(374, 106);
+            ClientSize = new Size(468, 132);
             Controls.Add(btnChoiTiep);
-            Controls.Add(button1);
             Controls.Add(lbTroChoiDaDuocTamDung);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "TamDunghoacTieptuc";
             StartPosition = FormStartPosition.CenterParent;
             Text = "TamDunghoacTieptuc";
@@ -93,7 +77,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbTroChoiDaDuocTamDung;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnChoiTiep;
     }
 }

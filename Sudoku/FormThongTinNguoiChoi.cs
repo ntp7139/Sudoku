@@ -38,6 +38,7 @@ namespace Sudoku
         private void btn_Update_Click(object sender, EventArgs e)
         {
             current_player.Load_Player(current_player.taikhoan);
+            current_player.Update_Player();
             Load_Data();
         }
     }

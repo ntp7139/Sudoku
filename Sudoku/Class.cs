@@ -195,7 +195,7 @@ namespace Sudoku
             }
             return true;
         }
-        public string Set_up_ID_game() 
+        public string Set_up_ID_game(string chedo) 
         {
             int id;
             
@@ -204,8 +204,10 @@ namespace Sudoku
             if (!Count.Check_ID_Sudoku(game_id))
             {
                 id = Count.ExcuteScalar(query);
-                id += 10000;
-                return id.ToString();
+                if (chedo == "Easy") id += 10000;
+                else if (chedo == "Medium") id += 20000;
+                else if (chedo == "Hard") id += 30000;
+                 return id.ToString();
             }return game_id;
            
          }

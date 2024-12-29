@@ -24,7 +24,7 @@ namespace Sudoku
             InitializeComponent();
             adt = new MySqlDataAdapter(); // Khởi tạo mặc định
             cmd = new MySqlCommand(); // Khởi tạo mặc định
-            constr = "server=127.0.0.1; Database = sudoku; Uid=root; Pwd=phatbaoan112;";
+            constr = "server=phatchison-phatbaoan112-1d4a.d.aivencloud.com;port = 28938;uid=avnadmin;pwd=AVNS_UF7t0kMFhSmIyxPG8M5;database=defaultdb";
             con = new MySqlConnection(constr);
             dataGridView1.RowPostPaint += dataGridView1_RowPostPaint;
         }

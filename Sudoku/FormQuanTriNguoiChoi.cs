@@ -43,16 +43,15 @@ namespace Sudoku
                 try
                 {
                     connection.Open();
-                    string Query = "select taikhoan as column_Taikhoan, matkhau as column_Matkhau, email as column_email, access as column_phanquyen from nguoichoi";
-
+                    string Query = "select taikhoan , matkhau , email, access from nguoichoi";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(Query, strConnection);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
-                    dtGV_Quantritaikhoan.Columns["column_Taikhoan"].DataPropertyName = "column_Taikhoan";
-                    dtGV_Quantritaikhoan.Columns["column_Matkhau"].DataPropertyName = "column_Matkhau";
-                    dtGV_Quantritaikhoan.Columns["column_email"].DataPropertyName = "column_email";
-                    dtGV_Quantritaikhoan.Columns["column_phanquyen"].DataPropertyName = "column_phanquyen";
-                    this.dtGV_Quantritaikhoan.AutoGenerateColumns = true;
+                   /* dtGV_Quantritaikhoan.Columns["taikhoan"].DataPropertyName = "column_Taikhoan";
+                    dtGV_Quantritaikhoan.Columns["matkhau"].DataPropertyName = "column_Matkhau";
+                    dtGV_Quantritaikhoan.Columns["email"].DataPropertyName = "column_email";
+                    dtGV_Quantritaikhoan.Columns["phanquyen"].DataPropertyName = "column_phanquyen";
+                    this.dtGV_Quantritaikhoan.AutoGenerateColumns = true;*/
 
                     this.dtGV_Quantritaikhoan.DataSource = dataTable;
                     connection.Close();
