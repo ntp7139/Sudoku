@@ -47,11 +47,11 @@ namespace Sudoku
                     MySqlDataAdapter adapter = new MySqlDataAdapter(Query, strConnection);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
-                   /* dtGV_Quantritaikhoan.Columns["taikhoan"].DataPropertyName = "column_Taikhoan";
-                    dtGV_Quantritaikhoan.Columns["matkhau"].DataPropertyName = "column_Matkhau";
-                    dtGV_Quantritaikhoan.Columns["email"].DataPropertyName = "column_email";
-                    dtGV_Quantritaikhoan.Columns["phanquyen"].DataPropertyName = "column_phanquyen";
-                    this.dtGV_Quantritaikhoan.AutoGenerateColumns = true;*/
+                    /* dtGV_Quantritaikhoan.Columns["taikhoan"].DataPropertyName = "column_Taikhoan";
+                     dtGV_Quantritaikhoan.Columns["matkhau"].DataPropertyName = "column_Matkhau";
+                     dtGV_Quantritaikhoan.Columns["email"].DataPropertyName = "column_email";
+                     dtGV_Quantritaikhoan.Columns["phanquyen"].DataPropertyName = "column_phanquyen";
+                     this.dtGV_Quantritaikhoan.AutoGenerateColumns = true;*/
 
                     this.dtGV_Quantritaikhoan.DataSource = dataTable;
                     connection.Close();

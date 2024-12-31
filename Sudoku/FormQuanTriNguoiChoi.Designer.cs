@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             dtGV_Quantritaikhoan = new DataGridView();
             column_Account = new DataGridViewTextBoxColumn();
             column_Password = new DataGridViewTextBoxColumn();
@@ -42,11 +42,6 @@
             pn_Giaodienchinh = new Panel();
             pn_Themnguoichoi = new Panel();
             btnExit = new Button();
-            pn_Xoa = new Panel();
-            btnExit_frmXoa = new Button();
-            btnDelete = new Button();
-            tB_Taikhoan_xoa = new TextBox();
-            lb_taikhoan_xoa = new Label();
             btnAdd = new Button();
             rB_admin_Them = new RadioButton();
             rB_user_Them = new RadioButton();
@@ -57,6 +52,11 @@
             lbEmail = new Label();
             lbPassword = new Label();
             lbAccount = new Label();
+            pn_Xoa = new Panel();
+            btnExit_frmXoa = new Button();
+            btnDelete = new Button();
+            tB_Taikhoan_xoa = new TextBox();
+            lb_taikhoan_xoa = new Label();
             pn_Suanguoichoi = new Panel();
             btnExit_frmSua = new Button();
             btnEdit = new Button();
@@ -79,23 +79,23 @@
             // dtGV_Quantritaikhoan
             // 
             dtGV_Quantritaikhoan.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dtGV_Quantritaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dtGV_Quantritaikhoan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dtGV_Quantritaikhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtGV_Quantritaikhoan.Columns.AddRange(new DataGridViewColumn[] { column_Account, column_Password, column_email, column_Access });
             dtGV_Quantritaikhoan.Location = new Point(92, 93);
             dtGV_Quantritaikhoan.Margin = new Padding(2);
             dtGV_Quantritaikhoan.Name = "dtGV_Quantritaikhoan";
             dtGV_Quantritaikhoan.RowHeadersWidth = 62;
-            dataGridViewCellStyle2.Font = new Font("Trebuchet MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ActiveCaptionText;
-            dtGV_Quantritaikhoan.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new Font("Trebuchet MS", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ActiveCaptionText;
+            dtGV_Quantritaikhoan.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dtGV_Quantritaikhoan.Size = new Size(796, 500);
             dtGV_Quantritaikhoan.TabIndex = 0;
             dtGV_Quantritaikhoan.CellContentClick += dtGV_Quantritaikhoan_CellContentClick;
@@ -238,66 +238,6 @@
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
-            // pn_Xoa
-            // 
-            pn_Xoa.Controls.Add(btnExit_frmXoa);
-            pn_Xoa.Controls.Add(btnDelete);
-            pn_Xoa.Controls.Add(tB_Taikhoan_xoa);
-            pn_Xoa.Controls.Add(lb_taikhoan_xoa);
-            pn_Xoa.Location = new Point(115, 102);
-            pn_Xoa.Margin = new Padding(2);
-            pn_Xoa.Name = "pn_Xoa";
-            pn_Xoa.Size = new Size(622, 172);
-            pn_Xoa.TabIndex = 14;
-            pn_Xoa.Visible = false;
-            // 
-            // btnExit_frmXoa
-            // 
-            btnExit_frmXoa.BackColor = Color.SteelBlue;
-            btnExit_frmXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit_frmXoa.ForeColor = SystemColors.ButtonHighlight;
-            btnExit_frmXoa.Location = new Point(332, 102);
-            btnExit_frmXoa.Margin = new Padding(4, 4, 4, 4);
-            btnExit_frmXoa.Name = "btnExit_frmXoa";
-            btnExit_frmXoa.Size = new Size(118, 36);
-            btnExit_frmXoa.TabIndex = 15;
-            btnExit_frmXoa.Text = "Exit";
-            btnExit_frmXoa.UseVisualStyleBackColor = false;
-            btnExit_frmXoa.Click += btnExit_frmXoa_Click;
-            // 
-            // btnDelete
-            // 
-            btnDelete.BackColor = Color.SteelBlue;
-            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDelete.ForeColor = SystemColors.ButtonHighlight;
-            btnDelete.Location = new Point(118, 102);
-            btnDelete.Margin = new Padding(4, 4, 4, 4);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(118, 36);
-            btnDelete.TabIndex = 14;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = false;
-            btnDelete.Click += btnDelete_Click;
-            // 
-            // tB_Taikhoan_xoa
-            // 
-            tB_Taikhoan_xoa.Location = new Point(182, 18);
-            tB_Taikhoan_xoa.Margin = new Padding(2);
-            tB_Taikhoan_xoa.Name = "tB_Taikhoan_xoa";
-            tB_Taikhoan_xoa.Size = new Size(388, 31);
-            tB_Taikhoan_xoa.TabIndex = 1;
-            // 
-            // lb_taikhoan_xoa
-            // 
-            lb_taikhoan_xoa.AutoSize = true;
-            lb_taikhoan_xoa.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lb_taikhoan_xoa.Location = new Point(18, 24);
-            lb_taikhoan_xoa.Margin = new Padding(2, 0, 2, 0);
-            lb_taikhoan_xoa.Name = "lb_taikhoan_xoa";
-            lb_taikhoan_xoa.Size = new Size(78, 23);
-            lb_taikhoan_xoa.TabIndex = 0;
-            lb_taikhoan_xoa.Text = "Account";
-            // 
             // btnAdd
             // 
             btnAdd.BackColor = Color.SteelBlue;
@@ -406,6 +346,66 @@
             lbAccount.TabIndex = 0;
             lbAccount.Text = "Account";
             // 
+            // pn_Xoa
+            // 
+            pn_Xoa.Controls.Add(btnExit_frmXoa);
+            pn_Xoa.Controls.Add(btnDelete);
+            pn_Xoa.Controls.Add(tB_Taikhoan_xoa);
+            pn_Xoa.Controls.Add(lb_taikhoan_xoa);
+            pn_Xoa.Location = new Point(115, 102);
+            pn_Xoa.Margin = new Padding(2);
+            pn_Xoa.Name = "pn_Xoa";
+            pn_Xoa.Size = new Size(622, 172);
+            pn_Xoa.TabIndex = 14;
+            pn_Xoa.Visible = false;
+            // 
+            // btnExit_frmXoa
+            // 
+            btnExit_frmXoa.BackColor = Color.SteelBlue;
+            btnExit_frmXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit_frmXoa.ForeColor = SystemColors.ButtonHighlight;
+            btnExit_frmXoa.Location = new Point(332, 102);
+            btnExit_frmXoa.Margin = new Padding(4);
+            btnExit_frmXoa.Name = "btnExit_frmXoa";
+            btnExit_frmXoa.Size = new Size(118, 36);
+            btnExit_frmXoa.TabIndex = 15;
+            btnExit_frmXoa.Text = "Exit";
+            btnExit_frmXoa.UseVisualStyleBackColor = false;
+            btnExit_frmXoa.Click += btnExit_frmXoa_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.SteelBlue;
+            btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDelete.ForeColor = SystemColors.ButtonHighlight;
+            btnDelete.Location = new Point(118, 102);
+            btnDelete.Margin = new Padding(4);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(118, 36);
+            btnDelete.TabIndex = 14;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // tB_Taikhoan_xoa
+            // 
+            tB_Taikhoan_xoa.Location = new Point(182, 18);
+            tB_Taikhoan_xoa.Margin = new Padding(2);
+            tB_Taikhoan_xoa.Name = "tB_Taikhoan_xoa";
+            tB_Taikhoan_xoa.Size = new Size(388, 31);
+            tB_Taikhoan_xoa.TabIndex = 1;
+            // 
+            // lb_taikhoan_xoa
+            // 
+            lb_taikhoan_xoa.AutoSize = true;
+            lb_taikhoan_xoa.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lb_taikhoan_xoa.Location = new Point(18, 24);
+            lb_taikhoan_xoa.Margin = new Padding(2, 0, 2, 0);
+            lb_taikhoan_xoa.Name = "lb_taikhoan_xoa";
+            lb_taikhoan_xoa.Size = new Size(78, 23);
+            lb_taikhoan_xoa.TabIndex = 0;
+            lb_taikhoan_xoa.Text = "Account";
+            // 
             // pn_Suanguoichoi
             // 
             pn_Suanguoichoi.BackColor = SystemColors.ButtonHighlight;
@@ -434,7 +434,7 @@
             btnExit_frmSua.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
             btnExit_frmSua.ForeColor = SystemColors.ButtonHighlight;
             btnExit_frmSua.Location = new Point(394, 335);
-            btnExit_frmSua.Margin = new Padding(4, 4, 4, 4);
+            btnExit_frmSua.Margin = new Padding(4);
             btnExit_frmSua.Name = "btnExit_frmSua";
             btnExit_frmSua.Size = new Size(118, 45);
             btnExit_frmSua.TabIndex = 16;
@@ -448,7 +448,7 @@
             btnEdit.Font = new Font("Trebuchet MS", 10.2F, FontStyle.Bold);
             btnEdit.ForeColor = SystemColors.ButtonHighlight;
             btnEdit.Location = new Point(118, 335);
-            btnEdit.Margin = new Padding(4, 4, 4, 4);
+            btnEdit.Margin = new Padding(4);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(118, 45);
             btnEdit.TabIndex = 15;
@@ -562,10 +562,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1000, 625);
-            Controls.Add(pn_Giaodienchinh);
             Controls.Add(pn_Suanguoichoi);
             Controls.Add(pn_Xoa);
             Controls.Add(pn_Themnguoichoi);
+            Controls.Add(pn_Giaodienchinh);
             Margin = new Padding(2);
             Name = "FormQuanTriNguoiChoi";
             StartPosition = FormStartPosition.CenterScreen;
