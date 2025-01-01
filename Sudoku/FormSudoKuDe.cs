@@ -130,12 +130,13 @@ namespace Sudoku
 
                 // Vẽ giá trị bản nháp (ở góc dưới bên phải)
                 e.Graphics.DrawString(
-                    drafts,
-                    new Font("Arial", 8),
-                    Brushes.Green,
-                    e.CellBounds.X + 5,
-                    e.CellBounds.Y + 5
-                );
+                 drafts,
+                 new Font("Arial", 8, FontStyle.Bold), // Đặt font chữ đậm
+                 Brushes.Gray, // Sử dụng màu xám
+                 e.CellBounds.X + 5,
+                 e.CellBounds.Y + 5
+ );
+
 
                 // Ngăn không cho vẽ lại nội dung mặc định
                 e.Handled = true;
